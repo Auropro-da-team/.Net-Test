@@ -1,36 +1,30 @@
-# .NET Bing Translate Sample
+# Bing Translate .NET Sample
 
 ## Project Title
-.NET Bing Translate Sample
+Bing Translate .NET Sample
 
 ## Description
-This project is a sample application that demonstrates how to use the Bing Translator API in a .NET application. It uses an OAuth token obtained from the Azure token server to send a request to the translator service. The response from the translator service is then used to translate a given text from English to Spanish.
+This project is a .NET sample application that demonstrates how to use the Bing Translator API. The application sends a request to the Azure token server each time it sends a request to the translator service. The result from that request is fed into the request sent to the translation service itself.
 
 ## Features
-- Uses Bing Translator API for translation
-- Utilizes Azure Marketplace Access Token for authentication
-- Asynchronous HTTP requests
-- Exception handling for request failures
+- Translates English phrases to Spanish using Bing Translator API
+- Demonstrates the use of Azure Marketplace Access Token in the message path
+- Handles exceptions and displays the error message
 
 ## Installation
-1. Clone this repository to your local machine.
-2. Open the solution in Visual Studio.
-3. Update the `_clientId` and `_clientSecret` fields in the `AccessTokenMessageHandler.cs` file with your Azure Marketplace application key.
-4. Build and run the solution.
+To install this project, you need to clone the repository and build the project using Visual Studio or any .NET compatible IDE.
 
 ## Usage
-Once the application is running, it will translate the phrase "Hello World" from English to Spanish using the Bing Translator API. The translated text will be displayed in the console.
+Before you can run this sample, you must obtain an application key from Azure Marketplace, and fill in the information in the AccessTokenMessageHandler class. See http://msdn.microsoft.com/en-us/library/hh454950.aspx for details.
 
 ## Technologies Used
 - .NET Framework
 - C#
 - Bing Translator API
 - Azure Marketplace Access Token
-- HttpClient
-- Newtonsoft.Json
 
 ## Contributing
-Contributions are welcome. Please open an issue or submit a pull request.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE.md file for details.
