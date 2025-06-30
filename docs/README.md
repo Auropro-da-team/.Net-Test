@@ -1,22 +1,25 @@
-# .Net-Test ResponseEntityProcessorSample
+# ResponseEntityProcessorSample
 
 ## Description
-This .NET project demonstrates how to copy a response entity (body) to a local file and perform additional processing on that file asynchronously. It does so by hooking in a HttpMessageHandler that wraps the response entity with one that both writes itself to the output as normal and to a local file.
+This .NET project demonstrates how to copy a response entity (body) to a local file and perform additional processing on that file asynchronously. It does so by hooking in a `HttpMessageHandler` that wraps the response entity with one that both writes itself to the output as normal and to a local file.
 
 ## Features
-- Asynchronous processing of response entity.
-- Response entity is written both to the output and a local file.
-- Use of HttpMessageHandler to handle response entities.
-- Local file is automatically deleted upon completion of processing.
+- Asynchronous processing of HTTP response bodies
+- Writing HTTP response bodies to local files
+- Customizable `HttpMessageHandler` for response processing
+- Self-hosted HTTP server with custom routing
 
 ## Installation
 1. Clone the repository to your local machine.
-2. Navigate to the cloned repository.
-3. Open the solution file in Visual Studio.
-4. Build the solution.
+2. Navigate to the cloned directory.
+3. Open the solution file `ResponseEntityProcessorSample.sln` in Visual Studio.
+4. Build the solution (Ctrl+Shift+B).
 
 ## Usage
-Run the program in Visual Studio. The program will start a local server and issue GET requests. The ResponseEntityHandler will be in action, saving the response in a local file and displaying the file size and name in the console. The file will be deleted automatically after processing.
+1. Run the program from Visual Studio (Ctrl+F5).
+2. The server will start and listen on `http://localhost:50231/`.
+3. The server will issue GET requests and process the responses.
+4. Press ENTER to stop the server.
 
 ## Technologies Used
 - .NET Framework
@@ -24,7 +27,7 @@ Run the program in Visual Studio. The program will start a local server and issu
 - C#
 
 ## Contributing
-Contributions are welcome. Please fork the project and create a pull request with your changes.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
