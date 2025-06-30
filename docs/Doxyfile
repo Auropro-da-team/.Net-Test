@@ -7,4 +7,3 @@ EXTRACT_ALL            = YES
 GENERATE_LATEX         = NO
 QUIET                  = YES
 GENERATE_HTML          = YES
-OPTIMIZE_OUTPUT_FOR_CSHARP = YES
