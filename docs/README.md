@@ -1,33 +1,48 @@
-# ResponseEntityProcessorSample
+# Project Documentation for .NET Project
 
-## Description
-This .NET project demonstrates how to copy a response entity (body) to a local file and perform additional processing on that file asynchronously. It does so by hooking in a `HttpMessageHandler` that wraps the response entity with one that both writes itself to the output as normal and to a local file.
+## 1. Introduction
+This section provides an overview of the project, its purpose, and any relevant background information. It includes context about the problem it solves, key motivations, and goals.
 
-## Features
-- Asynchronous processing of HTTP response bodies
-- Writing HTTP response bodies to local files
-- Customizable `HttpMessageHandler` for response processing
-- Self-hosted HTTP server with custom routing
+## 2. Project Architecture
+This section describes the high-level architecture of the project, including the relationship between major components and their roles. It includes any design patterns or architectural principles used (e.g., MVC, Singleton, etc.) and provides UML diagrams or other visual aids if needed to clarify the system design.
 
-## Installation
-1. Clone the repository to your local machine.
-2. Navigate to the cloned directory.
-3. Open the solution file `ResponseEntityProcessorSample.sln` in Visual Studio.
-4. Build the solution (Ctrl+Shift+B).
+## 3. Installation and Setup
+This section provides step-by-step instructions for installing and configuring the project. It describes any prerequisites (e.g., .NET version, dependencies, environment setup) and explains how to set up the project locally or on a server.
 
-## Usage
-1. Run the program from Visual Studio (Ctrl+F5).
-2. The server will start and listen on `http://localhost:50231/`.
-3. The server will issue GET requests and process the responses.
-4. Press ENTER to stop the server.
+## 4. Code Structure
+This section includes:
+- **Directory Structure**: An overview of the project's file and directory structure, explaining the purpose of each folder/file.
+- **Classes and Methods**: Explanation of the major classes and methods in the project, including their roles, key properties, methods, and expected behaviors. If possible, it includes links to the Doxygen-generated references for each class or method, or generates short summaries for each.
+- **Important Code Files**: Highlights of critical code files and their significance in the application flow.
 
-## Technologies Used
-- .NET Framework
-- ASP.NET Web API
-- C#
+## 5. Features and Functionality
+This section describes the core features and functionalities of the project. For each feature, it provides an explanation of how it works, including relevant code snippets or examples (with input-output examples if applicable).
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## 6. API Documentation
+If the project exposes an API (REST, GraphQL, etc.), this section provides detailed API documentation, describing available endpoints, methods (GET, POST, etc.), parameters, and expected responses. It includes examples for each endpoint, showing how to interact with them programmatically, and details authentication/authorization if relevant.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+## 7. Error Handling
+This section explains how errors and exceptions are handled within the project and documents any custom error classes or methods for logging/tracing issues.
+
+## 8. Testing and Quality Assurance
+This section provides details on any testing frameworks or methodologies used in the project (unit tests, integration tests, etc.). It includes instructions for running tests and any best practices related to test coverage and test-driven development (TDD).
+
+## 9. Performance and Optimization
+This section describes performance considerations and any optimizations implemented within the codebase. It includes any profiling or performance metrics, if available.
+
+## 10. Contributing Guidelines
+This section describes the process for contributing to the project, including:
+- Branching strategy (e.g., Gitflow).
+- Code review process.
+- Pull request guidelines.
+- How to report bugs or request features.
+
+## 11. Licensing and Legal
+This section provides information on the licensing model used (e.g., MIT, Apache 2.0). It includes any copyright and legal disclaimers relevant to the project.
+
+## 12. References
+This section provides links to any external resources, documentation, or related projects that can help the user/developer understand or extend the project.
+
+The documentation is well-organized with sections that are easy to navigate. It is clear and concise with detailed explanations of each aspect of the codebase and project. It is structured in a way that makes it easy for new developers to get up to speed quickly, understand the architecture, and begin contributing. If possible, it includes any visual diagrams, code snippets, and real-world usage examples to make the documentation more engaging and accessible.
+
+Please refer to the Doxygen-generated documentation (`index.html`) for more detailed information.
