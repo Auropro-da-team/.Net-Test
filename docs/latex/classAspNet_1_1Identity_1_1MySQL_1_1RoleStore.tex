@@ -1,0 +1,149 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store$<$ TRole $>$ Class Template Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+
+
+Class that implements the key ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} role store iterfaces  
+
+
+
+
+Inheritance diagram for Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store$<$ TRole $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store$<$ TRole $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a30606ba6b14cc986aaa3e53ac99750ea}{Role\+Store}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that initializes a new \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance using the Default Connection string \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae722e2dfb07d2be0d53c03769ab3e2a0}{Role\+Store}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} as argument \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a356a46691af6e9c4e813f722c728313e}{Create\+Async}} (TRole role)
+\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_adbbe1a5888f3f84467ac0f4dc869c442}{Delete\+Async}} (TRole role)
+\item 
+Task$<$ TRole $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a9ed5d4d8a8923c0f2b343554fe5686eb}{Find\+By\+Id\+Async}} (string role\+Id)
+\item 
+Task$<$ TRole $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a7e83a20eee1398e7c2d9e14581280663}{Find\+By\+Name\+Async}} (string role\+Name)
+\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a28ecf14633a6acffe6e4fa503c8565f7}{Update\+Async}} (TRole role)
+\item 
+void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a6872b06479b038e2e41bb5b16b36c0fe}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ada04263126a47195a092da5d7bf54d48}{Database}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IQueryable$<$ TRole $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae97f778c8c3bbab369e97de44b7989a0}{Roles}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that implements the key ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} role store iterfaces 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TRole} : {\em \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityRole}{Identity\+Role}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a30606ba6b14cc986aaa3e53ac99750ea}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a30606ba6b14cc986aaa3e53ac99750ea}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!RoleStore@{RoleStore}}
+\index{RoleStore@{RoleStore}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{RoleStore()}{RoleStore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Role\+Store}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor that initializes a new \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance using the Default Connection string 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae722e2dfb07d2be0d53c03769ab3e2a0}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae722e2dfb07d2be0d53c03769ab3e2a0}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!RoleStore@{RoleStore}}
+\index{RoleStore@{RoleStore}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{RoleStore()}{RoleStore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Role\+Store}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} as argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a356a46691af6e9c4e813f722c728313e}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a356a46691af6e9c4e813f722c728313e}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Create\+Async (\begin{DoxyParamCaption}\item[{TRole}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_adbbe1a5888f3f84467ac0f4dc869c442}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_adbbe1a5888f3f84467ac0f4dc869c442}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!DeleteAsync@{DeleteAsync}}
+\index{DeleteAsync@{DeleteAsync}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{DeleteAsync()}{DeleteAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Delete\+Async (\begin{DoxyParamCaption}\item[{TRole}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a6872b06479b038e2e41bb5b16b36c0fe}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a6872b06479b038e2e41bb5b16b36c0fe}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a9ed5d4d8a8923c0f2b343554fe5686eb}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a9ed5d4d8a8923c0f2b343554fe5686eb}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!FindByIdAsync@{FindByIdAsync}}
+\index{FindByIdAsync@{FindByIdAsync}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{FindByIdAsync()}{FindByIdAsync()}}
+{\footnotesize\ttfamily Task$<$TRole$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Find\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{string}]{role\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a7e83a20eee1398e7c2d9e14581280663}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a7e83a20eee1398e7c2d9e14581280663}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!FindByNameAsync@{FindByNameAsync}}
+\index{FindByNameAsync@{FindByNameAsync}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{FindByNameAsync()}{FindByNameAsync()}}
+{\footnotesize\ttfamily Task$<$TRole$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Find\+By\+Name\+Async (\begin{DoxyParamCaption}\item[{string}]{role\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a28ecf14633a6acffe6e4fa503c8565f7}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_a28ecf14633a6acffe6e4fa503c8565f7}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!UpdateAsync@{UpdateAsync}}
+\index{UpdateAsync@{UpdateAsync}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{UpdateAsync()}{UpdateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Update\+Async (\begin{DoxyParamCaption}\item[{TRole}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ada04263126a47195a092da5d7bf54d48}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ada04263126a47195a092da5d7bf54d48}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!Database@{Database}}
+\index{Database@{Database}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{Database}{Database}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Database\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae97f778c8c3bbab369e97de44b7989a0}\label{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore_ae97f778c8c3bbab369e97de44b7989a0}} 
+\index{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}!Roles@{Roles}}
+\index{Roles@{Roles}!AspNet.Identity.MySQL.RoleStore$<$ TRole $>$@{AspNet.Identity.MySQL.RoleStore$<$ TRole $>$}}
+\doxysubsubsection{\texorpdfstring{Roles}{Roles}}
+{\footnotesize\ttfamily IQueryable$<$TRole$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1RoleStore}{Asp\+Net.\+Identity.\+My\+SQL.\+Role\+Store}}$<$ TRole $>$.Roles\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{RoleStore_8cs}{Role\+Store.\+cs}}\end{DoxyCompactItemize}

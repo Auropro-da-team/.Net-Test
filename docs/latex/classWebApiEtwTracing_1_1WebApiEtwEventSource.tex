@@ -1,0 +1,215 @@
+\hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource}{}\doxysection{Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source Class Reference}
+\label{classWebApiEtwTracing_1_1WebApiEtwEventSource}\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+
+
+Implementation of Event\+Source used by \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}{Web\+Api\+Etw\+Trace\+Writer}} to emit ETW events.  
+
+
+
+
+Inheritance diagram for Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classWebApiEtwTracing_1_1WebApiEtwEventSource__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classWebApiEtwTracing_1_1WebApiEtwEventSource__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_1_1Keywords}{Keywords}}
+\begin{DoxyCompactList}\small\item\em Simple enum wrapper for the possible keyword values attached to the ETW events. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_1_1Tasks}{Tasks}}
+\begin{DoxyCompactList}\small\item\em Simple enum wrapper for possible Task values \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_a8b23bc4845e2c250df4de1f94ac3601b}{Request}} (string uri, string method)
+\begin{DoxyCompactList}\small\item\em Emit an ETW event for an incoming Http request. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_ac854bf4d22b543433a239286aefb652b}{Response}} (string uri, string method, int status\+Code, string status)
+\begin{DoxyCompactList}\small\item\em Emit an ETW event for an outgoing Http response. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_a0cd1bbee327417228eb713c2e2e2ce00}{Op\+Begin}} (string name, string operation, string message)
+\begin{DoxyCompactList}\small\item\em Emit an ETW event identifying the start of some operation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_aa99d5ecde259093f659c2540f1d942f6}{Op\+End}} (string name, string operation, string message)
+\begin{DoxyCompactList}\small\item\em Emit an ETW event identifying the end of some operation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_a085be291ebd05b2aa928909a0c9e5774}{Op\+Trace}} (string name, string operation, string message)
+\begin{DoxyCompactList}\small\item\em Emit an ETW event with a descriptive message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_a9e106c2ba33f008fb9d75e92aca5af0a}{Warning}} (string name, string operation, string message)
+\begin{DoxyCompactList}\small\item\em Emit a warning level ETW event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_a1b0b431824306a52bbdc5095a39fe0ab}{Error}} (string name, string operation, string message)
+\begin{DoxyCompactList}\small\item\em Emit an error level ETW event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource}{Web\+Api\+Etw\+Event\+Source}} \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource_aae0f0af3fbe806c22ddba412fc6e87bd}{Log}} = new \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource}{Web\+Api\+Etw\+Event\+Source}}()
+\begin{DoxyCompactList}\small\item\em Returns a singleton instance of this class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of Event\+Source used by \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}{Web\+Api\+Etw\+Trace\+Writer}} to emit ETW events. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_a1b0b431824306a52bbdc5095a39fe0ab}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_a1b0b431824306a52bbdc5095a39fe0ab}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!Error@{Error}}
+\index{Error@{Error}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Error (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{operation,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an error level ETW event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object performing the operation, usually the type name.\\
+\hline
+{\em operation} & The name of the operation, usually the method name.\\
+\hline
+{\em message} & A descriptive message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_a0cd1bbee327417228eb713c2e2e2ce00}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_a0cd1bbee327417228eb713c2e2e2ce00}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!OpBegin@{OpBegin}}
+\index{OpBegin@{OpBegin}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{OpBegin()}{OpBegin()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Op\+Begin (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{operation,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an ETW event identifying the start of some operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object performing the operation, usually the type name.\\
+\hline
+{\em operation} & The name of the operation, usually the method name.\\
+\hline
+{\em message} & An optional message.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_aa99d5ecde259093f659c2540f1d942f6}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_aa99d5ecde259093f659c2540f1d942f6}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!OpEnd@{OpEnd}}
+\index{OpEnd@{OpEnd}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{OpEnd()}{OpEnd()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Op\+End (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{operation,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an ETW event identifying the end of some operation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object performing the operation, usually the type name.\\
+\hline
+{\em operation} & The name of the operation, usually the method name.\\
+\hline
+{\em message} & An optional message, usually describing the result.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_a085be291ebd05b2aa928909a0c9e5774}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_a085be291ebd05b2aa928909a0c9e5774}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!OpTrace@{OpTrace}}
+\index{OpTrace@{OpTrace}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{OpTrace()}{OpTrace()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Op\+Trace (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{operation,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an ETW event with a descriptive message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object performing the operation, usually the type name.\\
+\hline
+{\em operation} & The name of the operation, usually the method name.\\
+\hline
+{\em message} & A descriptive message.\\
+\hline
+\end{DoxyParams}
+
+
+This method would be invoked only by user code invoking ITrace\+Writer.\+Trace() with Trace\+Kind.\+Trace. The Web\+API stack does not normally use this entry point. \mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_a8b23bc4845e2c250df4de1f94ac3601b}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_a8b23bc4845e2c250df4de1f94ac3601b}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!Request@{Request}}
+\index{Request@{Request}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Request (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{string}]{method }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an ETW event for an incoming Http request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The request Uri.\\
+\hline
+{\em method} & The request method, such as \char`\"{}\+Get\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_ac854bf4d22b543433a239286aefb652b}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_ac854bf4d22b543433a239286aefb652b}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!Response@{Response}}
+\index{Response@{Response}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{Response()}{Response()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Response (\begin{DoxyParamCaption}\item[{string}]{uri,  }\item[{string}]{method,  }\item[{int}]{status\+Code,  }\item[{string}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit an ETW event for an outgoing Http response. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uri} & The request Uri.\\
+\hline
+{\em method} & The request method, such as \char`\"{}\+Get\char`\"{}.\\
+\hline
+{\em status} & The string representation of the System.\+Net.\+Http.\+Http\+Status\+Code for the response.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_a9e106c2ba33f008fb9d75e92aca5af0a}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_a9e106c2ba33f008fb9d75e92aca5af0a}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!Warning@{Warning}}
+\index{Warning@{Warning}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{Warning()}{Warning()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Warning (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{operation,  }\item[{string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Emit a warning level ETW event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the object performing the operation, usually the type name.\\
+\hline
+{\em operation} & The name of the operation, usually the method name.\\
+\hline
+{\em message} & A descriptive message.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwEventSource_aae0f0af3fbe806c22ddba412fc6e87bd}\label{classWebApiEtwTracing_1_1WebApiEtwEventSource_aae0f0af3fbe806c22ddba412fc6e87bd}} 
+\index{WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}!Log@{Log}}
+\index{Log@{Log}!WebApiEtwTracing.WebApiEtwEventSource@{WebApiEtwTracing.WebApiEtwEventSource}}
+\doxysubsubsection{\texorpdfstring{Log}{Log}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource}{Web\+Api\+Etw\+Event\+Source}} Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Event\+Source.\+Log = new \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwEventSource}{Web\+Api\+Etw\+Event\+Source}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns a singleton instance of this class. 
+
+This is the convention used by other Event\+Source implementations. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Etw\+Tracing\+Sample/\+Web\+Api\+Etw\+Tracing/\mbox{\hyperlink{WebApiEtwEventSource_8cs}{Web\+Api\+Etw\+Event\+Source.\+cs}}\end{DoxyCompactItemize}

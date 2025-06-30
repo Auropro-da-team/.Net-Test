@@ -1,0 +1,51 @@
+\hypertarget{classPushContentController_1_1Controllers_1_1PushContentController}{}\doxysection{Push\+Content\+Controller.\+Controllers.\+Push\+Content\+Controller Class Reference}
+\label{classPushContentController_1_1Controllers_1_1PushContentController}\index{PushContentController.Controllers.PushContentController@{PushContentController.Controllers.PushContentController}}
+
+
+This controller pushes data to the client as a never-\/ending HTTP response writing a little bit of data every 1 second. There can be N number of clients connected at any given time -- the list of clients is maintained in a concurrent dictionary. Clients are removed if writes fail which means that they have disconnected.  
+
+
+
+
+Inheritance diagram for Push\+Content\+Controller.\+Controllers.\+Push\+Content\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classPushContentController_1_1Controllers_1_1PushContentController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Push\+Content\+Controller.\+Controllers.\+Push\+Content\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{classPushContentController_1_1Controllers_1_1PushContentController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Http\+Response\+Message \mbox{\hyperlink{classPushContentController_1_1Controllers_1_1PushContentController_a50d14ec0897896e39d8144c46ba118e2}{Get\+Updates}} (Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller pushes data to the client as a never-\/ending HTTP response writing a little bit of data every 1 second. There can be N number of clients connected at any given time -- the list of clients is maintained in a concurrent dictionary. Clients are removed if writes fail which means that they have disconnected. 
+
+The sample needs to run using either full IIS/\+ASP or IIS Express. The Visual Studio Development Server does not work. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPushContentController_1_1Controllers_1_1PushContentController_a50d14ec0897896e39d8144c46ba118e2}\label{classPushContentController_1_1Controllers_1_1PushContentController_a50d14ec0897896e39d8144c46ba118e2}} 
+\index{PushContentController.Controllers.PushContentController@{PushContentController.Controllers.PushContentController}!GetUpdates@{GetUpdates}}
+\index{GetUpdates@{GetUpdates}!PushContentController.Controllers.PushContentController@{PushContentController.Controllers.PushContentController}}
+\doxysubsubsection{\texorpdfstring{GetUpdates()}{GetUpdates()}}
+{\footnotesize\ttfamily Http\+Response\+Message Push\+Content\+Controller.\+Controllers.\+Push\+Content\+Controller.\+Get\+Updates (\begin{DoxyParamCaption}\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Push\+Content\+Controller\+Sample/\+Push\+Content\+Controller/\+Controllers/\mbox{\hyperlink{PushContentController_8cs}{Push\+Content\+Controller.\+cs}}\end{DoxyCompactItemize}

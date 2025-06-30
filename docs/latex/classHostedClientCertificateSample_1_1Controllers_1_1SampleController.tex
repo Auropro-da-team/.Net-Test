@@ -1,0 +1,82 @@
+\hypertarget{classHostedClientCertificateSample_1_1Controllers_1_1SampleController}{}\doxysection{Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller Class Reference}
+\label{classHostedClientCertificateSample_1_1Controllers_1_1SampleController}\index{HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}}
+
+
+Inheritance diagram for Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classHostedClientCertificateSample_1_1Controllers_1_1SampleController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{classHostedClientCertificateSample_1_1Controllers_1_1SampleController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerable$<$ \mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}} $>$ \mbox{\hyperlink{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_ad08d2f9ed03064d8e3de091466d3d25c}{Get\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the sample Items. It does not require client to send client certificate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}} \mbox{\hyperlink{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_adf3c8757fb835b9901dc61f8c7a2ba17}{Get\+Item}} (int id)
+\begin{DoxyCompactList}\small\item\em Gets an sample Item with the given id. It does not require client to send client certificate. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_a5931b6e132828bad8452cd16c7623849}{Post\+Item}} (\mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Post a new sample item to the list. This requires authentication with client certificate and it needs to be in the \char`\"{}administrator\char`\"{} role. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_adf3c8757fb835b9901dc61f8c7a2ba17}\label{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_adf3c8757fb835b9901dc61f8c7a2ba17}} 
+\index{HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}!GetItem@{GetItem}}
+\index{GetItem@{GetItem}!HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{GetItem()}{GetItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}} Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Get\+Item (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets an sample Item with the given id. It does not require client to send client certificate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id that is part of the route\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_ad08d2f9ed03064d8e3de091466d3d25c}\label{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_ad08d2f9ed03064d8e3de091466d3d25c}} 
+\index{HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}!GetItems@{GetItems}}
+\index{GetItems@{GetItems}!HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{GetItems()}{GetItems()}}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}}$>$ Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the sample Items. It does not require client to send client certificate. 
+
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_a5931b6e132828bad8452cd16c7623849}\label{classHostedClientCertificateSample_1_1Controllers_1_1SampleController_a5931b6e132828bad8452cd16c7623849}} 
+\index{HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}!PostItem@{PostItem}}
+\index{PostItem@{PostItem}!HostedClientCertificateSample.Controllers.SampleController@{HostedClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{PostItem()}{PostItem()}}
+{\footnotesize\ttfamily string Hosted\+Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Post\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classHostedClientCertificateSample_1_1SampleItem}{Sample\+Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Post a new sample item to the list. This requires authentication with client certificate and it needs to be in the \char`\"{}administrator\char`\"{} role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The sample item coming from the request body\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the newly added sample item\textquotesingle{}s string value
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Hosted\+Client\+Certificate\+Sample/\+Server/\+Controllers/\mbox{\hyperlink{HostedClientCertificateSample_2Server_2Controllers_2SampleController_8cs}{Sample\+Controller.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Roles\+Table Class Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable}\index{AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}}
+
+
+Class that represents the User\+Roles table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a61576cbe6912460e6a92d392e71e6bc3}{User\+Roles\+Table}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_ad7b86c770e3b3815e50e7f756622dfd7}{Find\+By\+User\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns a list of user\textquotesingle{}s roles \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a2656cd21bb4965278715d2eb95ab57e4}{Delete}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes all roles from a user in the User\+Roles table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_aa36b54c7b5ef01f3c7c92100d652da28}{Insert}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}} user, string role\+Id)
+\begin{DoxyCompactList}\small\item\em Inserts a new role for a user in the User\+Roles table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the User\+Roles table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a61576cbe6912460e6a92d392e71e6bc3}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a61576cbe6912460e6a92d392e71e6bc3}} 
+\index{AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}!UserRolesTable@{UserRolesTable}}
+\index{UserRolesTable@{UserRolesTable}!AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}}
+\doxysubsubsection{\texorpdfstring{UserRolesTable()}{UserRolesTable()}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+User\+Roles\+Table.\+User\+Roles\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a2656cd21bb4965278715d2eb95ab57e4}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_a2656cd21bb4965278715d2eb95ab57e4}} 
+\index{AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Roles\+Table.\+Delete (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes all roles from a user in the User\+Roles table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_ad7b86c770e3b3815e50e7f756622dfd7}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_ad7b86c770e3b3815e50e7f756622dfd7}} 
+\index{AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}!FindByUserId@{FindByUserId}}
+\index{FindByUserId@{FindByUserId}!AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}}
+\doxysubsubsection{\texorpdfstring{FindByUserId()}{FindByUserId()}}
+{\footnotesize\ttfamily List$<$string$>$ Asp\+Net.\+Identity.\+My\+SQL.\+User\+Roles\+Table.\+Find\+By\+User\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a list of user\textquotesingle{}s roles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_aa36b54c7b5ef01f3c7c92100d652da28}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserRolesTable_aa36b54c7b5ef01f3c7c92100d652da28}} 
+\index{AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}!Insert@{Insert}}
+\index{Insert@{Insert}!AspNet.Identity.MySQL.UserRolesTable@{AspNet.Identity.MySQL.UserRolesTable}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Roles\+Table.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]{user,  }\item[{string}]{role\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a new role for a user in the User\+Roles table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The User\\
+\hline
+{\em role\+Id} & The Role\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{UserRoleTable_8cs}{User\+Role\+Table.\+cs}}\end{DoxyCompactItemize}

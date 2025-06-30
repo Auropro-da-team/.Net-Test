@@ -1,0 +1,149 @@
+\hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{}\doxysection{Todo.\+Windows\+Store.\+Common.\+Relay\+Command Class Reference}
+\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+
+
+A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the Can\+Execute method is \textquotesingle{}true\textquotesingle{}. \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}{Raise\+Can\+Execute\+Changed}} needs to be called whenever \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} is expected to return a different value.  
+
+
+
+
+Inheritance diagram for Todo.\+Windows\+Store.\+Common.\+Relay\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Todo.\+Windows\+Store.\+Common.\+Relay\+Command\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a24059b0ec619c8278756de66bdf700da}{Relay\+Command}} (Action execute)
+\begin{DoxyCompactList}\small\item\em Creates a new command that can always execute. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a05eddf215413074b57f146835dbf1ed9}{Relay\+Command}} (Action execute, Func$<$ bool $>$ can\+Execute)
+\begin{DoxyCompactList}\small\item\em Creates a new command. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Determines whether this \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} can execute in its current state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_addebd881bd2e4c23c870dbd61a5bd1f3}{Execute}} (object parameter)
+\begin{DoxyCompactList}\small\item\em Executes the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} on the current command target. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}{Raise\+Can\+Execute\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Method used to raise the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a9511d7215c14834cf143b948555dd102}{Can\+Execute\+Changed}} event to indicate that the return value of the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} method has changed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a9511d7215c14834cf143b948555dd102}{Can\+Execute\+Changed}}
+\begin{DoxyCompactList}\small\item\em Raised when Raise\+Can\+Execute\+Changed is called. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the Can\+Execute method is \textquotesingle{}true\textquotesingle{}. \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}{Raise\+Can\+Execute\+Changed}} needs to be called whenever \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} is expected to return a different value. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a24059b0ec619c8278756de66bdf700da}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a24059b0ec619c8278756de66bdf700da}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!RelayCommand@{RelayCommand}}
+\index{RelayCommand@{RelayCommand}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{RelayCommand()}{RelayCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Relay\+Command (\begin{DoxyParamCaption}\item[{Action}]{execute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new command that can always execute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em execute} & The execution logic.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a05eddf215413074b57f146835dbf1ed9}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a05eddf215413074b57f146835dbf1ed9}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!RelayCommand@{RelayCommand}}
+\index{RelayCommand@{RelayCommand}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{RelayCommand()}{RelayCommand()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Relay\+Command (\begin{DoxyParamCaption}\item[{Action}]{execute,  }\item[{Func$<$ bool $>$}]{can\+Execute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em execute} & The execution logic.\\
+\hline
+{\em can\+Execute} & The execution status logic.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!CanExecute@{CanExecute}}
+\index{CanExecute@{CanExecute}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{CanExecute()}{CanExecute()}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Can\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Determines whether this \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} can execute in its current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Data used by the command. If the command does not require data to be passed, this object can be set to null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this command can be executed; otherwise, false.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_addebd881bd2e4c23c870dbd61a5bd1f3}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_addebd881bd2e4c23c870dbd61a5bd1f3}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!Execute@{Execute}}
+\index{Execute@{Execute}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Execute (\begin{DoxyParamCaption}\item[{object}]{parameter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} on the current command target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameter} & Data used by the command. If the command does not require data to be passed, this object can be set to null. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!RaiseCanExecuteChanged@{RaiseCanExecuteChanged}}
+\index{RaiseCanExecuteChanged@{RaiseCanExecuteChanged}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{RaiseCanExecuteChanged()}{RaiseCanExecuteChanged()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Raise\+Can\+Execute\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method used to raise the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a9511d7215c14834cf143b948555dd102}{Can\+Execute\+Changed}} event to indicate that the return value of the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} method has changed. 
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a9511d7215c14834cf143b948555dd102}\label{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_a9511d7215c14834cf143b948555dd102}} 
+\index{Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}!CanExecuteChanged@{CanExecuteChanged}}
+\index{CanExecuteChanged@{CanExecuteChanged}!Todo.WindowsStore.Common.RelayCommand@{Todo.WindowsStore.Common.RelayCommand}}
+\doxysubsubsection{\texorpdfstring{CanExecuteChanged}{CanExecuteChanged}}
+{\footnotesize\ttfamily Event\+Handler Todo.\+Windows\+Store.\+Common.\+Relay\+Command.\+Can\+Execute\+Changed}
+
+
+
+Raised when Raise\+Can\+Execute\+Changed is called. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Todo.\+Windows\+Store/\+Common/\mbox{\hyperlink{RelayCommand_8cs}{Relay\+Command.\+cs}}\end{DoxyCompactItemize}

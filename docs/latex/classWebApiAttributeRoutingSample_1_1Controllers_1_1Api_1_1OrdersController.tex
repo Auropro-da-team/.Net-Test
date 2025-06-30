@@ -1,0 +1,98 @@
+\hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController}{}\doxysection{Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller Class Reference}
+\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController}\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+
+
+This demonstrates the use of a controller-\/level attribute route. Notes\+:  
+
+
+
+
+Inheritance diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IQueryable$<$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}} $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ae4ffc24c6290a7f24c02862e634dbe51}{Get\+Orders}} ()
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a8bd78098dc74f620830761fca8b416e0}{Get\+Order}} (int id)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a73996ff69c1ac38a7fca28f0fe96df72}{Put\+Order}} (int id, \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}} order)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a24b79343ff807f0d6d4388dab2d63729}{Post\+Order}} (\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}} order)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a96e6f2856abc10ddd5f5346fd87485a3}{Delete\+Order}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ad3b4232b1a7bba1482711f84a3c09a5a}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This demonstrates the use of a controller-\/level attribute route. Notes\+: 
+
+
+\begin{DoxyItemize}
+\item Here the controller-\/level route applies to all actions except \textquotesingle{}Get\+Details\+Of\+Order\textquotesingle{}. i.\+e. Route attributes defined on an action override controller-\/level routes.
+\item The \textquotesingle{}Post\+Order\textquotesingle{} action uses the controller-\/level route name to generate links.
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a96e6f2856abc10ddd5f5346fd87485a3}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a96e6f2856abc10ddd5f5346fd87485a3}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!DeleteOrder@{DeleteOrder}}
+\index{DeleteOrder@{DeleteOrder}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{DeleteOrder()}{DeleteOrder()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Delete\+Order (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ad3b4232b1a7bba1482711f84a3c09a5a}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ad3b4232b1a7bba1482711f84a3c09a5a}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a8bd78098dc74f620830761fca8b416e0}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a8bd78098dc74f620830761fca8b416e0}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!GetOrder@{GetOrder}}
+\index{GetOrder@{GetOrder}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{GetOrder()}{GetOrder()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Get\+Order (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ae4ffc24c6290a7f24c02862e634dbe51}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_ae4ffc24c6290a7f24c02862e634dbe51}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!GetOrders@{GetOrders}}
+\index{GetOrders@{GetOrders}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{GetOrders()}{GetOrders()}}
+{\footnotesize\ttfamily IQueryable$<$\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}}$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Get\+Orders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a24b79343ff807f0d6d4388dab2d63729}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a24b79343ff807f0d6d4388dab2d63729}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!PostOrder@{PostOrder}}
+\index{PostOrder@{PostOrder}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{PostOrder()}{PostOrder()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Post\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}}}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a73996ff69c1ac38a7fca28f0fe96df72}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController_a73996ff69c1ac38a7fca28f0fe96df72}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}!PutOrder@{PutOrder}}
+\index{PutOrder@{PutOrder}!WebApiAttributeRoutingSample.Controllers.Api.OrdersController@{WebApiAttributeRoutingSample.Controllers.Api.OrdersController}}
+\doxysubsubsection{\texorpdfstring{PutOrder()}{PutOrder()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Orders\+Controller.\+Put\+Order (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Order}{Order}}}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Web\+Api\+Attribute\+Routing\+Sample/\+Web\+Api\+Attribute\+Routing\+Sample/\+Controllers/\+Api/\mbox{\hyperlink{OrdersController_8cs}{Orders\+Controller.\+cs}}\end{DoxyCompactItemize}

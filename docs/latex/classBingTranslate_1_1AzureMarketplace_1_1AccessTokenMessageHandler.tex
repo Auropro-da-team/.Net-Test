@@ -1,0 +1,69 @@
+\hypertarget{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler}{}\doxysection{Bing\+Translate.\+Azure\+Marketplace.\+Access\+Token\+Message\+Handler Class Reference}
+\label{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler}\index{BingTranslate.AzureMarketplace.AccessTokenMessageHandler@{BingTranslate.AzureMarketplace.AccessTokenMessageHandler}}
+
+
+Simple Delegating\+Handler which obtains an Access Token from Azure Marketplace by issuing an asynchronous HTTP POST request and inserting the response into the original HTTP request.  
+
+
+
+
+Inheritance diagram for Bing\+Translate.\+Azure\+Marketplace.\+Access\+Token\+Message\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bing\+Translate.\+Azure\+Marketplace.\+Access\+Token\+Message\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_ae20cc76aee6534dd96476e3e91ab2439}{Access\+Token\+Message\+Handler}} (Http\+Message\+Handler inner\+Content)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override async Task$<$ Http\+Response\+Message $>$ \mbox{\hyperlink{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_a3ca4a7c82149b5bab210f05a2564997d}{Send\+Async}} (Http\+Request\+Message request, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em This message handler first sends an async form POST request to the Azure Marketplace to obtain an Access Token. Once we obtain an access token, we add that as an authentication header to the original request and submit that request asynchronously to the BING translation service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple Delegating\+Handler which obtains an Access Token from Azure Marketplace by issuing an asynchronous HTTP POST request and inserting the response into the original HTTP request. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_ae20cc76aee6534dd96476e3e91ab2439}\label{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_ae20cc76aee6534dd96476e3e91ab2439}} 
+\index{BingTranslate.AzureMarketplace.AccessTokenMessageHandler@{BingTranslate.AzureMarketplace.AccessTokenMessageHandler}!AccessTokenMessageHandler@{AccessTokenMessageHandler}}
+\index{AccessTokenMessageHandler@{AccessTokenMessageHandler}!BingTranslate.AzureMarketplace.AccessTokenMessageHandler@{BingTranslate.AzureMarketplace.AccessTokenMessageHandler}}
+\doxysubsubsection{\texorpdfstring{AccessTokenMessageHandler()}{AccessTokenMessageHandler()}}
+{\footnotesize\ttfamily Bing\+Translate.\+Azure\+Marketplace.\+Access\+Token\+Message\+Handler.\+Access\+Token\+Message\+Handler (\begin{DoxyParamCaption}\item[{Http\+Message\+Handler}]{inner\+Content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_a3ca4a7c82149b5bab210f05a2564997d}\label{classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler_a3ca4a7c82149b5bab210f05a2564997d}} 
+\index{BingTranslate.AzureMarketplace.AccessTokenMessageHandler@{BingTranslate.AzureMarketplace.AccessTokenMessageHandler}!SendAsync@{SendAsync}}
+\index{SendAsync@{SendAsync}!BingTranslate.AzureMarketplace.AccessTokenMessageHandler@{BingTranslate.AzureMarketplace.AccessTokenMessageHandler}}
+\doxysubsubsection{\texorpdfstring{SendAsync()}{SendAsync()}}
+{\footnotesize\ttfamily override async Task$<$Http\+Response\+Message$>$ Bing\+Translate.\+Azure\+Marketplace.\+Access\+Token\+Message\+Handler.\+Send\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+This message handler first sends an async form POST request to the Azure Marketplace to obtain an Access Token. Once we obtain an access token, we add that as an authentication header to the original request and submit that request asynchronously to the BING translation service. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Http\+Client/\+Bing\+Translate\+Sample/\+Azure\+Marketplace/\mbox{\hyperlink{AccessTokenMessageHandler_8cs}{Access\+Token\+Message\+Handler.\+cs}}\end{DoxyCompactItemize}

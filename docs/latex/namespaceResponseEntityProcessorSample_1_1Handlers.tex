@@ -1,0 +1,11 @@
+\hypertarget{namespaceResponseEntityProcessorSample_1_1Handlers}{}\doxysection{Response\+Entity\+Processor\+Sample.\+Handlers Namespace Reference}
+\label{namespaceResponseEntityProcessorSample_1_1Handlers}\index{ResponseEntityProcessorSample.Handlers@{ResponseEntityProcessorSample.Handlers}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Http\+Content\+Processor}
+\begin{DoxyCompactList}\small\item\em Wraps an inner Http\+Content and forces the content to be written both to a local file as well as to the output stream when Serialize\+To\+Stream\+Async is called. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classResponseEntityProcessorSample_1_1Handlers_1_1HttpContentWrapper}{Http\+Content\+Wrapper}}
+\begin{DoxyCompactList}\small\item\em Help class for wrapping an inner Http\+Content for the purpose of processing the data. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler}{Response\+Entity\+Handler}}
+\begin{DoxyCompactList}\small\item\em This Delegating\+Handler checks that there is a response entity and if so plugs in a Http\+Content\+Processor instance which copies the response entity to a local file and then enables post-\/processing on that file. \end{DoxyCompactList}\end{DoxyCompactItemize}

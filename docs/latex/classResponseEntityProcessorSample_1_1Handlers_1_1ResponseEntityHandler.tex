@@ -1,0 +1,65 @@
+\hypertarget{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler}{}\doxysection{Response\+Entity\+Processor\+Sample.\+Handlers.\+Response\+Entity\+Handler Class Reference}
+\label{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler}\index{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler@{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler}}
+
+
+This Delegating\+Handler checks that there is a response entity and if so plugs in a Http\+Content\+Processor instance which copies the response entity to a local file and then enables post-\/processing on that file.  
+
+
+
+
+Inheritance diagram for Response\+Entity\+Processor\+Sample.\+Handlers.\+Response\+Entity\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Response\+Entity\+Processor\+Sample.\+Handlers.\+Response\+Entity\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_a80c891c4490b97aeab72b7ec403cdcf2}{Response\+Entity\+Handler}} (string output\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async override Task$<$ Http\+Response\+Message $>$ \mbox{\hyperlink{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_aaf56a155bda1357ab08bcc3a082bdeb3}{Send\+Async}} (Http\+Request\+Message request, Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This Delegating\+Handler checks that there is a response entity and if so plugs in a Http\+Content\+Processor instance which copies the response entity to a local file and then enables post-\/processing on that file. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_a80c891c4490b97aeab72b7ec403cdcf2}\label{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_a80c891c4490b97aeab72b7ec403cdcf2}} 
+\index{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler@{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler}!ResponseEntityHandler@{ResponseEntityHandler}}
+\index{ResponseEntityHandler@{ResponseEntityHandler}!ResponseEntityProcessorSample.Handlers.ResponseEntityHandler@{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler}}
+\doxysubsubsection{\texorpdfstring{ResponseEntityHandler()}{ResponseEntityHandler()}}
+{\footnotesize\ttfamily Response\+Entity\+Processor\+Sample.\+Handlers.\+Response\+Entity\+Handler.\+Response\+Entity\+Handler (\begin{DoxyParamCaption}\item[{string}]{output\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_aaf56a155bda1357ab08bcc3a082bdeb3}\label{classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler_aaf56a155bda1357ab08bcc3a082bdeb3}} 
+\index{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler@{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler}!SendAsync@{SendAsync}}
+\index{SendAsync@{SendAsync}!ResponseEntityProcessorSample.Handlers.ResponseEntityHandler@{ResponseEntityProcessorSample.Handlers.ResponseEntityHandler}}
+\doxysubsubsection{\texorpdfstring{SendAsync()}{SendAsync()}}
+{\footnotesize\ttfamily async override Task$<$Http\+Response\+Message$>$ Response\+Entity\+Processor\+Sample.\+Handlers.\+Response\+Entity\+Handler.\+Send\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Response\+Entity\+Processor\+Sample/\+Handlers/\mbox{\hyperlink{ResponseEntityHandler_8cs}{Response\+Entity\+Handler.\+cs}}\end{DoxyCompactItemize}

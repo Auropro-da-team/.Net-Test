@@ -1,0 +1,183 @@
+\hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary}{}\doxysection{Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary Class Reference}
+\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary}\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+
+
+Implementation of IObservable\+Map that supports reentrancy for use as a default view model.  
+
+
+
+
+Inheritance diagram for Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a7467f9cecdef455d50dc8d4e8c6b5cf5}{Add}} (string key, object value)
+\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_acb793e9298de0eadff3adf0838acb372}{Add}} (Key\+Value\+Pair$<$ string, object $>$ item)
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a45e4e48e01c43c544a4d8379c2695d20}{Remove}} (string key)
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a4592bd8b29dab4fd39193a6a0d26f11c}{Remove}} (Key\+Value\+Pair$<$ string, object $>$ item)
+\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae33e594ec6227f6b20326018c4528c00}{Clear}} ()
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_afad8f4f03b9fb34b5cffe34502001b5a}{Contains\+Key}} (string key)
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae4a4e697c192c897ecd637fdd3698f15}{Try\+Get\+Value}} (string key, out object value)
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa5410e3b2aa1acdc60e5d44c3edfa1f3}{Contains}} (Key\+Value\+Pair$<$ string, object $>$ item)
+\item 
+IEnumerator$<$ Key\+Value\+Pair$<$ string, object $>$ $>$ \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae07560fc4b5383406629b6943c93a5c3}{Get\+Enumerator}} ()
+\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa6e5f005c57a8a7a3a44ed96de032566}{Copy\+To}} (Key\+Value\+Pair$<$ string, object $>$\mbox{[}$\,$\mbox{]} array, int array\+Index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+object \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a86e2cb14875e50e9f1b0aa95978d8b6d}{this\mbox{[}string key\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+ICollection$<$ string $>$ \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5a5cf7df39c2475f1e1dcfcd2e8e2143}{Keys}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+ICollection$<$ object $>$ \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aee7758a1d4ba54591aeae576c3b9df3d}{Values}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+int \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ab3647025c60d73dbd601b1e9b16694eb}{Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5dff17d625fef8dedcf9968741181e0b}{Is\+Read\+Only}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Map\+Changed\+Event\+Handler$<$ string, object $>$ \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a71aaa26b2d07da257d433c3d73ea01a2}{Map\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of IObservable\+Map that supports reentrancy for use as a default view model. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_acb793e9298de0eadff3adf0838acb372}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_acb793e9298de0eadff3adf0838acb372}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Add@{Add}}
+\index{Add@{Add}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Add (\begin{DoxyParamCaption}\item[{Key\+Value\+Pair$<$ string, object $>$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a7467f9cecdef455d50dc8d4e8c6b5cf5}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a7467f9cecdef455d50dc8d4e8c6b5cf5}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Add@{Add}}
+\index{Add@{Add}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Add (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{object}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae33e594ec6227f6b20326018c4528c00}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae33e594ec6227f6b20326018c4528c00}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Clear@{Clear}}
+\index{Clear@{Clear}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Clear()}{Clear()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa5410e3b2aa1acdc60e5d44c3edfa1f3}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa5410e3b2aa1acdc60e5d44c3edfa1f3}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Contains@{Contains}}
+\index{Contains@{Contains}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Contains()}{Contains()}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Contains (\begin{DoxyParamCaption}\item[{Key\+Value\+Pair$<$ string, object $>$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_afad8f4f03b9fb34b5cffe34502001b5a}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_afad8f4f03b9fb34b5cffe34502001b5a}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!ContainsKey@{ContainsKey}}
+\index{ContainsKey@{ContainsKey}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{ContainsKey()}{ContainsKey()}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Contains\+Key (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa6e5f005c57a8a7a3a44ed96de032566}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aa6e5f005c57a8a7a3a44ed96de032566}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!CopyTo@{CopyTo}}
+\index{CopyTo@{CopyTo}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{CopyTo()}{CopyTo()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Copy\+To (\begin{DoxyParamCaption}\item[{Key\+Value\+Pair$<$ string, object $>$\mbox{[}$\,$\mbox{]}}]{array,  }\item[{int}]{array\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae07560fc4b5383406629b6943c93a5c3}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae07560fc4b5383406629b6943c93a5c3}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!GetEnumerator@{GetEnumerator}}
+\index{GetEnumerator@{GetEnumerator}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{GetEnumerator()}{GetEnumerator()}}
+{\footnotesize\ttfamily IEnumerator$<$Key\+Value\+Pair$<$string, object$>$ $>$ Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Get\+Enumerator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a4592bd8b29dab4fd39193a6a0d26f11c}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a4592bd8b29dab4fd39193a6a0d26f11c}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Remove@{Remove}}
+\index{Remove@{Remove}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Remove (\begin{DoxyParamCaption}\item[{Key\+Value\+Pair$<$ string, object $>$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a45e4e48e01c43c544a4d8379c2695d20}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a45e4e48e01c43c544a4d8379c2695d20}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Remove@{Remove}}
+\index{Remove@{Remove}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Remove()}{Remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Remove (\begin{DoxyParamCaption}\item[{string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae4a4e697c192c897ecd637fdd3698f15}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ae4a4e697c192c897ecd637fdd3698f15}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!TryGetValue@{TryGetValue}}
+\index{TryGetValue@{TryGetValue}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{TryGetValue()}{TryGetValue()}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Try\+Get\+Value (\begin{DoxyParamCaption}\item[{string}]{key,  }\item[{out object}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ab3647025c60d73dbd601b1e9b16694eb}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_ab3647025c60d73dbd601b1e9b16694eb}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Count@{Count}}
+\index{Count@{Count}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Count}{Count}}
+{\footnotesize\ttfamily int Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Count\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5dff17d625fef8dedcf9968741181e0b}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5dff17d625fef8dedcf9968741181e0b}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!IsReadOnly@{IsReadOnly}}
+\index{IsReadOnly@{IsReadOnly}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{IsReadOnly}{IsReadOnly}}
+{\footnotesize\ttfamily bool Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Is\+Read\+Only\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5a5cf7df39c2475f1e1dcfcd2e8e2143}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a5a5cf7df39c2475f1e1dcfcd2e8e2143}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Keys@{Keys}}
+\index{Keys@{Keys}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Keys}{Keys}}
+{\footnotesize\ttfamily ICollection$<$string$>$ Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Keys\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a86e2cb14875e50e9f1b0aa95978d8b6d}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a86e2cb14875e50e9f1b0aa95978d8b6d}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!this\mbox{[}string key\mbox{]}@{this[string key]}}
+\index{this\mbox{[}string key\mbox{]}@{this[string key]}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{this[string key]}{this[string key]}}
+{\footnotesize\ttfamily object Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+this\mbox{[}string key\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aee7758a1d4ba54591aeae576c3b9df3d}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_aee7758a1d4ba54591aeae576c3b9df3d}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!Values@{Values}}
+\index{Values@{Values}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{Values}{Values}}
+{\footnotesize\ttfamily ICollection$<$object$>$ Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Values\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a71aaa26b2d07da257d433c3d73ea01a2}\label{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary_a71aaa26b2d07da257d433c3d73ea01a2}} 
+\index{Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}!MapChanged@{MapChanged}}
+\index{MapChanged@{MapChanged}!Todo.WindowsStore.Common.ObservableDictionary@{Todo.WindowsStore.Common.ObservableDictionary}}
+\doxysubsubsection{\texorpdfstring{MapChanged}{MapChanged}}
+{\footnotesize\ttfamily Map\+Changed\+Event\+Handler$<$string, object$>$ Todo.\+Windows\+Store.\+Common.\+Observable\+Dictionary.\+Map\+Changed}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Todo.\+Windows\+Store/\+Common/\mbox{\hyperlink{ObservableDictionary_8cs}{Observable\+Dictionary.\+cs}}\end{DoxyCompactItemize}

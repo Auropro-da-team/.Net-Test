@@ -1,0 +1,128 @@
+\hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController}{}\doxysection{Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller Class Reference}
+\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController}\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+
+
+This controller mixes conventional and attribute routing in a single controller. The \textquotesingle{}Professor\textquotesingle{} action uses attribute routing while rest of the actions are accessible by conventional routes.  
+
+
+
+
+Inheritance diagram for Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1CoursesController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1CoursesController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a5007ebcc20a23b9bfd775f0c501b4b4d}{Professor}} (int id)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_af611c99e6d98ee50e280b55168d42725}{Index}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_ac3437c4a7cb60362058440a2ace85fc8}{Details}} (int? id)
+\item 
+Action\+Result \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a75f20ea59474195bae2578adeaba4d29}{Create}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a422de9685b1de6d7d249ea46557d4799}{Create}} (\mbox{[}Bind(Include=\char`\"{}Id,Name\char`\"{})\mbox{]} Course course)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a6e5cd81f4480ee8c6d19745dd6c1d4c0}{Edit}} (int? id)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a9bbf097c9ddaa1e234ad7a8473c259b9}{Edit}} (\mbox{[}Bind(Include=\char`\"{}Id,Name\char`\"{})\mbox{]} Course course)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a7e5e1286cb91b90458f49799dbb7890b}{Delete}} (int? id)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a57c635162648cb46e90503f388001ef6}{Delete\+Confirmed}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_add8ef9ea0e48195c80ae37d5e356a3a6}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller mixes conventional and attribute routing in a single controller. The \textquotesingle{}Professor\textquotesingle{} action uses attribute routing while rest of the actions are accessible by conventional routes. 
+
+The comments by each action detail example URLs that could reach the action.
+
+NOTE\+: Conventional routes can never access attributed controller/actions
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a75f20ea59474195bae2578adeaba4d29}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a75f20ea59474195bae2578adeaba4d29}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Create@{Create}}
+\index{Create@{Create}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a422de9685b1de6d7d249ea46557d4799}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a422de9685b1de6d7d249ea46557d4799}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Create@{Create}}
+\index{Create@{Create}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\+Include=\char`\"{}\+Id,\+Name\char`\"{})\mbox{]} \mbox{\hyperlink{classAttributeRoutingSample_1_1Models_1_1Course}{Course}}}]{course }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a7e5e1286cb91b90458f49799dbb7890b}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a7e5e1286cb91b90458f49799dbb7890b}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Delete@{Delete}}
+\index{Delete@{Delete}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a57c635162648cb46e90503f388001ef6}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a57c635162648cb46e90503f388001ef6}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_ac3437c4a7cb60362058440a2ace85fc8}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_ac3437c4a7cb60362058440a2ace85fc8}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Details@{Details}}
+\index{Details@{Details}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_add8ef9ea0e48195c80ae37d5e356a3a6}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_add8ef9ea0e48195c80ae37d5e356a3a6}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a9bbf097c9ddaa1e234ad7a8473c259b9}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a9bbf097c9ddaa1e234ad7a8473c259b9}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Edit@{Edit}}
+\index{Edit@{Edit}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind(\+Include=\char`\"{}\+Id,\+Name\char`\"{})\mbox{]} \mbox{\hyperlink{classAttributeRoutingSample_1_1Models_1_1Course}{Course}}}]{course }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a6e5cd81f4480ee8c6d19745dd6c1d4c0}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a6e5cd81f4480ee8c6d19745dd6c1d4c0}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Edit@{Edit}}
+\index{Edit@{Edit}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_af611c99e6d98ee50e280b55168d42725}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_af611c99e6d98ee50e280b55168d42725}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Index@{Index}}
+\index{Index@{Index}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a5007ebcc20a23b9bfd775f0c501b4b4d}\label{classAttributeRoutingSample_1_1Controllers_1_1CoursesController_a5007ebcc20a23b9bfd775f0c501b4b4d}} 
+\index{AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}!Professor@{Professor}}
+\index{Professor@{Professor}!AttributeRoutingSample.Controllers.CoursesController@{AttributeRoutingSample.Controllers.CoursesController}}
+\doxysubsubsection{\texorpdfstring{Professor()}{Professor()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Courses\+Controller.\+Professor (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+MVC/\+Attribute\+Routing\+Sample/\+Attribute\+Routing\+Sample/\+Controllers/\mbox{\hyperlink{CoursesController_8cs}{Courses\+Controller.\+cs}}\end{DoxyCompactItemize}

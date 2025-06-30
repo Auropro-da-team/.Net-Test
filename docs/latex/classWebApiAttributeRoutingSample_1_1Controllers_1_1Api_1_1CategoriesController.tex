@@ -1,0 +1,83 @@
+\hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController}{}\doxysection{Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller Class Reference}
+\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController}\index{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}}
+
+
+This controller demonstrates default ordering of attribute routes. In general, as per the routing guidelines, more specific routes should be registered before generic ones. Attribute routing by default tries to do the best it can to order the routes according to it.  
+
+
+
+
+Inheritance diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_af622fbcb28b0102c6812ebcdb0027639}{Get\+Category}} (int id)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_ac4bb451ea9d33ae4c1b51ff62b2f0836}{Get\+Category}} (string name)
+\item 
+IQueryable$<$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Category}{Category}} $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a4194827ceabb5be1d2ff8e003585d909}{Get\+Categories}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a44d7fc9f6ea34816a054588024e594d0}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller demonstrates default ordering of attribute routes. In general, as per the routing guidelines, more specific routes should be registered before generic ones. Attribute routing by default tries to do the best it can to order the routes according to it. 
+
+For the following controller, the routes are ordered like the following\+:
+\begin{DoxyEnumerate}
+\item api/categories/all
+\item api/categories/\{id\+:int\}
+\item api/categories/\{name\}
+\end{DoxyEnumerate}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a44d7fc9f6ea34816a054588024e594d0}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a44d7fc9f6ea34816a054588024e594d0}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a4194827ceabb5be1d2ff8e003585d909}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_a4194827ceabb5be1d2ff8e003585d909}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}!GetCategories@{GetCategories}}
+\index{GetCategories@{GetCategories}!WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}}
+\doxysubsubsection{\texorpdfstring{GetCategories()}{GetCategories()}}
+{\footnotesize\ttfamily IQueryable$<$\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Category}{Category}}$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller.\+Get\+Categories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_af622fbcb28b0102c6812ebcdb0027639}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_af622fbcb28b0102c6812ebcdb0027639}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}!GetCategory@{GetCategory}}
+\index{GetCategory@{GetCategory}!WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}}
+\doxysubsubsection{\texorpdfstring{GetCategory()}{GetCategory()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller.\+Get\+Category (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_ac4bb451ea9d33ae4c1b51ff62b2f0836}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController_ac4bb451ea9d33ae4c1b51ff62b2f0836}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}!GetCategory@{GetCategory}}
+\index{GetCategory@{GetCategory}!WebApiAttributeRoutingSample.Controllers.Api.CategoriesController@{WebApiAttributeRoutingSample.Controllers.Api.CategoriesController}}
+\doxysubsubsection{\texorpdfstring{GetCategory()}{GetCategory()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Categories\+Controller.\+Get\+Category (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Web\+Api\+Attribute\+Routing\+Sample/\+Web\+Api\+Attribute\+Routing\+Sample/\+Controllers/\+Api/\mbox{\hyperlink{CategoriesController_8cs}{Categories\+Controller.\+cs}}\end{DoxyCompactItemize}

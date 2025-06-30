@@ -1,0 +1,397 @@
+\hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase}{}\doxysection{Twitter\+Sample.\+OAuth.\+OAuth\+Base Class Reference}
+\label{classTwitterSample_1_1OAuth_1_1OAuthBase}\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+
+
+This class is written by Eran Sandler and performs \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} signing. It can be obtained from \href{http://oauth.net/code/}{\texttt{ http\+://oauth.\+net/code/}}  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_1_1QueryParameter}{Query\+Parameter}}
+\begin{DoxyCompactList}\small\item\em Provides an internal structure to sort the query parameter \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_1_1QueryParameterComparer}{Query\+Parameter\+Comparer}}
+\begin{DoxyCompactList}\small\item\em Comparer class used to perform the sorting of the query parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}{Signature\+Types}} \{ \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a97c09cfa262fdcf75b02b9b7b9ea7886}{HMACSHA1}}
+, \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a211d1ad7c6b239335a6f394cc544fabb}{PLAINTEXT}}
+, \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a8b9bc417201f6d2a61b49d471f9b3d74}{RSASHA1}}
+ \}
+\begin{DoxyCompactList}\small\item\em Provides a predefined set of algorithms that are supported officially by the protocol \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a5313881abf11c65d6155dba586943240}{Generate\+Signature\+Base}} (Uri url, string consumer\+Key, string token, string token\+Secret, string http\+Method, string time\+Stamp, string nonce, string signature\+Type, out string normalized\+Url, out string normalized\+Request\+Parameters)
+\begin{DoxyCompactList}\small\item\em Generate the signature base that is used to produce the signature \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac607f9ac22511a36619e1250ce04df3e}{Generate\+Signature\+Using\+Hash}} (string signature\+Base, Hash\+Algorithm hash)
+\begin{DoxyCompactList}\small\item\em Generate the signature value based on the given signature base and hash algorithm \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ab8e72f305daf78deb84a2660098b2584}{Generate\+Signature}} (Uri url, string consumer\+Key, string consumer\+Secret, string token, string token\+Secret, string http\+Method, string time\+Stamp, string nonce, out string normalized\+Url, out string normalized\+Request\+Parameters, out string auth\+Header)
+\begin{DoxyCompactList}\small\item\em Generates a signature using the HMAC-\/\+SHA1 algorithm \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_af3cfc948c2267603854fdd3a3a6fd7d8}{Generate\+Signature}} (Uri url, string consumer\+Key, string consumer\+Secret, string token, string token\+Secret, string http\+Method, string time\+Stamp, string nonce, \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}{Signature\+Types}} signature\+Type, out string normalized\+Url, out string normalized\+Request\+Parameters, out string auth\+Header)
+\begin{DoxyCompactList}\small\item\em Generates a signature using the specified signature\+Type \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_aa9de22bd4275e7ceca947ed3fa65a2d4}{Generate\+Time\+Stamp}} ()
+\begin{DoxyCompactList}\small\item\em Generate the timestamp for the signature ~\newline
+ \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a4b9de088069f278220fe835a0508586e}{Generate\+Nonce}} ()
+\begin{DoxyCompactList}\small\item\em Generate a nonce \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_acd60cab32baff1f2a20c7dd55d24ddb1}{Url\+Encode}} (string value)
+\begin{DoxyCompactList}\small\item\em This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case. While this is not a problem with the percent encoding spec, it is used in upper case throughout \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a1ecb0fb3af335e6ee0f883651e1cd8f4}{Normalize\+Request\+Parameters}} (IList$<$ \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_1_1QueryParameter}{Query\+Parameter}} $>$ parameters)
+\begin{DoxyCompactList}\small\item\em Normalizes the request parameters according to the spec \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Random \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_aaaab8c4fe27701c73233ef7bce5ff800}{random}} = new Random()
+\item 
+string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_adc21f544b1634dfd16ac9187a7bb406e}{unreserved\+Chars}} = \char`\"{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-\/\+\_\+.$\sim$\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a3a94d278ea5d9867b4d07bad89f1b76c}{OAuth\+Version}} = \char`\"{}1.\+0\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_aad84e9d6aaa786b0c740e5fd59abb4cc}{OAuth\+Parameter\+Prefix}} = \char`\"{}oauth\+\_\+\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a3bd9cd720c1c457c2b6a4f41118e504e}{OAuth\+Consumer\+Key\+Key}} = \char`\"{}oauth\+\_\+consumer\+\_\+key\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a6624f844b404cff16d91ca2200fa71bc}{OAuth\+Callback\+Key}} = \char`\"{}oauth\+\_\+callback\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a46f05d423398be51745083911f8f9d10}{OAuth\+Version\+Key}} = \char`\"{}oauth\+\_\+version\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a67a611b5c3233c45759ee8a899f66be0}{OAuth\+Signature\+Method\+Key}} = \char`\"{}oauth\+\_\+signature\+\_\+method\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a09eb2c8253aa4f3a5f0385add05d4ac5}{OAuth\+Signature\+Key}} = \char`\"{}oauth\+\_\+signature\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_adad94c0a43b8b85105c80a1d3b605be7}{OAuth\+Timestamp\+Key}} = \char`\"{}oauth\+\_\+timestamp\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ad2f177b04c8258812a77f62c5c788aed}{OAuth\+Nonce\+Key}} = \char`\"{}oauth\+\_\+nonce\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a5546ced74075db0264b2e6f2b06f4ff5}{OAuth\+Token\+Key}} = \char`\"{}oauth\+\_\+token\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a6958adc389e7054e98e276501d8a846f}{OAuth\+Token\+Secret\+Key}} = \char`\"{}oauth\+\_\+token\+\_\+secret\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a9ed3c3580e5f0e54de7ebd0e63d19126}{HMACSHA1\+Signature\+Type}} = \char`\"{}HMAC-\/SHA1\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ae74e3b608343fc174d42936d1bee705a}{Plain\+Text\+Signature\+Type}} = \char`\"{}PLAINTEXT\char`\"{}
+\item 
+const string \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_a5f5591c2cf80c2529e101b261cbab8f9}{RSASHA1\+Signature\+Type}} = \char`\"{}RSA-\/SHA1\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is written by Eran Sandler and performs \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} signing. It can be obtained from \href{http://oauth.net/code/}{\texttt{ http\+://oauth.\+net/code/}} 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!SignatureTypes@{SignatureTypes}}
+\index{SignatureTypes@{SignatureTypes}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{SignatureTypes}{SignatureTypes}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}{Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Signature\+Types}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Provides a predefined set of algorithms that are supported officially by the protocol 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HMACSHA1@{HMACSHA1}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!HMACSHA1@{HMACSHA1}}}\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a97c09cfa262fdcf75b02b9b7b9ea7886}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a97c09cfa262fdcf75b02b9b7b9ea7886}} 
+HMACSHA1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAINTEXT@{PLAINTEXT}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!PLAINTEXT@{PLAINTEXT}}}\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a211d1ad7c6b239335a6f394cc544fabb}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a211d1ad7c6b239335a6f394cc544fabb}} 
+PLAINTEXT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RSASHA1@{RSASHA1}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!RSASHA1@{RSASHA1}}}\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a8b9bc417201f6d2a61b49d471f9b3d74}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95a8b9bc417201f6d2a61b49d471f9b3d74}} 
+RSASHA1&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a4b9de088069f278220fe835a0508586e}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a4b9de088069f278220fe835a0508586e}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateNonce@{GenerateNonce}}
+\index{GenerateNonce@{GenerateNonce}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateNonce()}{GenerateNonce()}}
+{\footnotesize\ttfamily virtual string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Nonce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Generate a nonce 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ab8e72f305daf78deb84a2660098b2584}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ab8e72f305daf78deb84a2660098b2584}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateSignature@{GenerateSignature}}
+\index{GenerateSignature@{GenerateSignature}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateSignature()}{GenerateSignature()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Signature (\begin{DoxyParamCaption}\item[{Uri}]{url,  }\item[{string}]{consumer\+Key,  }\item[{string}]{consumer\+Secret,  }\item[{string}]{token,  }\item[{string}]{token\+Secret,  }\item[{string}]{http\+Method,  }\item[{string}]{time\+Stamp,  }\item[{string}]{nonce,  }\item[{out string}]{normalized\+Url,  }\item[{out string}]{normalized\+Request\+Parameters,  }\item[{out string}]{auth\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generates a signature using the HMAC-\/\+SHA1 algorithm 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em url} & The full url that needs to be signed including its non \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} url parameters\\
+\hline
+{\em consumer\+Key} & The consumer key\\
+\hline
+{\em consumer\+Secret} & The consumer seceret\\
+\hline
+{\em token} & The token, if available. If not available pass null or an empty string\\
+\hline
+{\em token\+Secret} & The token secret, if available. If not available pass null or an empty string\\
+\hline
+{\em http\+Method} & The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A base64 string of the hash value
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_af3cfc948c2267603854fdd3a3a6fd7d8}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_af3cfc948c2267603854fdd3a3a6fd7d8}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateSignature@{GenerateSignature}}
+\index{GenerateSignature@{GenerateSignature}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateSignature()}{GenerateSignature()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Signature (\begin{DoxyParamCaption}\item[{Uri}]{url,  }\item[{string}]{consumer\+Key,  }\item[{string}]{consumer\+Secret,  }\item[{string}]{token,  }\item[{string}]{token\+Secret,  }\item[{string}]{http\+Method,  }\item[{string}]{time\+Stamp,  }\item[{string}]{nonce,  }\item[{\mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}{Signature\+Types}}}]{signature\+Type,  }\item[{out string}]{normalized\+Url,  }\item[{out string}]{normalized\+Request\+Parameters,  }\item[{out string}]{auth\+Header }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generates a signature using the specified signature\+Type 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em url} & The full url that needs to be signed including its non \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} url parameters\\
+\hline
+{\em consumer\+Key} & The consumer key\\
+\hline
+{\em consumer\+Secret} & The consumer seceret\\
+\hline
+{\em token} & The token, if available. If not available pass null or an empty string\\
+\hline
+{\em token\+Secret} & The token secret, if available. If not available pass null or an empty string\\
+\hline
+{\em http\+Method} & The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)\\
+\hline
+{\em signature\+Type} & The type of signature to use\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A base64 string of the hash value
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a5313881abf11c65d6155dba586943240}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a5313881abf11c65d6155dba586943240}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateSignatureBase@{GenerateSignatureBase}}
+\index{GenerateSignatureBase@{GenerateSignatureBase}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateSignatureBase()}{GenerateSignatureBase()}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Signature\+Base (\begin{DoxyParamCaption}\item[{Uri}]{url,  }\item[{string}]{consumer\+Key,  }\item[{string}]{token,  }\item[{string}]{token\+Secret,  }\item[{string}]{http\+Method,  }\item[{string}]{time\+Stamp,  }\item[{string}]{nonce,  }\item[{string}]{signature\+Type,  }\item[{out string}]{normalized\+Url,  }\item[{out string}]{normalized\+Request\+Parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate the signature base that is used to produce the signature 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & The full url that needs to be signed including its non \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} url parameters\\
+\hline
+{\em consumer\+Key} & The consumer key\\
+\hline
+\end{DoxyParams}
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em token} & The token, if available. If not available pass null or an empty string\\
+\hline
+{\em token\+Secret} & The token secret, if available. If not available pass null or an empty string\\
+\hline
+{\em http\+Method} & The http method used. Must be a valid HTTP method verb (POST,GET,PUT, etc)\\
+\hline
+{\em signature\+Type} & The signature type. To use the default values use \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_ac6b3e65182c13f0ca1e0ac165e1b8c95}{OAuth\+Base.\+Signature\+Types}}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The signature base
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ac607f9ac22511a36619e1250ce04df3e}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ac607f9ac22511a36619e1250ce04df3e}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateSignatureUsingHash@{GenerateSignatureUsingHash}}
+\index{GenerateSignatureUsingHash@{GenerateSignatureUsingHash}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateSignatureUsingHash()}{GenerateSignatureUsingHash()}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Signature\+Using\+Hash (\begin{DoxyParamCaption}\item[{string}]{signature\+Base,  }\item[{Hash\+Algorithm}]{hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Generate the signature value based on the given signature base and hash algorithm 
+
+
+\begin{DoxyParams}{Parameters}
+{\em signature\+Base} & The signature based as produced by the Generate\+Signature\+Base method or by any other means\\
+\hline
+{\em hash} & The hash algorithm used to perform the hashing. If the hashing algorithm requires initialization or a key it should be set prior to calling this method\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A base64 string of the hash value
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_aa9de22bd4275e7ceca947ed3fa65a2d4}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_aa9de22bd4275e7ceca947ed3fa65a2d4}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!GenerateTimeStamp@{GenerateTimeStamp}}
+\index{GenerateTimeStamp@{GenerateTimeStamp}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{GenerateTimeStamp()}{GenerateTimeStamp()}}
+{\footnotesize\ttfamily virtual string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Generate\+Time\+Stamp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Generate the timestamp for the signature ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a1ecb0fb3af335e6ee0f883651e1cd8f4}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a1ecb0fb3af335e6ee0f883651e1cd8f4}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!NormalizeRequestParameters@{NormalizeRequestParameters}}
+\index{NormalizeRequestParameters@{NormalizeRequestParameters}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{NormalizeRequestParameters()}{NormalizeRequestParameters()}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Normalize\+Request\+Parameters (\begin{DoxyParamCaption}\item[{IList$<$ \mbox{\hyperlink{classTwitterSample_1_1OAuth_1_1OAuthBase_1_1QueryParameter}{Query\+Parameter}} $>$}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Normalizes the request parameters according to the spec 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & The list of parameters already sorted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the normalized parameters
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_acd60cab32baff1f2a20c7dd55d24ddb1}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_acd60cab32baff1f2a20c7dd55d24ddb1}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!UrlEncode@{UrlEncode}}
+\index{UrlEncode@{UrlEncode}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{UrlEncode()}{UrlEncode()}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Url\+Encode (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+This is a different Url Encode implementation since the default .NET one outputs the percent encoding in lower case. While this is not a problem with the percent encoding spec, it is used in upper case throughout \mbox{\hyperlink{namespaceTwitterSample_1_1OAuth}{OAuth}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to Url encode\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a Url encoded string
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a9ed3c3580e5f0e54de7ebd0e63d19126}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a9ed3c3580e5f0e54de7ebd0e63d19126}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!HMACSHA1SignatureType@{HMACSHA1SignatureType}}
+\index{HMACSHA1SignatureType@{HMACSHA1SignatureType}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{HMACSHA1SignatureType}{HMACSHA1SignatureType}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+HMACSHA1\+Signature\+Type = \char`\"{}HMAC-\/SHA1\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a6624f844b404cff16d91ca2200fa71bc}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a6624f844b404cff16d91ca2200fa71bc}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthCallbackKey@{OAuthCallbackKey}}
+\index{OAuthCallbackKey@{OAuthCallbackKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthCallbackKey}{OAuthCallbackKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Callback\+Key = \char`\"{}oauth\+\_\+callback\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a3bd9cd720c1c457c2b6a4f41118e504e}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a3bd9cd720c1c457c2b6a4f41118e504e}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthConsumerKeyKey@{OAuthConsumerKeyKey}}
+\index{OAuthConsumerKeyKey@{OAuthConsumerKeyKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthConsumerKeyKey}{OAuthConsumerKeyKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Consumer\+Key\+Key = \char`\"{}oauth\+\_\+consumer\+\_\+key\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ad2f177b04c8258812a77f62c5c788aed}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ad2f177b04c8258812a77f62c5c788aed}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthNonceKey@{OAuthNonceKey}}
+\index{OAuthNonceKey@{OAuthNonceKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthNonceKey}{OAuthNonceKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Nonce\+Key = \char`\"{}oauth\+\_\+nonce\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_aad84e9d6aaa786b0c740e5fd59abb4cc}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_aad84e9d6aaa786b0c740e5fd59abb4cc}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthParameterPrefix@{OAuthParameterPrefix}}
+\index{OAuthParameterPrefix@{OAuthParameterPrefix}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthParameterPrefix}{OAuthParameterPrefix}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Parameter\+Prefix = \char`\"{}oauth\+\_\+\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a09eb2c8253aa4f3a5f0385add05d4ac5}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a09eb2c8253aa4f3a5f0385add05d4ac5}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthSignatureKey@{OAuthSignatureKey}}
+\index{OAuthSignatureKey@{OAuthSignatureKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthSignatureKey}{OAuthSignatureKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Signature\+Key = \char`\"{}oauth\+\_\+signature\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a67a611b5c3233c45759ee8a899f66be0}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a67a611b5c3233c45759ee8a899f66be0}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthSignatureMethodKey@{OAuthSignatureMethodKey}}
+\index{OAuthSignatureMethodKey@{OAuthSignatureMethodKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthSignatureMethodKey}{OAuthSignatureMethodKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Signature\+Method\+Key = \char`\"{}oauth\+\_\+signature\+\_\+method\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_adad94c0a43b8b85105c80a1d3b605be7}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_adad94c0a43b8b85105c80a1d3b605be7}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthTimestampKey@{OAuthTimestampKey}}
+\index{OAuthTimestampKey@{OAuthTimestampKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthTimestampKey}{OAuthTimestampKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Timestamp\+Key = \char`\"{}oauth\+\_\+timestamp\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a5546ced74075db0264b2e6f2b06f4ff5}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a5546ced74075db0264b2e6f2b06f4ff5}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthTokenKey@{OAuthTokenKey}}
+\index{OAuthTokenKey@{OAuthTokenKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthTokenKey}{OAuthTokenKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Token\+Key = \char`\"{}oauth\+\_\+token\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a6958adc389e7054e98e276501d8a846f}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a6958adc389e7054e98e276501d8a846f}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthTokenSecretKey@{OAuthTokenSecretKey}}
+\index{OAuthTokenSecretKey@{OAuthTokenSecretKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthTokenSecretKey}{OAuthTokenSecretKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Token\+Secret\+Key = \char`\"{}oauth\+\_\+token\+\_\+secret\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a3a94d278ea5d9867b4d07bad89f1b76c}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a3a94d278ea5d9867b4d07bad89f1b76c}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthVersion@{OAuthVersion}}
+\index{OAuthVersion@{OAuthVersion}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthVersion}{OAuthVersion}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Version = \char`\"{}1.\+0\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a46f05d423398be51745083911f8f9d10}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a46f05d423398be51745083911f8f9d10}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!OAuthVersionKey@{OAuthVersionKey}}
+\index{OAuthVersionKey@{OAuthVersionKey}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{OAuthVersionKey}{OAuthVersionKey}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+OAuth\+Version\+Key = \char`\"{}oauth\+\_\+version\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_ae74e3b608343fc174d42936d1bee705a}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_ae74e3b608343fc174d42936d1bee705a}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!PlainTextSignatureType@{PlainTextSignatureType}}
+\index{PlainTextSignatureType@{PlainTextSignatureType}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{PlainTextSignatureType}{PlainTextSignatureType}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+Plain\+Text\+Signature\+Type = \char`\"{}PLAINTEXT\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_aaaab8c4fe27701c73233ef7bce5ff800}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_aaaab8c4fe27701c73233ef7bce5ff800}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!random@{random}}
+\index{random@{random}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{random}{random}}
+{\footnotesize\ttfamily Random Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+random = new Random()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_a5f5591c2cf80c2529e101b261cbab8f9}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_a5f5591c2cf80c2529e101b261cbab8f9}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!RSASHA1SignatureType@{RSASHA1SignatureType}}
+\index{RSASHA1SignatureType@{RSASHA1SignatureType}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{RSASHA1SignatureType}{RSASHA1SignatureType}}
+{\footnotesize\ttfamily const string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+RSASHA1\+Signature\+Type = \char`\"{}RSA-\/SHA1\char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTwitterSample_1_1OAuth_1_1OAuthBase_adc21f544b1634dfd16ac9187a7bb406e}\label{classTwitterSample_1_1OAuth_1_1OAuthBase_adc21f544b1634dfd16ac9187a7bb406e}} 
+\index{TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}!unreservedChars@{unreservedChars}}
+\index{unreservedChars@{unreservedChars}!TwitterSample.OAuth.OAuthBase@{TwitterSample.OAuth.OAuthBase}}
+\doxysubsubsection{\texorpdfstring{unreservedChars}{unreservedChars}}
+{\footnotesize\ttfamily string Twitter\+Sample.\+OAuth.\+OAuth\+Base.\+unreserved\+Chars = \char`\"{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-\/\+\_\+.$\sim$\char`\"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Http\+Client/\+Twitter\+Sample/\+OAuth/\mbox{\hyperlink{OAuthBase_8cs}{OAuth\+Base.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter}{}\doxysection{Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter Class Reference}
+\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter}\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+
+
+This sample formatter illustrates how to use the Buffered\+Media\+Type\+Formatter base class for writing a Media\+Type\+Formatter. The Buffered\+Media\+Type\+Formatter is useful when you either want to aggregate many small reads or writes or when you are writing synchronously to the underlying stream.  
+
+
+
+
+Inheritance diagram for Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_ad43f30df4f0334e408f77e3800961130}{Plain\+Text\+Buffered\+Formatter}} ()
+\item 
+override bool \mbox{\hyperlink{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a62ee97fee924587ab4bd4e31d554fe87}{Can\+Read\+Type}} (Type type)
+\item 
+override bool \mbox{\hyperlink{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_aae0f29ffed3496c763d12cbc9fd8536e}{Can\+Write\+Type}} (Type type)
+\item 
+override object \mbox{\hyperlink{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a26281a1eadff4e8ed1695fa09769a3d6}{Read\+From\+Stream}} (Type type, Stream read\+Stream, Http\+Content content, IFormatter\+Logger formatter\+Logger)
+\item 
+override void \mbox{\hyperlink{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_af912f55144dc98b93da263129cfe4b68}{Write\+To\+Stream}} (Type type, object value, Stream write\+Stream, Http\+Content content)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This sample formatter illustrates how to use the Buffered\+Media\+Type\+Formatter base class for writing a Media\+Type\+Formatter. The Buffered\+Media\+Type\+Formatter is useful when you either want to aggregate many small reads or writes or when you are writing synchronously to the underlying stream. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_ad43f30df4f0334e408f77e3800961130}\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_ad43f30df4f0334e408f77e3800961130}} 
+\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}!PlainTextBufferedFormatter@{PlainTextBufferedFormatter}}
+\index{PlainTextBufferedFormatter@{PlainTextBufferedFormatter}!CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{PlainTextBufferedFormatter()}{PlainTextBufferedFormatter()}}
+{\footnotesize\ttfamily Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter.\+Plain\+Text\+Buffered\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a62ee97fee924587ab4bd4e31d554fe87}\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a62ee97fee924587ab4bd4e31d554fe87}} 
+\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}!CanReadType@{CanReadType}}
+\index{CanReadType@{CanReadType}!CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{CanReadType()}{CanReadType()}}
+{\footnotesize\ttfamily override bool Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter.\+Can\+Read\+Type (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_aae0f29ffed3496c763d12cbc9fd8536e}\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_aae0f29ffed3496c763d12cbc9fd8536e}} 
+\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}!CanWriteType@{CanWriteType}}
+\index{CanWriteType@{CanWriteType}!CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{CanWriteType()}{CanWriteType()}}
+{\footnotesize\ttfamily override bool Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter.\+Can\+Write\+Type (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a26281a1eadff4e8ed1695fa09769a3d6}\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_a26281a1eadff4e8ed1695fa09769a3d6}} 
+\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}!ReadFromStream@{ReadFromStream}}
+\index{ReadFromStream@{ReadFromStream}!CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{ReadFromStream()}{ReadFromStream()}}
+{\footnotesize\ttfamily override object Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter.\+Read\+From\+Stream (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{Stream}]{read\+Stream,  }\item[{Http\+Content}]{content,  }\item[{IFormatter\+Logger}]{formatter\+Logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_af912f55144dc98b93da263129cfe4b68}\label{classCustomMediaTypeFormatter_1_1PlainTextBufferedFormatter_af912f55144dc98b93da263129cfe4b68}} 
+\index{CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}!WriteToStream@{WriteToStream}}
+\index{WriteToStream@{WriteToStream}!CustomMediaTypeFormatter.PlainTextBufferedFormatter@{CustomMediaTypeFormatter.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{WriteToStream()}{WriteToStream()}}
+{\footnotesize\ttfamily override void Custom\+Media\+Type\+Formatter.\+Plain\+Text\+Buffered\+Formatter.\+Write\+To\+Stream (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{object}]{value,  }\item[{Stream}]{write\+Stream,  }\item[{Http\+Content}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Custom\+Media\+Type\+Formatter\+Sample/\+Custom\+Media\+Type\+Formatter/\+Formatters/\mbox{\hyperlink{CustomMediaTypeFormatterSample_2CustomMediaTypeFormatter_2Formatters_2PlainTextBufferedFormatter_8cs}{Plain\+Text\+Buffered\+Formatter.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController}{}\doxysection{Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller Class Reference}
+\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController}\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+
+
+Here we demonstrate the following\+:  
+
+
+
+
+Inheritance diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IQueryable$<$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}} $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a05d0ae4517c5410de1236831e57ff476}{Get\+Products}} ()
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a22d8e16be14658683bd2ec889d6de8ed}{Get\+Product}} (int id)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_ad9b49e0e3088b8e9de22cff1ce224764}{Update\+Product}} (int id, \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}} product)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a5ff4aba859545782735bdef32ccc3f6a}{Post\+Product}} (\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}} product)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_af81aba55300cec02ad5f6c5d805f925f}{Delete\+Product}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a97c38a7390414be8d21e445d84d16c2a}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Here we demonstrate the following\+: 
+
+
+\begin{DoxyItemize}
+\item Decorate attribute route on each action.
+\item Escaping Route\+Prefix by using \textquotesingle{}$\sim$/\textquotesingle{}
+\item Multiple Route attributes on an action
+\item Uri\+Path\+Extension\+Mapping with attribute routing
+\end{DoxyItemize}
+
+NOTE\+:
+\begin{DoxyItemize}
+\item Route\+Prefix never creates a route in the route table, where as Route\+Attribute does
+\item This example is a verbose way of using attribute routing where each action is attributed explicitly. You can take a look at the \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController}{Customers\+Controller}} \& \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController}{Orders\+Controller}} for better ways of improving this controller.
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_af81aba55300cec02ad5f6c5d805f925f}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_af81aba55300cec02ad5f6c5d805f925f}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!DeleteProduct@{DeleteProduct}}
+\index{DeleteProduct@{DeleteProduct}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{DeleteProduct()}{DeleteProduct()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Delete\+Product (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a97c38a7390414be8d21e445d84d16c2a}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a97c38a7390414be8d21e445d84d16c2a}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a22d8e16be14658683bd2ec889d6de8ed}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a22d8e16be14658683bd2ec889d6de8ed}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!GetProduct@{GetProduct}}
+\index{GetProduct@{GetProduct}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{GetProduct()}{GetProduct()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Get\+Product (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a05d0ae4517c5410de1236831e57ff476}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a05d0ae4517c5410de1236831e57ff476}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!GetProducts@{GetProducts}}
+\index{GetProducts@{GetProducts}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{GetProducts()}{GetProducts()}}
+{\footnotesize\ttfamily IQueryable$<$\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}}$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Get\+Products (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a5ff4aba859545782735bdef32ccc3f6a}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_a5ff4aba859545782735bdef32ccc3f6a}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!PostProduct@{PostProduct}}
+\index{PostProduct@{PostProduct}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{PostProduct()}{PostProduct()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Post\+Product (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}}}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_ad9b49e0e3088b8e9de22cff1ce224764}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController_ad9b49e0e3088b8e9de22cff1ce224764}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}!UpdateProduct@{UpdateProduct}}
+\index{UpdateProduct@{UpdateProduct}!WebApiAttributeRoutingSample.Controllers.Api.ProductsController@{WebApiAttributeRoutingSample.Controllers.Api.ProductsController}}
+\doxysubsubsection{\texorpdfstring{UpdateProduct()}{UpdateProduct()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Products\+Controller.\+Update\+Product (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Product}{Product}}}]{product }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Web\+Api\+Attribute\+Routing\+Sample/\+Web\+Api\+Attribute\+Routing\+Sample/\+Controllers/\+Api/\mbox{\hyperlink{WebApiAttributeRoutingSample_2WebApiAttributeRoutingSample_2Controllers_2Api_2ProductsController_8cs}{Products\+Controller.\+cs}}\end{DoxyCompactItemize}

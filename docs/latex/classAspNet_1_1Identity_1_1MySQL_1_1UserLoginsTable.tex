@@ -1,0 +1,147 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table Class Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+
+
+Class that represents the User\+Logins table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a03911ddeb94f3e77f3f3e1790b919b89}{User\+Logins\+Table}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82e893fdd54499a300845b5d16ce010}{Delete}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}} user, User\+Login\+Info login)
+\begin{DoxyCompactList}\small\item\em Deletes a login from a user in the User\+Logins table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82a2d9c5bf1ea21ac7adb15d900d642}{Delete}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes all Logins from a user in the User\+Logins table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a265e83ab0bb687437a94a41715bd1cdc}{Insert}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}} user, User\+Login\+Info login)
+\begin{DoxyCompactList}\small\item\em Inserts a new login in the User\+Logins table \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_aaeefae6963fa165dbffaa34c20177de6}{Find\+User\+Id\+By\+Login}} (User\+Login\+Info user\+Login)
+\begin{DoxyCompactList}\small\item\em Return a user\+Id given a user\textquotesingle{}s login \end{DoxyCompactList}\item 
+List$<$ User\+Login\+Info $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_ae3f980eacc617c95c6c2c8c1320c0527}{Find\+By\+User\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns a list of user\textquotesingle{}s logins \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the User\+Logins table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a03911ddeb94f3e77f3f3e1790b919b89}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a03911ddeb94f3e77f3f3e1790b919b89}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!UserLoginsTable@{UserLoginsTable}}
+\index{UserLoginsTable@{UserLoginsTable}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{UserLoginsTable()}{UserLoginsTable()}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+User\+Logins\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82e893fdd54499a300845b5d16ce010}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82e893fdd54499a300845b5d16ce010}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]{user,  }\item[{User\+Login\+Info}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a login from a user in the User\+Logins table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have login deleted\\
+\hline
+{\em login} & Login to be deleted from user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82a2d9c5bf1ea21ac7adb15d900d642}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_af82a2d9c5bf1ea21ac7adb15d900d642}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+Delete (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes all Logins from a user in the User\+Logins table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_ae3f980eacc617c95c6c2c8c1320c0527}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_ae3f980eacc617c95c6c2c8c1320c0527}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!FindByUserId@{FindByUserId}}
+\index{FindByUserId@{FindByUserId}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{FindByUserId()}{FindByUserId()}}
+{\footnotesize\ttfamily List$<$User\+Login\+Info$>$ Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+Find\+By\+User\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a list of user\textquotesingle{}s logins 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_aaeefae6963fa165dbffaa34c20177de6}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_aaeefae6963fa165dbffaa34c20177de6}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!FindUserIdByLogin@{FindUserIdByLogin}}
+\index{FindUserIdByLogin@{FindUserIdByLogin}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{FindUserIdByLogin()}{FindUserIdByLogin()}}
+{\footnotesize\ttfamily string Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+Find\+User\+Id\+By\+Login (\begin{DoxyParamCaption}\item[{User\+Login\+Info}]{user\+Login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return a user\+Id given a user\textquotesingle{}s login 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Login} & The user\textquotesingle{}s login info\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a265e83ab0bb687437a94a41715bd1cdc}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable_a265e83ab0bb687437a94a41715bd1cdc}} 
+\index{AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}!Insert@{Insert}}
+\index{Insert@{Insert}!AspNet.Identity.MySQL.UserLoginsTable@{AspNet.Identity.MySQL.UserLoginsTable}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Logins\+Table.\+Insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]{user,  }\item[{User\+Login\+Info}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a new login in the User\+Logins table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have new login added\\
+\hline
+{\em login} & Login to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{UserLoginsTable_8cs}{User\+Logins\+Table.\+cs}}\end{DoxyCompactItemize}

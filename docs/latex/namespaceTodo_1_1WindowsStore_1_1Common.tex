@@ -1,0 +1,49 @@
+\hypertarget{namespaceTodo_1_1WindowsStore_1_1Common}{}\doxysection{Todo.\+Windows\+Store.\+Common Namespace Reference}
+\label{namespaceTodo_1_1WindowsStore_1_1Common}\index{Todo.WindowsStore.Common@{Todo.WindowsStore.Common}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper}{Navigation\+Helper}}
+\begin{DoxyCompactList}\small\item\em Navigation\+Manager aids in navigation between pages. It provides commands used to navigate back and forward as well as registers for standard mouse and keyboard shortcuts used to go back and forward. In addition it integrates Suspension\+Manger to handle process lifetime management and state management when navigating between pages. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1LoadStateEventArgs}{Load\+State\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Class used to hold the event data required when a page attempts to load state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1SaveStateEventArgs}{Save\+State\+Event\+Args}}
+\begin{DoxyCompactList}\small\item\em Class used to hold the event data required when a page attempts to save state. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary}{Observable\+Dictionary}}
+\begin{DoxyCompactList}\small\item\em Implementation of IObservable\+Map that supports reentrancy for use as a default view model. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}}
+\begin{DoxyCompactList}\small\item\em A command whose sole purpose is to relay its functionality to other objects by invoking delegates. The default return value for the Can\+Execute method is \textquotesingle{}true\textquotesingle{}. \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_ad042d3b953a4f7911f47c762bdb0055a}{Raise\+Can\+Execute\+Changed}} needs to be called whenever \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand_adf161f6f5b5cb2d502d55b7d77bb5cd7}{Can\+Execute}} is expected to return a different value. \end{DoxyCompactList}\item 
+class {\bfseries Suspension\+Manager}
+\begin{DoxyCompactList}\small\item\em Suspension\+Manager captures global session state to simplify process lifetime management for an application. Note that session state will be automatically cleared under a variety of conditions and should only be used to store information that would be convenient to carry across sessions, but that should be discarded when an application crashes or is upgraded. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1SuspensionManagerException}{Suspension\+Manager\+Exception}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+delegate void \mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a6805a3cedd11d7e9d568570d860a62e9}{Load\+State\+Event\+Handler}} (object sender, \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1LoadStateEventArgs}{Load\+State\+Event\+Args}} e)
+\begin{DoxyCompactList}\small\item\em Represents the method that will handle the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}{Navigation\+Helper.\+Load\+State}}event \end{DoxyCompactList}\item 
+delegate void \mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a24fdfe387b560d6fd314a59aea83c38e}{Save\+State\+Event\+Handler}} (object sender, \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1SaveStateEventArgs}{Save\+State\+Event\+Args}} e)
+\begin{DoxyCompactList}\small\item\em Represents the method that will handle the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}{Navigation\+Helper.\+Save\+State}}event \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceTodo_1_1WindowsStore_1_1Common_a6805a3cedd11d7e9d568570d860a62e9}\label{namespaceTodo_1_1WindowsStore_1_1Common_a6805a3cedd11d7e9d568570d860a62e9}} 
+\index{Todo.WindowsStore.Common@{Todo.WindowsStore.Common}!LoadStateEventHandler@{LoadStateEventHandler}}
+\index{LoadStateEventHandler@{LoadStateEventHandler}!Todo.WindowsStore.Common@{Todo.WindowsStore.Common}}
+\doxysubsubsection{\texorpdfstring{LoadStateEventHandler()}{LoadStateEventHandler()}}
+{\footnotesize\ttfamily delegate void Todo.\+Windows\+Store.\+Common.\+Load\+State\+Event\+Handler (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1LoadStateEventArgs}{Load\+State\+Event\+Args}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Represents the method that will handle the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}{Navigation\+Helper.\+Load\+State}}event 
+
+\mbox{\Hypertarget{namespaceTodo_1_1WindowsStore_1_1Common_a24fdfe387b560d6fd314a59aea83c38e}\label{namespaceTodo_1_1WindowsStore_1_1Common_a24fdfe387b560d6fd314a59aea83c38e}} 
+\index{Todo.WindowsStore.Common@{Todo.WindowsStore.Common}!SaveStateEventHandler@{SaveStateEventHandler}}
+\index{SaveStateEventHandler@{SaveStateEventHandler}!Todo.WindowsStore.Common@{Todo.WindowsStore.Common}}
+\doxysubsubsection{\texorpdfstring{SaveStateEventHandler()}{SaveStateEventHandler()}}
+{\footnotesize\ttfamily delegate void Todo.\+Windows\+Store.\+Common.\+Save\+State\+Event\+Handler (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1SaveStateEventArgs}{Save\+State\+Event\+Args}}}]{e }\end{DoxyParamCaption})}
+
+
+
+Represents the method that will handle the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}{Navigation\+Helper.\+Save\+State}}event 
+

@@ -1,0 +1,58 @@
+\hypertarget{classAccount_1_1Client_1_1HttpAuthenticationHandler}{}\doxysection{Account.\+Client.\+Http\+Authentication\+Handler Class Reference}
+\label{classAccount_1_1Client_1_1HttpAuthenticationHandler}\index{Account.Client.HttpAuthenticationHandler@{Account.Client.HttpAuthenticationHandler}}
+
+
+Inheritance diagram for Account.\+Client.\+Http\+Authentication\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classAccount_1_1Client_1_1HttpAuthenticationHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Account.\+Client.\+Http\+Authentication\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classAccount_1_1Client_1_1HttpAuthenticationHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual Task$<$ Authentication\+Header\+Value $>$ \mbox{\hyperlink{classAccount_1_1Client_1_1HttpAuthenticationHandler_aada3cc6e120d0383a12e1d704bc7b440}{Create\+Authorization\+Header\+Async}} (Http\+Request\+Message request, Http\+Header\+Value\+Collection$<$ Authentication\+Header\+Value $>$ challenges, Cancellation\+Token cancellation\+Token)
+\item 
+override async Task$<$ bool $>$ \mbox{\hyperlink{classAccount_1_1Client_1_1HttpAuthenticationHandler_a2ae2ee474933539202c74993b104bb02}{Handle\+Unauthorized\+Async}} (Http\+Request\+Message request, Http\+Response\+Message response, Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAccount_1_1Client_1_1HttpAuthenticationHandler_aada3cc6e120d0383a12e1d704bc7b440}\label{classAccount_1_1Client_1_1HttpAuthenticationHandler_aada3cc6e120d0383a12e1d704bc7b440}} 
+\index{Account.Client.HttpAuthenticationHandler@{Account.Client.HttpAuthenticationHandler}!CreateAuthorizationHeaderAsync@{CreateAuthorizationHeaderAsync}}
+\index{CreateAuthorizationHeaderAsync@{CreateAuthorizationHeaderAsync}!Account.Client.HttpAuthenticationHandler@{Account.Client.HttpAuthenticationHandler}}
+\doxysubsubsection{\texorpdfstring{CreateAuthorizationHeaderAsync()}{CreateAuthorizationHeaderAsync()}}
+{\footnotesize\ttfamily virtual Task$<$Authentication\+Header\+Value$>$ Account.\+Client.\+Http\+Authentication\+Handler.\+Create\+Authorization\+Header\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{Http\+Header\+Value\+Collection$<$ Authentication\+Header\+Value $>$}]{challenges,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_ab4a98dd9660877cfe018ea3c60e635fe}{Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler}}.
+
+\mbox{\Hypertarget{classAccount_1_1Client_1_1HttpAuthenticationHandler_a2ae2ee474933539202c74993b104bb02}\label{classAccount_1_1Client_1_1HttpAuthenticationHandler_a2ae2ee474933539202c74993b104bb02}} 
+\index{Account.Client.HttpAuthenticationHandler@{Account.Client.HttpAuthenticationHandler}!HandleUnauthorizedAsync@{HandleUnauthorizedAsync}}
+\index{HandleUnauthorizedAsync@{HandleUnauthorizedAsync}!Account.Client.HttpAuthenticationHandler@{Account.Client.HttpAuthenticationHandler}}
+\doxysubsubsection{\texorpdfstring{HandleUnauthorizedAsync()}{HandleUnauthorizedAsync()}}
+{\footnotesize\ttfamily override async Task$<$bool$>$ Account.\+Client.\+Http\+Authentication\+Handler.\+Handle\+Unauthorized\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{Http\+Response\+Message}]{response,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAccount_1_1Client_1_1AuthenticationHandler_a932ad67f59461c4a1e78989bd752ba90}{Account.\+Client.\+Authentication\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Account.\+Client/\mbox{\hyperlink{HttpAuthenticationHandler_8cs}{Http\+Authentication\+Handler.\+cs}}\end{DoxyCompactItemize}

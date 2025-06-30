@@ -1,0 +1,67 @@
+\hypertarget{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver}{}\doxysection{Delta\+Json\+Deserialization.\+Server.\+Delta\+Contract\+Resolver Class Reference}
+\label{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver}\index{DeltaJsonDeserialization.Server.DeltaContractResolver@{DeltaJsonDeserialization.Server.DeltaContractResolver}}
+
+
+This class implements a Json\+Contract\+Resolver to provide support for deserialization of the Delta$<$\+T$>$ type using Json.\+NET.  
+
+
+
+
+Inheritance diagram for Delta\+Json\+Deserialization.\+Server.\+Delta\+Contract\+Resolver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Delta\+Json\+Deserialization.\+Server.\+Delta\+Contract\+Resolver\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a85d906381438aa8def2ad28a252e6719}{Delta\+Contract\+Resolver}} (Media\+Type\+Formatter formatter)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override Json\+Contract \mbox{\hyperlink{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a7682b80522902088630af23f4e5155fb}{Create\+Contract}} (Type object\+Type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements a Json\+Contract\+Resolver to provide support for deserialization of the Delta$<$\+T$>$ type using Json.\+NET. 
+
+See Web\+Api\+Config.\+cs to see how the this class is used in the configuration.
+
+The contract created for Delta$<$\+T$>$ will deserialize properties using the types and property names of the underlying type. The Json\+Property instances are copied from the underlying type\textquotesingle{}s Json\+Contract and customized to work with a dynamic object. In particular, a custom IValue\+Provider is used to get and set values using the contract of Dynamic\+Object, which Delta$<$\+T$>$ inherits from. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a85d906381438aa8def2ad28a252e6719}\label{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a85d906381438aa8def2ad28a252e6719}} 
+\index{DeltaJsonDeserialization.Server.DeltaContractResolver@{DeltaJsonDeserialization.Server.DeltaContractResolver}!DeltaContractResolver@{DeltaContractResolver}}
+\index{DeltaContractResolver@{DeltaContractResolver}!DeltaJsonDeserialization.Server.DeltaContractResolver@{DeltaJsonDeserialization.Server.DeltaContractResolver}}
+\doxysubsubsection{\texorpdfstring{DeltaContractResolver()}{DeltaContractResolver()}}
+{\footnotesize\ttfamily Delta\+Json\+Deserialization.\+Server.\+Delta\+Contract\+Resolver.\+Delta\+Contract\+Resolver (\begin{DoxyParamCaption}\item[{Media\+Type\+Formatter}]{formatter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a7682b80522902088630af23f4e5155fb}\label{classDeltaJsonDeserialization_1_1Server_1_1DeltaContractResolver_a7682b80522902088630af23f4e5155fb}} 
+\index{DeltaJsonDeserialization.Server.DeltaContractResolver@{DeltaJsonDeserialization.Server.DeltaContractResolver}!CreateContract@{CreateContract}}
+\index{CreateContract@{CreateContract}!DeltaJsonDeserialization.Server.DeltaContractResolver@{DeltaJsonDeserialization.Server.DeltaContractResolver}}
+\doxysubsubsection{\texorpdfstring{CreateContract()}{CreateContract()}}
+{\footnotesize\ttfamily override Json\+Contract Delta\+Json\+Deserialization.\+Server.\+Delta\+Contract\+Resolver.\+Create\+Contract (\begin{DoxyParamCaption}\item[{Type}]{object\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Delta\+Json\+Deserialization/\+Delta\+Json\+Deserialization.\+Server/\mbox{\hyperlink{DeltaContractResolver_8cs}{Delta\+Contract\+Resolver.\+cs}}\end{DoxyCompactItemize}

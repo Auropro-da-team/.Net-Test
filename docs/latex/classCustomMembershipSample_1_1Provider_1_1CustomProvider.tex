@@ -1,0 +1,266 @@
+\hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider}{}\doxysection{Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider Class Reference}
+\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider}\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+
+
+Inheritance diagram for Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classCustomMembershipSample_1_1Provider_1_1CustomProvider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classCustomMembershipSample_1_1Provider_1_1CustomProvider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ae620617cc39b1d77d37879c316ba80ed}{Change\+Password}} (string username, string old\+Password, string new\+Password)
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a1174131c000db2999f8bcaae093531bb}{Change\+Password\+Question\+And\+Answer}} (string username, string password, string new\+Password\+Question, string new\+Password\+Answer)
+\item 
+override Membership\+User \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aaebf148615d56d066f61fd91a745aa03}{Create\+User}} (string username, string password, string email, string password\+Question, string password\+Answer, bool is\+Approved, object provider\+User\+Key, out Membership\+Create\+Status status)
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a14550fcb054e16da15df40175fb91f14}{Delete\+User}} (string username, bool delete\+All\+Related\+Data)
+\item 
+override Membership\+User\+Collection \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a42ddc2bdeaa34b4d40c70cef08ad680d}{Find\+Users\+By\+Email}} (string email\+To\+Match, int page\+Index, int page\+Size, out int total\+Records)
+\item 
+override Membership\+User\+Collection \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ac923c94538fa1caa2720e943ab5030ab}{Find\+Users\+By\+Name}} (string username\+To\+Match, int page\+Index, int page\+Size, out int total\+Records)
+\item 
+override Membership\+User\+Collection \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a360f0ddaa31274a19aaa4ab208c43883}{Get\+All\+Users}} (int page\+Index, int page\+Size, out int total\+Records)
+\item 
+override int \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5c876e0c2bf2f6122f32f88ee6963a73}{Get\+Number\+Of\+Users\+Online}} ()
+\item 
+override string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa7e7fb6be1459bdb902b41993fccff9a}{Get\+Password}} (string username, string answer)
+\item 
+override Membership\+User \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab369a0d315f5312744680b924f4ee8c5}{Get\+User}} (string username, bool user\+Is\+Online)
+\item 
+override Membership\+User \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af92c7f4a01d0fa5f5eb2ab391bf5b8fa}{Get\+User}} (object provider\+User\+Key, bool user\+Is\+Online)
+\item 
+override string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a7c6e7e7d589cb2c1792a452bde090490}{Get\+User\+Name\+By\+Email}} (string email)
+\item 
+override string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a09bfec15d9e70ad4076d6c081b0684b6}{Reset\+Password}} (string username, string answer)
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8f2b120c87d0db31f136c3aeaa2ceb33}{Unlock\+User}} (string user\+Name)
+\item 
+override void \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aeddbe5036a45550f3fac6a82ba7bf412}{Update\+User}} (Membership\+User user)
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_adac5b191e1872a9dc18497133ba1d7ed}{Validate\+User}} (string username, string password)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a2eb441b1c0ad61adc027811c4bf1e6df}{Get\+MD5\+Hash}} (string value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+override string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa118fc0c3d85ead165a90ec319f793ef}{Application\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5ccd8f1e1550a689bd8f9e50f2cc0348}{Enable\+Password\+Reset}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af38d3555083ca0d37862ee0608880ec7}{Enable\+Password\+Retrieval}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override int \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a30bb667aece0ad8589ee71145ab096c9}{Max\+Invalid\+Password\+Attempts}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override int \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a07343691bd4d320aad3d1195a68d20d6}{Min\+Required\+Non\+Alphanumeric\+Characters}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override int \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a3e4c19b73082658f56d37c8aed5acf0c}{Min\+Required\+Password\+Length}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override int \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aee50ef5eab3aa7d70f50352e8bc37fe0}{Password\+Attempt\+Window}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override Membership\+Password\+Format \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a570fbb790219a8d3666f73c4632e6b17}{Password\+Format}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override string \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8dee4240012b597f36a8c3ec4c76c0b7}{Password\+Strength\+Regular\+Expression}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_afee4197dabaa70eeeb169bc189baef27}{Requires\+Question\+And\+Answer}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+override bool \mbox{\hyperlink{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab8b33034e97935e240f482ed9668ee62}{Requires\+Unique\+Email}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ae620617cc39b1d77d37879c316ba80ed}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ae620617cc39b1d77d37879c316ba80ed}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Change\+Password (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{old\+Password,  }\item[{string}]{new\+Password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a1174131c000db2999f8bcaae093531bb}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a1174131c000db2999f8bcaae093531bb}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!ChangePasswordQuestionAndAnswer@{ChangePasswordQuestionAndAnswer}}
+\index{ChangePasswordQuestionAndAnswer@{ChangePasswordQuestionAndAnswer}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{ChangePasswordQuestionAndAnswer()}{ChangePasswordQuestionAndAnswer()}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Change\+Password\+Question\+And\+Answer (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{new\+Password\+Question,  }\item[{string}]{new\+Password\+Answer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aaebf148615d56d066f61fd91a745aa03}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aaebf148615d56d066f61fd91a745aa03}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!CreateUser@{CreateUser}}
+\index{CreateUser@{CreateUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{CreateUser()}{CreateUser()}}
+{\footnotesize\ttfamily override Membership\+User Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Create\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{email,  }\item[{string}]{password\+Question,  }\item[{string}]{password\+Answer,  }\item[{bool}]{is\+Approved,  }\item[{object}]{provider\+User\+Key,  }\item[{out Membership\+Create\+Status}]{status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a14550fcb054e16da15df40175fb91f14}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a14550fcb054e16da15df40175fb91f14}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!DeleteUser@{DeleteUser}}
+\index{DeleteUser@{DeleteUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{DeleteUser()}{DeleteUser()}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Delete\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{bool}]{delete\+All\+Related\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a42ddc2bdeaa34b4d40c70cef08ad680d}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a42ddc2bdeaa34b4d40c70cef08ad680d}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!FindUsersByEmail@{FindUsersByEmail}}
+\index{FindUsersByEmail@{FindUsersByEmail}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{FindUsersByEmail()}{FindUsersByEmail()}}
+{\footnotesize\ttfamily override Membership\+User\+Collection Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Find\+Users\+By\+Email (\begin{DoxyParamCaption}\item[{string}]{email\+To\+Match,  }\item[{int}]{page\+Index,  }\item[{int}]{page\+Size,  }\item[{out int}]{total\+Records }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ac923c94538fa1caa2720e943ab5030ab}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ac923c94538fa1caa2720e943ab5030ab}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!FindUsersByName@{FindUsersByName}}
+\index{FindUsersByName@{FindUsersByName}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{FindUsersByName()}{FindUsersByName()}}
+{\footnotesize\ttfamily override Membership\+User\+Collection Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Find\+Users\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{username\+To\+Match,  }\item[{int}]{page\+Index,  }\item[{int}]{page\+Size,  }\item[{out int}]{total\+Records }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a360f0ddaa31274a19aaa4ab208c43883}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a360f0ddaa31274a19aaa4ab208c43883}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetAllUsers@{GetAllUsers}}
+\index{GetAllUsers@{GetAllUsers}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetAllUsers()}{GetAllUsers()}}
+{\footnotesize\ttfamily override Membership\+User\+Collection Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+All\+Users (\begin{DoxyParamCaption}\item[{int}]{page\+Index,  }\item[{int}]{page\+Size,  }\item[{out int}]{total\+Records }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a2eb441b1c0ad61adc027811c4bf1e6df}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a2eb441b1c0ad61adc027811c4bf1e6df}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetMD5Hash@{GetMD5Hash}}
+\index{GetMD5Hash@{GetMD5Hash}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetMD5Hash()}{GetMD5Hash()}}
+{\footnotesize\ttfamily static string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+MD5\+Hash (\begin{DoxyParamCaption}\item[{string}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5c876e0c2bf2f6122f32f88ee6963a73}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5c876e0c2bf2f6122f32f88ee6963a73}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetNumberOfUsersOnline@{GetNumberOfUsersOnline}}
+\index{GetNumberOfUsersOnline@{GetNumberOfUsersOnline}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetNumberOfUsersOnline()}{GetNumberOfUsersOnline()}}
+{\footnotesize\ttfamily override int Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+Number\+Of\+Users\+Online (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa7e7fb6be1459bdb902b41993fccff9a}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa7e7fb6be1459bdb902b41993fccff9a}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetPassword@{GetPassword}}
+\index{GetPassword@{GetPassword}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetPassword()}{GetPassword()}}
+{\footnotesize\ttfamily override string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+Password (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{answer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af92c7f4a01d0fa5f5eb2ab391bf5b8fa}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af92c7f4a01d0fa5f5eb2ab391bf5b8fa}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily override Membership\+User Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+User (\begin{DoxyParamCaption}\item[{object}]{provider\+User\+Key,  }\item[{bool}]{user\+Is\+Online }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab369a0d315f5312744680b924f4ee8c5}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab369a0d315f5312744680b924f4ee8c5}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily override Membership\+User Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{bool}]{user\+Is\+Online }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a7c6e7e7d589cb2c1792a452bde090490}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a7c6e7e7d589cb2c1792a452bde090490}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!GetUserNameByEmail@{GetUserNameByEmail}}
+\index{GetUserNameByEmail@{GetUserNameByEmail}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{GetUserNameByEmail()}{GetUserNameByEmail()}}
+{\footnotesize\ttfamily override string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Get\+User\+Name\+By\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a09bfec15d9e70ad4076d6c081b0684b6}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a09bfec15d9e70ad4076d6c081b0684b6}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}}
+{\footnotesize\ttfamily override string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Reset\+Password (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{answer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8f2b120c87d0db31f136c3aeaa2ceb33}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8f2b120c87d0db31f136c3aeaa2ceb33}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!UnlockUser@{UnlockUser}}
+\index{UnlockUser@{UnlockUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{UnlockUser()}{UnlockUser()}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Unlock\+User (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aeddbe5036a45550f3fac6a82ba7bf412}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aeddbe5036a45550f3fac6a82ba7bf412}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!UpdateUser@{UpdateUser}}
+\index{UpdateUser@{UpdateUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{UpdateUser()}{UpdateUser()}}
+{\footnotesize\ttfamily override void Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Update\+User (\begin{DoxyParamCaption}\item[{Membership\+User}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_adac5b191e1872a9dc18497133ba1d7ed}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_adac5b191e1872a9dc18497133ba1d7ed}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!ValidateUser@{ValidateUser}}
+\index{ValidateUser@{ValidateUser}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{ValidateUser()}{ValidateUser()}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Validate\+User (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa118fc0c3d85ead165a90ec319f793ef}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aa118fc0c3d85ead165a90ec319f793ef}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!ApplicationName@{ApplicationName}}
+\index{ApplicationName@{ApplicationName}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{ApplicationName}{ApplicationName}}
+{\footnotesize\ttfamily override string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Application\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5ccd8f1e1550a689bd8f9e50f2cc0348}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a5ccd8f1e1550a689bd8f9e50f2cc0348}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!EnablePasswordReset@{EnablePasswordReset}}
+\index{EnablePasswordReset@{EnablePasswordReset}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{EnablePasswordReset}{EnablePasswordReset}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Enable\+Password\+Reset\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af38d3555083ca0d37862ee0608880ec7}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_af38d3555083ca0d37862ee0608880ec7}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!EnablePasswordRetrieval@{EnablePasswordRetrieval}}
+\index{EnablePasswordRetrieval@{EnablePasswordRetrieval}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{EnablePasswordRetrieval}{EnablePasswordRetrieval}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Enable\+Password\+Retrieval\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a30bb667aece0ad8589ee71145ab096c9}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a30bb667aece0ad8589ee71145ab096c9}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!MaxInvalidPasswordAttempts@{MaxInvalidPasswordAttempts}}
+\index{MaxInvalidPasswordAttempts@{MaxInvalidPasswordAttempts}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{MaxInvalidPasswordAttempts}{MaxInvalidPasswordAttempts}}
+{\footnotesize\ttfamily override int Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Max\+Invalid\+Password\+Attempts\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a07343691bd4d320aad3d1195a68d20d6}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a07343691bd4d320aad3d1195a68d20d6}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!MinRequiredNonAlphanumericCharacters@{MinRequiredNonAlphanumericCharacters}}
+\index{MinRequiredNonAlphanumericCharacters@{MinRequiredNonAlphanumericCharacters}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{MinRequiredNonAlphanumericCharacters}{MinRequiredNonAlphanumericCharacters}}
+{\footnotesize\ttfamily override int Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Min\+Required\+Non\+Alphanumeric\+Characters\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a3e4c19b73082658f56d37c8aed5acf0c}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a3e4c19b73082658f56d37c8aed5acf0c}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!MinRequiredPasswordLength@{MinRequiredPasswordLength}}
+\index{MinRequiredPasswordLength@{MinRequiredPasswordLength}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{MinRequiredPasswordLength}{MinRequiredPasswordLength}}
+{\footnotesize\ttfamily override int Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Min\+Required\+Password\+Length\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aee50ef5eab3aa7d70f50352e8bc37fe0}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_aee50ef5eab3aa7d70f50352e8bc37fe0}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!PasswordAttemptWindow@{PasswordAttemptWindow}}
+\index{PasswordAttemptWindow@{PasswordAttemptWindow}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{PasswordAttemptWindow}{PasswordAttemptWindow}}
+{\footnotesize\ttfamily override int Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Password\+Attempt\+Window\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a570fbb790219a8d3666f73c4632e6b17}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a570fbb790219a8d3666f73c4632e6b17}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!PasswordFormat@{PasswordFormat}}
+\index{PasswordFormat@{PasswordFormat}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{PasswordFormat}{PasswordFormat}}
+{\footnotesize\ttfamily override Membership\+Password\+Format Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Password\+Format\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8dee4240012b597f36a8c3ec4c76c0b7}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_a8dee4240012b597f36a8c3ec4c76c0b7}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!PasswordStrengthRegularExpression@{PasswordStrengthRegularExpression}}
+\index{PasswordStrengthRegularExpression@{PasswordStrengthRegularExpression}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{PasswordStrengthRegularExpression}{PasswordStrengthRegularExpression}}
+{\footnotesize\ttfamily override string Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Password\+Strength\+Regular\+Expression\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_afee4197dabaa70eeeb169bc189baef27}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_afee4197dabaa70eeeb169bc189baef27}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!RequiresQuestionAndAnswer@{RequiresQuestionAndAnswer}}
+\index{RequiresQuestionAndAnswer@{RequiresQuestionAndAnswer}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{RequiresQuestionAndAnswer}{RequiresQuestionAndAnswer}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Requires\+Question\+And\+Answer\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab8b33034e97935e240f482ed9668ee62}\label{classCustomMembershipSample_1_1Provider_1_1CustomProvider_ab8b33034e97935e240f482ed9668ee62}} 
+\index{CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}!RequiresUniqueEmail@{RequiresUniqueEmail}}
+\index{RequiresUniqueEmail@{RequiresUniqueEmail}!CustomMembershipSample.Provider.CustomProvider@{CustomMembershipSample.Provider.CustomProvider}}
+\doxysubsubsection{\texorpdfstring{RequiresUniqueEmail}{RequiresUniqueEmail}}
+{\footnotesize\ttfamily override bool Custom\+Membership\+Sample.\+Provider.\+Custom\+Provider.\+Requires\+Unique\+Email\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Custom\+Membership\+Sample/\+Custom\+Membership\+Sample/\+Provider/\mbox{\hyperlink{CustomProvider_8cs}{Custom\+Provider.\+cs}}\end{DoxyCompactItemize}

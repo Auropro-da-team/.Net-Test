@@ -1,0 +1,87 @@
+\hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder}{}\doxysection{Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder Class Reference}
+\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder}\index{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}}
+
+
+Used to bind matrix parameter values from the URI.  
+
+
+
+
+Inheritance diagram for Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a1232640a4d38af074d97e8f1a27b23c8}{Matrix\+Parameter\+Model\+Binder}} (string segment)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder}{Matrix\+Parameter\+Model\+Binder}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_ae5bd2d0ef1efb5097f65f2131c02c4dc}{Bind\+Model}} (Http\+Action\+Context action\+Context, Model\+Binding\+Context binding\+Context)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a619bee4c884a34b297afcecf4e36b284}{Segment}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to bind matrix parameter values from the URI. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a1232640a4d38af074d97e8f1a27b23c8}\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a1232640a4d38af074d97e8f1a27b23c8}} 
+\index{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}!MatrixParameterModelBinder@{MatrixParameterModelBinder}}
+\index{MatrixParameterModelBinder@{MatrixParameterModelBinder}!RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}}
+\doxysubsubsection{\texorpdfstring{MatrixParameterModelBinder()}{MatrixParameterModelBinder()}}
+{\footnotesize\ttfamily Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder.\+Matrix\+Parameter\+Model\+Binder (\begin{DoxyParamCaption}\item[{string}]{segment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder}{Matrix\+Parameter\+Model\+Binder}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em segment} & Can be empty, a target prefix value, or a route parameter name embeded in \char`\"{}\{\char`\"{} and \char`\"{}\}\char`\"{}. \\
+\hline
+\end{DoxyParams}
+
+
+If segment is null or empty, the parameter will match all color values from the whole path. If segment is \char`\"{}oranges\char`\"{}, the parameter will match color only from the segment starting with \char`\"{}oranges\char`\"{} like .../oranges;color=red/... If segment is \char`\"{}\{fruits\}\char`\"{}, the parameter will match color only from the route .../\{fruits\}/... 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_ae5bd2d0ef1efb5097f65f2131c02c4dc}\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_ae5bd2d0ef1efb5097f65f2131c02c4dc}} 
+\index{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}!BindModel@{BindModel}}
+\index{BindModel@{BindModel}!RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}}
+\doxysubsubsection{\texorpdfstring{BindModel()}{BindModel()}}
+{\footnotesize\ttfamily bool Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder.\+Bind\+Model (\begin{DoxyParamCaption}\item[{Http\+Action\+Context}]{action\+Context,  }\item[{Model\+Binding\+Context}]{binding\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a619bee4c884a34b297afcecf4e36b284}\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1ModelBinders_1_1MatrixParameterModelBinder_a619bee4c884a34b297afcecf4e36b284}} 
+\index{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}!Segment@{Segment}}
+\index{Segment@{Segment}!RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder@{RouteConstraintsAndModelBindersSample.Server.ModelBinders.MatrixParameterModelBinder}}
+\doxysubsubsection{\texorpdfstring{Segment}{Segment}}
+{\footnotesize\ttfamily string Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Model\+Binders.\+Matrix\+Parameter\+Model\+Binder.\+Segment\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Route\+Constraints\+And\+Model\+Binders\+Sample/\+Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server/\+Model\+Binders/\mbox{\hyperlink{MatrixParameterModelBinder_8cs}{Matrix\+Parameter\+Model\+Binder.\+cs}}\end{DoxyCompactItemize}

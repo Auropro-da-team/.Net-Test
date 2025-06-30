@@ -1,0 +1,51 @@
+\hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint}{}\doxysection{Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Route\+Constraints.\+Segment\+Prefix\+Constraint Class Reference}
+\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint}\index{RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint@{RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint}}
+
+
+This constraint will match a route starting with the segment\+Prefix + \char`\"{};\char`\"{} or the segment\+Prefix only.  
+
+
+
+
+Inheritance diagram for Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Route\+Constraints.\+Segment\+Prefix\+Constraint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Route\+Constraints.\+Segment\+Prefix\+Constraint\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint_a515f21d69ec34070bf2a52784c98aff8}{Match}} (Http\+Request\+Message request, IHttp\+Route route, string segment\+Prefix, IDictionary$<$ string, object $>$ values, Http\+Route\+Direction route\+Direction)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This constraint will match a route starting with the segment\+Prefix + \char`\"{};\char`\"{} or the segment\+Prefix only. 
+
+If Route\mbox{[}\char`\"{}\{apples\+:\+Segment\+Prefix\}\char`\"{}\mbox{]} is specified, .../apples;color=red/... or .../apples will match, but .../apples?color=red will not. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint_a515f21d69ec34070bf2a52784c98aff8}\label{classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint_a515f21d69ec34070bf2a52784c98aff8}} 
+\index{RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint@{RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint}!Match@{Match}}
+\index{Match@{Match}!RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint@{RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint}}
+\doxysubsubsection{\texorpdfstring{Match()}{Match()}}
+{\footnotesize\ttfamily bool Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server.\+Route\+Constraints.\+Segment\+Prefix\+Constraint.\+Match (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{IHttp\+Route}]{route,  }\item[{string}]{segment\+Prefix,  }\item[{IDictionary$<$ string, object $>$}]{values,  }\item[{Http\+Route\+Direction}]{route\+Direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Route\+Constraints\+And\+Model\+Binders\+Sample/\+Route\+Constraints\+And\+Model\+Binders\+Sample.\+Server/\+Route\+Constraints/\mbox{\hyperlink{SegmentPrefixConstraint_8cs}{Segment\+Prefix\+Constraint.\+cs}}\end{DoxyCompactItemize}

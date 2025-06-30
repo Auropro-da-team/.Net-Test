@@ -1,0 +1,59 @@
+\hypertarget{classHostedClientCertificateSample_1_1Program}{}\doxysection{Hosted\+Client\+Certificate\+Sample.\+Program Class Reference}
+\label{classHostedClientCertificateSample_1_1Program}\index{HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}}
+
+
+This sample shows how to secure a web API server with mutual Certificates in the web hosted scenario. It also shows how to authenticate and authorize based on client\textquotesingle{}s certificate. This project contains the client part.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classHostedClientCertificateSample_1_1Program_a803e24b397f9c77b583b9e060ac648f3}{Remote\+Certificate\+Validation\+Callback}} (Object sender, X509\+Certificate certificate, X509\+Chain chain, Ssl\+Policy\+Errors ssl\+Policy\+Errors)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{classHostedClientCertificateSample_1_1Program_aa6c8884ac6626d866f6e9aa73f34292d}{Server\+Cert\+Hash}} = \char`\"{}3DD9\+A794612\+C78\+E25\+B1\+FD25\+ECC4\+E486\+C18\+E690\+D2\char`\"{}
+\item 
+const string \mbox{\hyperlink{classHostedClientCertificateSample_1_1Program_aa2a2b5614c4d6e73a3e5db94b7accdb8}{Client\+Cert\+Hash}} = \char`\"{}97526DCB0\+CC8\+D557436\+DBA57\+EE1116\+CFB81\+E80\+E1\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This sample shows how to secure a web API server with mutual Certificates in the web hosted scenario. It also shows how to authenticate and authorize based on client\textquotesingle{}s certificate. This project contains the client part. 
+
+There are some \mbox{\hyperlink{namespaceClient}{Client}} related SETUP steps required to run this app successfully. For the server related steps, please see those instructions in Global.\+asax.\+cs.
+
+Step 1\+: Generate your client test cert using the following makecert command. makecert -\/pe -\/n \char`\"{}\+CN=\+Your Name\char`\"{} -\/ss my -\/sr Current\+User -\/a sha1 -\/sky signature -\/r If makecert is not in your path, try locations such as \textquotesingle{}C\+:\textbackslash{}\+Program Files (x86)\textbackslash{}\+Windows Kits\textbackslash{}8.\+1\textbackslash{}bin\textbackslash{}x64\textquotesingle{}
+
+Step 2\+: Export the client test certificate from the Current\+User/\+Personal certificate store, and then import newly exported certificate into the Local Machine store under \char`\"{}\+Trusted Root Certification Authority\char`\"{} so that the server will trust this client certificate. After you complete the testing, please uninstall the certificate from the \char`\"{}\+Trusted Root Certification Authority\char`\"{} store.
+
+Step 3\+: Update the Server\+Cert\+Hash with hash of your server certificate and the Client\+Cert\+Hash with hash of your client certificate. Please also update the Get\+Client\+Certificate() method to return the client certificate if it needs to come from a different store other than Current\+User/\+Personal.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Program_a803e24b397f9c77b583b9e060ac648f3}\label{classHostedClientCertificateSample_1_1Program_a803e24b397f9c77b583b9e060ac648f3}} 
+\index{HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}!RemoteCertificateValidationCallback@{RemoteCertificateValidationCallback}}
+\index{RemoteCertificateValidationCallback@{RemoteCertificateValidationCallback}!HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{RemoteCertificateValidationCallback()}{RemoteCertificateValidationCallback()}}
+{\footnotesize\ttfamily static bool Hosted\+Client\+Certificate\+Sample.\+Program.\+Remote\+Certificate\+Validation\+Callback (\begin{DoxyParamCaption}\item[{Object}]{sender,  }\item[{X509\+Certificate}]{certificate,  }\item[{X509\+Chain}]{chain,  }\item[{Ssl\+Policy\+Errors}]{ssl\+Policy\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Program_aa2a2b5614c4d6e73a3e5db94b7accdb8}\label{classHostedClientCertificateSample_1_1Program_aa2a2b5614c4d6e73a3e5db94b7accdb8}} 
+\index{HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}!ClientCertHash@{ClientCertHash}}
+\index{ClientCertHash@{ClientCertHash}!HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{ClientCertHash}{ClientCertHash}}
+{\footnotesize\ttfamily const string Hosted\+Client\+Certificate\+Sample.\+Program.\+Client\+Cert\+Hash = \char`\"{}97526DCB0\+CC8\+D557436\+DBA57\+EE1116\+CFB81\+E80\+E1\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classHostedClientCertificateSample_1_1Program_aa6c8884ac6626d866f6e9aa73f34292d}\label{classHostedClientCertificateSample_1_1Program_aa6c8884ac6626d866f6e9aa73f34292d}} 
+\index{HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}!ServerCertHash@{ServerCertHash}}
+\index{ServerCertHash@{ServerCertHash}!HostedClientCertificateSample.Program@{HostedClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{ServerCertHash}{ServerCertHash}}
+{\footnotesize\ttfamily const string Hosted\+Client\+Certificate\+Sample.\+Program.\+Server\+Cert\+Hash = \char`\"{}3DD9\+A794612\+C78\+E25\+B1\+FD25\+ECC4\+E486\+C18\+E690\+D2\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Hosted\+Client\+Certificate\+Sample/\+Client/\mbox{\hyperlink{WebApi_2HostedClientCertificateSample_2Client_2Program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

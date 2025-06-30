@@ -1,0 +1,113 @@
+\hypertarget{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}{}\doxysection{Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer Class Reference}
+\label{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}\index{WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}}
+
+
+Implementation of ITrace\+Writer that traces to ETW.  
+
+
+
+
+Inheritance diagram for Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classWebApiEtwTracing_1_1WebApiEtwTraceWriter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classWebApiEtwTracing_1_1WebApiEtwTraceWriter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aff62d8256d61801dccb8e1407bd75a7f}{Web\+Api\+Etw\+Trace\+Writer}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates an instance of the \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}{Web\+Api\+Etw\+Trace\+Writer}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_af5cba1970f7b8426b4af7e3fab02bea0}{Trace}} (Http\+Request\+Message request, string category, Trace\+Level level, Action$<$ Trace\+Record $>$ trace\+Action)
+\begin{DoxyCompactList}\small\item\em Traces the specified information if permitted. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Func$<$ Trace\+Level, string, bool $>$ \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_ae4ff015ec700bf4e7972e8fab3d74383}{Trace\+Request\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a predicate to determine whether an individual trace request should be accepted. \end{DoxyCompactList}\item 
+Func$<$ Trace\+Record, bool $>$ \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aa7f6fc6d333ddcefb35c330d64477a28}{Trace\+Record\+Filter}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a predicate to determine whether a specific Trace\+Record should be written to ETW. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of ITrace\+Writer that traces to ETW. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aff62d8256d61801dccb8e1407bd75a7f}\label{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aff62d8256d61801dccb8e1407bd75a7f}} 
+\index{WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}!WebApiEtwTraceWriter@{WebApiEtwTraceWriter}}
+\index{WebApiEtwTraceWriter@{WebApiEtwTraceWriter}!WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}}
+\doxysubsubsection{\texorpdfstring{WebApiEtwTraceWriter()}{WebApiEtwTraceWriter()}}
+{\footnotesize\ttfamily Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer.\+Web\+Api\+Etw\+Trace\+Writer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Instantiates an instance of the \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter}{Web\+Api\+Etw\+Trace\+Writer}} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_af5cba1970f7b8426b4af7e3fab02bea0}\label{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_af5cba1970f7b8426b4af7e3fab02bea0}} 
+\index{WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}!Trace@{Trace}}
+\index{Trace@{Trace}!WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}}
+\doxysubsubsection{\texorpdfstring{Trace()}{Trace()}}
+{\footnotesize\ttfamily void Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer.\+Trace (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{string}]{category,  }\item[{Trace\+Level}]{level,  }\item[{Action$<$ Trace\+Record $>$}]{trace\+Action }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Traces the specified information if permitted. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & The Http\+Request\+Message to associate with this trace.\\
+\hline
+{\em category} & A string specifying an arbitrary category name for the trace.\\
+\hline
+{\em level} & The Trace\+Level of the trace.\\
+\hline
+{\em trace\+Action} & An action to call for the detailed trace information if this method determines the trace request will be honored. The action is expected to fill in the given Trace\+Record with any information is wishes.\\
+\hline
+\end{DoxyParams}
+
+
+This is the public entry point for tracing via ITrace\+Writer, and it is called by both core Web\+API code as well as user code. This implementation will use \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_ae4ff015ec700bf4e7972e8fab3d74383}{Trace\+Request\+Filter}} and \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aa7f6fc6d333ddcefb35c330d64477a28}{Trace\+Record\+Filter}} to determine whether to trace the information or discard it. 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aa7f6fc6d333ddcefb35c330d64477a28}\label{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_aa7f6fc6d333ddcefb35c330d64477a28}} 
+\index{WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}!TraceRecordFilter@{TraceRecordFilter}}
+\index{TraceRecordFilter@{TraceRecordFilter}!WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}}
+\doxysubsubsection{\texorpdfstring{TraceRecordFilter}{TraceRecordFilter}}
+{\footnotesize\ttfamily Func$<$Trace\+Record, bool$>$ Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer.\+Trace\+Record\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a predicate to determine whether a specific Trace\+Record should be written to ETW. 
+
+This predicate is executed only after the \mbox{\hyperlink{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_ae4ff015ec700bf4e7972e8fab3d74383}{Trace\+Request\+Filter}} predicate has returned {\ttfamily true} to accept the trace request. This predicate can examine the fully-\/formed Trace\+Record to determine whether it should be written to ETW. If the predicate returns {\ttfamily true} the Trace\+Record will be written to ETW, otherwise it will be discarded. A {\ttfamily null} value for this predicate allows all Trace\+Record instances to be written. \mbox{\Hypertarget{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_ae4ff015ec700bf4e7972e8fab3d74383}\label{classWebApiEtwTracing_1_1WebApiEtwTraceWriter_ae4ff015ec700bf4e7972e8fab3d74383}} 
+\index{WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}!TraceRequestFilter@{TraceRequestFilter}}
+\index{TraceRequestFilter@{TraceRequestFilter}!WebApiEtwTracing.WebApiEtwTraceWriter@{WebApiEtwTracing.WebApiEtwTraceWriter}}
+\doxysubsubsection{\texorpdfstring{TraceRequestFilter}{TraceRequestFilter}}
+{\footnotesize\ttfamily Func$<$Trace\+Level, string, bool$>$ Web\+Api\+Etw\+Tracing.\+Web\+Api\+Etw\+Trace\+Writer.\+Trace\+Request\+Filter\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a predicate to determine whether an individual trace request should be accepted. 
+
+The default value for this predicate allows only a subset of traces to be accepted, including the incoming request, outgoing response, and any warnings or errors. If this predicate returns {\ttfamily true} the trace request will be accepted, otherwise it will be discarded. A {\ttfamily null} value for this predicate allows all trace requests. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Etw\+Tracing\+Sample/\+Web\+Api\+Etw\+Tracing/\mbox{\hyperlink{WebApiEtwTraceWriter_8cs}{Web\+Api\+Etw\+Trace\+Writer.\+cs}}\end{DoxyCompactItemize}

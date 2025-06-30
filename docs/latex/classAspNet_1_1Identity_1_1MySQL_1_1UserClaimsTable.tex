@@ -1,0 +1,127 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table Class Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable}\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+
+
+Class that represents the User\+Claims table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a304040d4862bd0da38a6a8786f91ff68}{User\+Claims\+Table}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance \end{DoxyCompactList}\item 
+Claims\+Identity \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a889c91af61f7992f63a2a2c41f0792fb}{Find\+By\+User\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns a Claims\+Identity instance given a user\+Id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a51adf0e72866ab5997cb29317f6af0b5}{Delete}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Deletes all claims from a user given a user\+Id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_abc890910cb3487091ff2fd0c18d14d69}{Insert}} (Claim user\+Claim, string user\+Id)
+\begin{DoxyCompactList}\small\item\em Inserts a new claim in User\+Claims table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a5731684abd2a9856cc005e05b1842179}{Delete}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}} user, Claim claim)
+\begin{DoxyCompactList}\small\item\em Deletes a claim from a user \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the User\+Claims table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a304040d4862bd0da38a6a8786f91ff68}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a304040d4862bd0da38a6a8786f91ff68}} 
+\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}!UserClaimsTable@{UserClaimsTable}}
+\index{UserClaimsTable@{UserClaimsTable}!AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+\doxysubsubsection{\texorpdfstring{UserClaimsTable()}{UserClaimsTable()}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table.\+User\+Claims\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a5731684abd2a9856cc005e05b1842179}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a5731684abd2a9856cc005e05b1842179}} 
+\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table.\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]{user,  }\item[{Claim}]{claim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a claim from a user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to have a claim deleted\\
+\hline
+{\em claim} & A claim to be deleted from user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a51adf0e72866ab5997cb29317f6af0b5}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a51adf0e72866ab5997cb29317f6af0b5}} 
+\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table.\+Delete (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes all claims from a user given a user\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a889c91af61f7992f63a2a2c41f0792fb}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_a889c91af61f7992f63a2a2c41f0792fb}} 
+\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}!FindByUserId@{FindByUserId}}
+\index{FindByUserId@{FindByUserId}!AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+\doxysubsubsection{\texorpdfstring{FindByUserId()}{FindByUserId()}}
+{\footnotesize\ttfamily Claims\+Identity Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table.\+Find\+By\+User\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a Claims\+Identity instance given a user\+Id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_abc890910cb3487091ff2fd0c18d14d69}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable_abc890910cb3487091ff2fd0c18d14d69}} 
+\index{AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}!Insert@{Insert}}
+\index{Insert@{Insert}!AspNet.Identity.MySQL.UserClaimsTable@{AspNet.Identity.MySQL.UserClaimsTable}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+User\+Claims\+Table.\+Insert (\begin{DoxyParamCaption}\item[{Claim}]{user\+Claim,  }\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a new claim in User\+Claims table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Claim} & User\textquotesingle{}s claim to be added\\
+\hline
+{\em user\+Id} & User\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{UserClaimsTable_8cs}{User\+Claims\+Table.\+cs}}\end{DoxyCompactItemize}

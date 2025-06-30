@@ -1,0 +1,257 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table$<$ TUser $>$ Class Template Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+
+
+Class that represents the Users table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ae33921fe6e6d79fc8273d7cec70b28f7}{User\+Table}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a80d8317af541c4f38c5f01c361cd1048}{Get\+User\+Name}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s name given a user id \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ada6450c4695a661911c01301cbbccaab}{Get\+User\+Id}} (string user\+Name)
+\begin{DoxyCompactList}\small\item\em Returns a User ID given a user name \end{DoxyCompactList}\item 
+TUser \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a8f428ed3f54ec944df2de7cd91a958d3}{Get\+User\+By\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns an TUser given the user\textquotesingle{}s id \end{DoxyCompactList}\item 
+List$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a5c0c3bc99becd6cda3fe0b5b9be50d1e}{Get\+User\+By\+Name}} (string user\+Name)
+\begin{DoxyCompactList}\small\item\em Returns a list of TUser instances given a user name \end{DoxyCompactList}\item 
+List$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a121292a5e515093409dae13c939bd7e4}{Get\+User\+By\+Email}} (string email)
+\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a35c3b086d8028d27674feab5a934d96e}{Get\+Password\+Hash}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Return the user\textquotesingle{}s password hash \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a6cf9896ff169b5d9dfa7fcfcc633efd8}{Set\+Password\+Hash}} (string user\+Id, string password\+Hash)
+\begin{DoxyCompactList}\small\item\em Sets the user\textquotesingle{}s password hash \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a10336d6d2554c448f9144b59327df94c}{Get\+Security\+Stamp}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns the user\textquotesingle{}s security stamp \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a258ffb47d6c6f986185c8abf4478a129}{Insert}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Inserts a new user in the Users table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a36fc71a0c7d432fd9767e760b864fe98}{Delete}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Deletes a user from the Users table \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a64e2ccfda2848b514f2b16b1af3a1ab1}{Update}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Updates a user in the Users table \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents the Users table in the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} Database 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TUser} : {\em \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ae33921fe6e6d79fc8273d7cec70b28f7}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ae33921fe6e6d79fc8273d7cec70b28f7}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!UserTable@{UserTable}}
+\index{UserTable@{UserTable}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{UserTable()}{UserTable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{User\+Table}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a36fc71a0c7d432fd9767e760b864fe98}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a36fc71a0c7d432fd9767e760b864fe98}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!Delete@{Delete}}
+\index{Delete@{Delete}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Delete (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a user from the Users table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a35c3b086d8028d27674feab5a934d96e}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a35c3b086d8028d27674feab5a934d96e}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetPasswordHash@{GetPasswordHash}}
+\index{GetPasswordHash@{GetPasswordHash}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetPasswordHash()}{GetPasswordHash()}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+Password\+Hash (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the user\textquotesingle{}s password hash 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a10336d6d2554c448f9144b59327df94c}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a10336d6d2554c448f9144b59327df94c}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetSecurityStamp@{GetSecurityStamp}}
+\index{GetSecurityStamp@{GetSecurityStamp}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetSecurityStamp()}{GetSecurityStamp()}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+Security\+Stamp (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s security stamp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a121292a5e515093409dae13c939bd7e4}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a121292a5e515093409dae13c939bd7e4}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetUserByEmail@{GetUserByEmail}}
+\index{GetUserByEmail@{GetUserByEmail}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetUserByEmail()}{GetUserByEmail()}}
+{\footnotesize\ttfamily List$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+User\+By\+Email (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a8f428ed3f54ec944df2de7cd91a958d3}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a8f428ed3f54ec944df2de7cd91a958d3}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetUserById@{GetUserById}}
+\index{GetUserById@{GetUserById}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetUserById()}{GetUserById()}}
+{\footnotesize\ttfamily TUser \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+User\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an TUser given the user\textquotesingle{}s id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a5c0c3bc99becd6cda3fe0b5b9be50d1e}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a5c0c3bc99becd6cda3fe0b5b9be50d1e}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetUserByName@{GetUserByName}}
+\index{GetUserByName@{GetUserByName}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetUserByName()}{GetUserByName()}}
+{\footnotesize\ttfamily List$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+User\+By\+Name (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a list of TUser instances given a user name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & User\textquotesingle{}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ada6450c4695a661911c01301cbbccaab}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_ada6450c4695a661911c01301cbbccaab}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetUserId@{GetUserId}}
+\index{GetUserId@{GetUserId}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetUserId()}{GetUserId()}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+User\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns a User ID given a user name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & The user\textquotesingle{}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a80d8317af541c4f38c5f01c361cd1048}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a80d8317af541c4f38c5f01c361cd1048}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!GetUserName@{GetUserName}}
+\index{GetUserName@{GetUserName}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetUserName()}{GetUserName()}}
+{\footnotesize\ttfamily string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Get\+User\+Name (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the user\textquotesingle{}s name given a user id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a258ffb47d6c6f986185c8abf4478a129}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a258ffb47d6c6f986185c8abf4478a129}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!Insert@{Insert}}
+\index{Insert@{Insert}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Insert (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a new user in the Users table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a6cf9896ff169b5d9dfa7fcfcc633efd8}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a6cf9896ff169b5d9dfa7fcfcc633efd8}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!SetPasswordHash@{SetPasswordHash}}
+\index{SetPasswordHash@{SetPasswordHash}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetPasswordHash()}{SetPasswordHash()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Set\+Password\+Hash (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{password\+Hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the user\textquotesingle{}s password hash 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & \\
+\hline
+{\em password\+Hash} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a64e2ccfda2848b514f2b16b1af3a1ab1}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserTable_a64e2ccfda2848b514f2b16b1af3a1ab1}} 
+\index{AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}!Update@{Update}}
+\index{Update@{Update}!AspNet.Identity.MySQL.UserTable$<$ TUser $>$@{AspNet.Identity.MySQL.UserTable$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Table}}$<$ TUser $>$.Update (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates a user in the Users table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{UserTable_8cs}{User\+Table.\+cs}}\end{DoxyCompactItemize}

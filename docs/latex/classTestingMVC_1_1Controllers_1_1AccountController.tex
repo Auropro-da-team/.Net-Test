@@ -1,0 +1,226 @@
+\hypertarget{classTestingMVC_1_1Controllers_1_1AccountController}{}\doxysection{Testing\+MVC.\+Controllers.\+Account\+Controller Class Reference}
+\label{classTestingMVC_1_1Controllers_1_1AccountController}\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+
+
+Inheritance diagram for Testing\+MVC.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classTestingMVC_1_1Controllers_1_1AccountController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Testing\+MVC.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classTestingMVC_1_1Controllers_1_1AccountController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_aa3b8574c21dd0983ead08a9287779f32}{Account\+Controller}} (User\+Manager$<$ \mbox{\hyperlink{classTestingMVC_1_1Models_1_1ApplicationUser}{Application\+User}} $>$ user\+Manager, Sign\+In\+Manager$<$ \mbox{\hyperlink{classTestingMVC_1_1Models_1_1ApplicationUser}{Application\+User}} $>$ sign\+In\+Manager, \mbox{\hyperlink{interfaceTestingMVC_1_1Services_1_1IEmailSender}{IEmail\+Sender}} email\+Sender, ILogger$<$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController}{Account\+Controller}} $>$ logger)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a0d9a28fc6e8b3b50211e498863710753}{Login}} (string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_af8e95f1bf555615ec9d4678f03e3a115}{Login}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginViewModel}{Login\+View\+Model}} model, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_af68b07387462cfb6c8ec0a4baca58f48}{Login\+With2fa}} (bool remember\+Me, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_aa49dd50bafbb7686129d82a3b8454d04}{Login\+With2fa}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginWith2faViewModel}{Login\+With2fa\+View\+Model}} model, bool remember\+Me, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a3ff3f676d1397790527da0c1bad51467}{Login\+With\+Recovery\+Code}} (string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_af9f5257ad452a85b5b1e3016e19c8c89}{Login\+With\+Recovery\+Code}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginWithRecoveryCodeViewModel}{Login\+With\+Recovery\+Code\+View\+Model}} model, string return\+Url=null)
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a83228a61e36f123341c9e671eac0a5c2}{Lockout}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a1b536f9d6b0afc5df885644e25ede114}{Register}} (string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a229b85ff543088af67814921df7764bd}{Register}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1RegisterViewModel}{Register\+View\+Model}} model, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_aad9bef9d200c9749412b7fa0a703e156}{Logout}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_ae138f6fbe9f30529cd1b8d5f1c3d83b1}{External\+Login}} (string provider, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_ac31ebfeda97c669bb3dd13e7b0fbfaa6}{External\+Login\+Callback}} (string return\+Url=null, string remote\+Error=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a6f9375a3e25704ba30d1c2cafa96f942}{External\+Login\+Confirmation}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ExternalLoginViewModel}{External\+Login\+View\+Model}} model, string return\+Url=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a20a26a3a117f827cd8be29656ab97c56}{Confirm\+Email}} (string user\+Id, string code)
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_af736b79ff2efd3be720eaa7c616041ce}{Forgot\+Password}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_aa54fc4eb41e055fb836a134588c71808}{Forgot\+Password}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ForgotPasswordViewModel}{Forgot\+Password\+View\+Model}} model)
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_aa658c79b827e3fee0a8a6664caa051d7}{Forgot\+Password\+Confirmation}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a7819fec375841a1430983fc59f458596}{Reset\+Password}} (string code=null)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a494d4e532b9c79671249038ad8567991}{Reset\+Password}} (\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ResetPasswordViewModel}{Reset\+Password\+View\+Model}} model)
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a5968838af71da5ce4fe3b06890d7a9df}{Reset\+Password\+Confirmation}} ()
+\item 
+IAction\+Result \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a056d2d5f4ca34cb6c92972d714c95a2f}{Access\+Denied}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController_a850f613b2a795f6e5feb4116c2511410}{Error\+Message}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_aa3b8574c21dd0983ead08a9287779f32}\label{classTestingMVC_1_1Controllers_1_1AccountController_aa3b8574c21dd0983ead08a9287779f32}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}}
+{\footnotesize\ttfamily Testing\+MVC.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}\item[{User\+Manager$<$ \mbox{\hyperlink{classTestingMVC_1_1Models_1_1ApplicationUser}{Application\+User}} $>$}]{user\+Manager,  }\item[{Sign\+In\+Manager$<$ \mbox{\hyperlink{classTestingMVC_1_1Models_1_1ApplicationUser}{Application\+User}} $>$}]{sign\+In\+Manager,  }\item[{\mbox{\hyperlink{interfaceTestingMVC_1_1Services_1_1IEmailSender}{IEmail\+Sender}}}]{email\+Sender,  }\item[{ILogger$<$ \mbox{\hyperlink{classTestingMVC_1_1Controllers_1_1AccountController}{Account\+Controller}} $>$}]{logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a056d2d5f4ca34cb6c92972d714c95a2f}\label{classTestingMVC_1_1Controllers_1_1AccountController_a056d2d5f4ca34cb6c92972d714c95a2f}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!AccessDenied@{AccessDenied}}
+\index{AccessDenied@{AccessDenied}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccessDenied()}{AccessDenied()}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Access\+Denied (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a20a26a3a117f827cd8be29656ab97c56}\label{classTestingMVC_1_1Controllers_1_1AccountController_a20a26a3a117f827cd8be29656ab97c56}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ConfirmEmail@{ConfirmEmail}}
+\index{ConfirmEmail@{ConfirmEmail}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ConfirmEmail()}{ConfirmEmail()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Confirm\+Email (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_ae138f6fbe9f30529cd1b8d5f1c3d83b1}\label{classTestingMVC_1_1Controllers_1_1AccountController_ae138f6fbe9f30529cd1b8d5f1c3d83b1}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ExternalLogin@{ExternalLogin}}
+\index{ExternalLogin@{ExternalLogin}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLogin()}{ExternalLogin()}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+External\+Login (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_ac31ebfeda97c669bb3dd13e7b0fbfaa6}\label{classTestingMVC_1_1Controllers_1_1AccountController_ac31ebfeda97c669bb3dd13e7b0fbfaa6}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ExternalLoginCallback@{ExternalLoginCallback}}
+\index{ExternalLoginCallback@{ExternalLoginCallback}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginCallback()}{ExternalLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+External\+Login\+Callback (\begin{DoxyParamCaption}\item[{string}]{return\+Url = {\ttfamily null},  }\item[{string}]{remote\+Error = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a6f9375a3e25704ba30d1c2cafa96f942}\label{classTestingMVC_1_1Controllers_1_1AccountController_a6f9375a3e25704ba30d1c2cafa96f942}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ExternalLoginConfirmation@{ExternalLoginConfirmation}}
+\index{ExternalLoginConfirmation@{ExternalLoginConfirmation}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginConfirmation()}{ExternalLoginConfirmation()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+External\+Login\+Confirmation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ExternalLoginViewModel}{External\+Login\+View\+Model}}}]{model,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_af736b79ff2efd3be720eaa7c616041ce}\label{classTestingMVC_1_1Controllers_1_1AccountController_af736b79ff2efd3be720eaa7c616041ce}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_aa54fc4eb41e055fb836a134588c71808}\label{classTestingMVC_1_1Controllers_1_1AccountController_aa54fc4eb41e055fb836a134588c71808}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ForgotPasswordViewModel}{Forgot\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_aa658c79b827e3fee0a8a6664caa051d7}\label{classTestingMVC_1_1Controllers_1_1AccountController_aa658c79b827e3fee0a8a6664caa051d7}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ForgotPasswordConfirmation@{ForgotPasswordConfirmation}}
+\index{ForgotPasswordConfirmation@{ForgotPasswordConfirmation}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPasswordConfirmation()}{ForgotPasswordConfirmation()}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Forgot\+Password\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a83228a61e36f123341c9e671eac0a5c2}\label{classTestingMVC_1_1Controllers_1_1AccountController_a83228a61e36f123341c9e671eac0a5c2}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Lockout@{Lockout}}
+\index{Lockout@{Lockout}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Lockout()}{Lockout()}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Lockout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_af8e95f1bf555615ec9d4678f03e3a115}\label{classTestingMVC_1_1Controllers_1_1AccountController_af8e95f1bf555615ec9d4678f03e3a115}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginViewModel}{Login\+View\+Model}}}]{model,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a0d9a28fc6e8b3b50211e498863710753}\label{classTestingMVC_1_1Controllers_1_1AccountController_a0d9a28fc6e8b3b50211e498863710753}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_af68b07387462cfb6c8ec0a4baca58f48}\label{classTestingMVC_1_1Controllers_1_1AccountController_af68b07387462cfb6c8ec0a4baca58f48}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!LoginWith2fa@{LoginWith2fa}}
+\index{LoginWith2fa@{LoginWith2fa}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LoginWith2fa()}{LoginWith2fa()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login\+With2fa (\begin{DoxyParamCaption}\item[{bool}]{remember\+Me,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_aa49dd50bafbb7686129d82a3b8454d04}\label{classTestingMVC_1_1Controllers_1_1AccountController_aa49dd50bafbb7686129d82a3b8454d04}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!LoginWith2fa@{LoginWith2fa}}
+\index{LoginWith2fa@{LoginWith2fa}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LoginWith2fa()}{LoginWith2fa()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login\+With2fa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginWith2faViewModel}{Login\+With2fa\+View\+Model}}}]{model,  }\item[{bool}]{remember\+Me,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_af9f5257ad452a85b5b1e3016e19c8c89}\label{classTestingMVC_1_1Controllers_1_1AccountController_af9f5257ad452a85b5b1e3016e19c8c89}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!LoginWithRecoveryCode@{LoginWithRecoveryCode}}
+\index{LoginWithRecoveryCode@{LoginWithRecoveryCode}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LoginWithRecoveryCode()}{LoginWithRecoveryCode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login\+With\+Recovery\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1LoginWithRecoveryCodeViewModel}{Login\+With\+Recovery\+Code\+View\+Model}}}]{model,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a3ff3f676d1397790527da0c1bad51467}\label{classTestingMVC_1_1Controllers_1_1AccountController_a3ff3f676d1397790527da0c1bad51467}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!LoginWithRecoveryCode@{LoginWithRecoveryCode}}
+\index{LoginWithRecoveryCode@{LoginWithRecoveryCode}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LoginWithRecoveryCode()}{LoginWithRecoveryCode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Login\+With\+Recovery\+Code (\begin{DoxyParamCaption}\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_aad9bef9d200c9749412b7fa0a703e156}\label{classTestingMVC_1_1Controllers_1_1AccountController_aad9bef9d200c9749412b7fa0a703e156}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Logout@{Logout}}
+\index{Logout@{Logout}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Logout()}{Logout()}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a229b85ff543088af67814921df7764bd}\label{classTestingMVC_1_1Controllers_1_1AccountController_a229b85ff543088af67814921df7764bd}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1RegisterViewModel}{Register\+View\+Model}}}]{model,  }\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a1b536f9d6b0afc5df885644e25ede114}\label{classTestingMVC_1_1Controllers_1_1AccountController_a1b536f9d6b0afc5df885644e25ede114}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{string}]{return\+Url = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a494d4e532b9c79671249038ad8567991}\label{classTestingMVC_1_1Controllers_1_1AccountController_a494d4e532b9c79671249038ad8567991}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$IAction\+Result$>$ Testing\+MVC.\+Controllers.\+Account\+Controller.\+Reset\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTestingMVC_1_1Models_1_1AccountViewModels_1_1ResetPasswordViewModel}{Reset\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a7819fec375841a1430983fc59f458596}\label{classTestingMVC_1_1Controllers_1_1AccountController_a7819fec375841a1430983fc59f458596}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Reset\+Password (\begin{DoxyParamCaption}\item[{string}]{code = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a5968838af71da5ce4fe3b06890d7a9df}\label{classTestingMVC_1_1Controllers_1_1AccountController_a5968838af71da5ce4fe3b06890d7a9df}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ResetPasswordConfirmation@{ResetPasswordConfirmation}}
+\index{ResetPasswordConfirmation@{ResetPasswordConfirmation}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPasswordConfirmation()}{ResetPasswordConfirmation()}}
+{\footnotesize\ttfamily IAction\+Result Testing\+MVC.\+Controllers.\+Account\+Controller.\+Reset\+Password\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTestingMVC_1_1Controllers_1_1AccountController_a850f613b2a795f6e5feb4116c2511410}\label{classTestingMVC_1_1Controllers_1_1AccountController_a850f613b2a795f6e5feb4116c2511410}} 
+\index{TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}!ErrorMessage@{ErrorMessage}}
+\index{ErrorMessage@{ErrorMessage}!TestingMVC.Controllers.AccountController@{TestingMVC.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ErrorMessage}{ErrorMessage}}
+{\footnotesize\ttfamily string Testing\+MVC.\+Controllers.\+Account\+Controller.\+Error\+Message\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnetcore/mvc/testing/\+Testing\+MVC/src/\+Testing\+MVC/\+Controllers/\mbox{\hyperlink{ore_2mvc_2testing_2TestingMVC_2src_2TestingMVC_2Controllers_2AccountController_8cs}{Account\+Controller.\+cs}}\end{DoxyCompactItemize}

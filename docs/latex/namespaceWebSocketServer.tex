@@ -1,0 +1,55 @@
+\hypertarget{namespaceWebSocketServer}{}\doxysection{Web\+Socket\+Server Namespace Reference}
+\label{namespaceWebSocketServer}\index{WebSocketServer@{WebSocketServer}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classWebSocketServer_1_1Program}{Program}}
+\item 
+class \mbox{\hyperlink{classWebSocketServer_1_1Startup}{Startup}}
+\begin{DoxyCompactList}\small\item\em This sample requires \mbox{\hyperlink{namespaceWindows}{Windows}} 8, .NET 4.\+5, and Microsoft.\+Owin.\+Host.\+Http\+Listener. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{namespaceWebSocketServer_a758d30da9fd48aa7092baec6ce7b1799}{Web\+Socket\+Accept}} = Action$<$ IDictionary$<$ string, object $>$, Func$<$ IDictionary$<$ string, object $>$, Task $>$ $>$
+\item 
+using \mbox{\hyperlink{namespaceWebSocketServer_a7a5e2463d859ce3c1fc536cf6cac5021}{Web\+Socket\+Close\+Async}} = Func$<$ int, string, Cancellation\+Token, Task $>$
+\item 
+using \mbox{\hyperlink{namespaceWebSocketServer_abf57a04e891537c92d84107006a053b3}{Web\+Socket\+Receive\+Async}} = Func$<$ Array\+Segment$<$ byte $>$, Cancellation\+Token, Task$<$ Tuple$<$ int, bool, int $>$ $>$$>$
+\item 
+using \mbox{\hyperlink{namespaceWebSocketServer_a71e500cf85d49da598b74c4600675680}{Web\+Socket\+Send\+Async}} = Func$<$ Array\+Segment$<$ byte $>$, int, bool, Cancellation\+Token, Task $>$
+\item 
+using \mbox{\hyperlink{namespaceWebSocketServer_aa5a0c8cf8627180ab0ccc420b5d3bb85}{Web\+Socket\+Receive\+Result}} = Tuple$<$ int, bool, int $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceWebSocketServer_a758d30da9fd48aa7092baec6ce7b1799}\label{namespaceWebSocketServer_a758d30da9fd48aa7092baec6ce7b1799}} 
+\index{WebSocketServer@{WebSocketServer}!WebSocketAccept@{WebSocketAccept}}
+\index{WebSocketAccept@{WebSocketAccept}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{WebSocketAccept}{WebSocketAccept}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceWebSocketServer_a758d30da9fd48aa7092baec6ce7b1799}{Web\+Socket\+Server.\+Web\+Socket\+Accept}} = typedef Action$<$IDictionary$<$string, object$>$, Func$<$IDictionary$<$string, object$>$, Task$>$ $>$}
+
+\mbox{\Hypertarget{namespaceWebSocketServer_a7a5e2463d859ce3c1fc536cf6cac5021}\label{namespaceWebSocketServer_a7a5e2463d859ce3c1fc536cf6cac5021}} 
+\index{WebSocketServer@{WebSocketServer}!WebSocketCloseAsync@{WebSocketCloseAsync}}
+\index{WebSocketCloseAsync@{WebSocketCloseAsync}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{WebSocketCloseAsync}{WebSocketCloseAsync}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceWebSocketServer_a7a5e2463d859ce3c1fc536cf6cac5021}{Web\+Socket\+Server.\+Web\+Socket\+Close\+Async}} = typedef Func$<$int , string , Cancellation\+Token , Task$>$}
+
+\mbox{\Hypertarget{namespaceWebSocketServer_abf57a04e891537c92d84107006a053b3}\label{namespaceWebSocketServer_abf57a04e891537c92d84107006a053b3}} 
+\index{WebSocketServer@{WebSocketServer}!WebSocketReceiveAsync@{WebSocketReceiveAsync}}
+\index{WebSocketReceiveAsync@{WebSocketReceiveAsync}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{WebSocketReceiveAsync}{WebSocketReceiveAsync}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceWebSocketServer_abf57a04e891537c92d84107006a053b3}{Web\+Socket\+Server.\+Web\+Socket\+Receive\+Async}} = typedef Func$<$Array\+Segment$<$byte$>$ , Cancellation\+Token , Task$<$Tuple$<$int , bool , int $>$ $>$$>$}
+
+\mbox{\Hypertarget{namespaceWebSocketServer_aa5a0c8cf8627180ab0ccc420b5d3bb85}\label{namespaceWebSocketServer_aa5a0c8cf8627180ab0ccc420b5d3bb85}} 
+\index{WebSocketServer@{WebSocketServer}!WebSocketReceiveResult@{WebSocketReceiveResult}}
+\index{WebSocketReceiveResult@{WebSocketReceiveResult}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{WebSocketReceiveResult}{WebSocketReceiveResult}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceWebSocketServer_aa5a0c8cf8627180ab0ccc420b5d3bb85}{Web\+Socket\+Server.\+Web\+Socket\+Receive\+Result}} = typedef Tuple$<$int, bool, int$>$}
+
+\mbox{\Hypertarget{namespaceWebSocketServer_a71e500cf85d49da598b74c4600675680}\label{namespaceWebSocketServer_a71e500cf85d49da598b74c4600675680}} 
+\index{WebSocketServer@{WebSocketServer}!WebSocketSendAsync@{WebSocketSendAsync}}
+\index{WebSocketSendAsync@{WebSocketSendAsync}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{WebSocketSendAsync}{WebSocketSendAsync}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceWebSocketServer_a71e500cf85d49da598b74c4600675680}{Web\+Socket\+Server.\+Web\+Socket\+Send\+Async}} = typedef Func$<$Array\+Segment$<$byte$>$ , int , bool , Cancellation\+Token , Task$>$}
+

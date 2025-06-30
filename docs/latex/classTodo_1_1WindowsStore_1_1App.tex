@@ -1,0 +1,103 @@
+\hypertarget{classTodo_1_1WindowsStore_1_1App}{}\doxysection{Todo.\+Windows\+Store.\+App Class Reference}
+\label{classTodo_1_1WindowsStore_1_1App}\index{Todo.WindowsStore.App@{Todo.WindowsStore.App}}
+
+
+Provides application-\/specific behavior to supplement the default Application class.  
+
+
+
+
+Inheritance diagram for Todo.\+Windows\+Store.\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classTodo_1_1WindowsStore_1_1App__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Todo.\+Windows\+Store.\+App\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classTodo_1_1WindowsStore_1_1App__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1App_ada0faba24199df41c25e36698ac4982f}{App}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the singleton application object. This is the first line of authored code executed, and as such is the logical equivalent of main() or Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static IDictionary$<$ string, Uri $>$ \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1App_af9e231e3a1b050cee54361aab67a74db}{Login\+Icons}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1App_a2137dcc39c5af0bc0798a5bb89d085c0}{On\+Launched}} (Launch\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoked when the application is launched normally by the end user. Other entry points will be used such as when the application is launched to open a specific file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides application-\/specific behavior to supplement the default Application class. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1App_ada0faba24199df41c25e36698ac4982f}\label{classTodo_1_1WindowsStore_1_1App_ada0faba24199df41c25e36698ac4982f}} 
+\index{Todo.WindowsStore.App@{Todo.WindowsStore.App}!App@{App}}
+\index{App@{App}!Todo.WindowsStore.App@{Todo.WindowsStore.App}}
+\doxysubsubsection{\texorpdfstring{App()}{App()}}
+{\footnotesize\ttfamily Todo.\+Windows\+Store.\+App.\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes the singleton application object. This is the first line of authored code executed, and as such is the logical equivalent of main() or Win\+Main(). 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1App_a2137dcc39c5af0bc0798a5bb89d085c0}\label{classTodo_1_1WindowsStore_1_1App_a2137dcc39c5af0bc0798a5bb89d085c0}} 
+\index{Todo.WindowsStore.App@{Todo.WindowsStore.App}!OnLaunched@{OnLaunched}}
+\index{OnLaunched@{OnLaunched}!Todo.WindowsStore.App@{Todo.WindowsStore.App}}
+\doxysubsubsection{\texorpdfstring{OnLaunched()}{OnLaunched()}}
+{\footnotesize\ttfamily override void Todo.\+Windows\+Store.\+App.\+On\+Launched (\begin{DoxyParamCaption}\item[{Launch\+Activated\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Invoked when the application is launched normally by the end user. Other entry points will be used such as when the application is launched to open a specific file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Details about the launch request and process.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1App_af9e231e3a1b050cee54361aab67a74db}\label{classTodo_1_1WindowsStore_1_1App_af9e231e3a1b050cee54361aab67a74db}} 
+\index{Todo.WindowsStore.App@{Todo.WindowsStore.App}!LoginIcons@{LoginIcons}}
+\index{LoginIcons@{LoginIcons}!Todo.WindowsStore.App@{Todo.WindowsStore.App}}
+\doxysubsubsection{\texorpdfstring{LoginIcons}{LoginIcons}}
+{\footnotesize\ttfamily IDictionary$<$string, Uri$>$ Todo.\+Windows\+Store.\+App.\+Login\+Icons\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \textcolor{keyword}{new} Dictionary<string, Uri>()}
+\DoxyCodeLine{        \{}
+\DoxyCodeLine{            \{ \textcolor{stringliteral}{"{}Facebook"{}}, \textcolor{keyword}{new} Uri(\textcolor{stringliteral}{"{}ms-\/appx:///assets/Facebook.png"{}}) \},}
+\DoxyCodeLine{            \{ \textcolor{stringliteral}{"{}Microsoft"{}}, \textcolor{keyword}{new} Uri(\textcolor{stringliteral}{"{}ms-\/appx:///assets/Microsoft.png"{}})\},}
+\DoxyCodeLine{            \{ \textcolor{stringliteral}{"{}Google"{}}, \textcolor{keyword}{new} Uri(\textcolor{stringliteral}{"{}ms-\/appx:///assets/Google.png"{}})\},}
+\DoxyCodeLine{            \{ \textcolor{stringliteral}{"{}Twitter"{}}, \textcolor{keyword}{new} Uri(\textcolor{stringliteral}{"{}ms-\/appx:///assets/Twitter.png"{}})\}}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Todo.\+Windows\+Store/\mbox{\hyperlink{Todo_8WindowsStore_2App_8xaml_8cs}{App.\+xaml.\+cs}}\end{DoxyCompactItemize}

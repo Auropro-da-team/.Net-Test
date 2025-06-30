@@ -1,0 +1,56 @@
+\hypertarget{classClientCertificateSample_1_1Program}{}\doxysection{Client\+Certificate\+Sample.\+Program Class Reference}
+\label{classClientCertificateSample_1_1Program}\index{ClientCertificateSample.Program@{ClientCertificateSample.Program}}
+
+
+This sample shows how to secure a web API server with mutual Certificates in the self host scenario. It also shows how to authenticate and authorize based on client\textquotesingle{}s certificate.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classClientCertificateSample_1_1Program_a005a7a3e98ac9c87c08240ffe59646fc}{Remote\+Certificate\+Validation\+Callback}} (Object sender, X509\+Certificate certificate, X509\+Chain chain, Ssl\+Policy\+Errors ssl\+Policy\+Errors)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{classClientCertificateSample_1_1Program_a7d26a0145d7c24d5d92d16e4090ef3a4}{Server\+Cert\+Hash}} = \char`\"{}F8\+A657\+C399\+C919\+DC96\+F0\+C272\+D35\+CE5\+D51880\+CEF6\char`\"{}
+\item 
+const string \mbox{\hyperlink{classClientCertificateSample_1_1Program_a445747b256c029209c16f94931d6834e}{Client\+Cert\+Hash}} = \char`\"{}496B1\+B29\+D45375\+D49270966\+A45811\+E9\+F0\+AC870\+E2\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This sample shows how to secure a web API server with mutual Certificates in the self host scenario. It also shows how to authenticate and authorize based on client\textquotesingle{}s certificate. 
+
+There are some SETUP steps required to run this app successfully.
+
+STEP 1\+: Generate your own server test cert using the following makecert cmd. Please note that you must run the following command as administrator. makecert -\/pe -\/n \char`\"{}\+CN=contoso.\+com\char`\"{} -\/ss my -\/sr Local\+Machine -\/a sha1 -\/sky signature -\/r STEP 2\+: Map the SSL cert to the selfhost port with the cert hash for your server certificate you just generated. e.\+g. netsh http add sslcert ipport=0.\+0.\+0.\+0\+:50231 certhash=F8\+A657\+C399\+C919\+DC96\+F0\+C272\+D35\+CE5\+D51880\+CEF6 appid=\{DAEFA3\+B4-\/8827-\/47\+B3-\/9981-\/004\+E63\+F5\+DA59\} STEP 3\+: Generate your own client test cert using the following makecert cmd. makecert -\/pe -\/n \char`\"{}\+CN=\+Your Name\char`\"{} -\/ss my -\/sr Current\+User -\/a sha1 -\/sky signature -\/r STEP 4\+: Export the client test certificate from the Current\+User/\+Personal certificate store, and then import newly exported certificate into the Local Machine store under \char`\"{}\+Trusted Root Certification Authority\char`\"{} so that the server will trust this client certificate. After you complete the testing, please uninstall the certificate from the ~\newline
+ \char`\"{}\+Trusted Root Certification Authority\char`\"{} store. Please update the Server\+Cert\+Hash with the hash value of your server certificate and the Client\+Cert\+Hash with the hash of your client certificate. If you need to select a client certificate from a different store other than Current\+User/\+Personal, please update the Get\+Client\+Certificate() method to return the client certificate your app uses. CLEAN UP STEPS netsh http delete sslcert ipport=0.\+0.\+0.\+0\+:50231 uninstall the certificate from the Local\+Machine/\char`\"{}\+Trusted Root Certification Authority\char`\"{} store.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClientCertificateSample_1_1Program_a005a7a3e98ac9c87c08240ffe59646fc}\label{classClientCertificateSample_1_1Program_a005a7a3e98ac9c87c08240ffe59646fc}} 
+\index{ClientCertificateSample.Program@{ClientCertificateSample.Program}!RemoteCertificateValidationCallback@{RemoteCertificateValidationCallback}}
+\index{RemoteCertificateValidationCallback@{RemoteCertificateValidationCallback}!ClientCertificateSample.Program@{ClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{RemoteCertificateValidationCallback()}{RemoteCertificateValidationCallback()}}
+{\footnotesize\ttfamily static bool Client\+Certificate\+Sample.\+Program.\+Remote\+Certificate\+Validation\+Callback (\begin{DoxyParamCaption}\item[{Object}]{sender,  }\item[{X509\+Certificate}]{certificate,  }\item[{X509\+Chain}]{chain,  }\item[{Ssl\+Policy\+Errors}]{ssl\+Policy\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classClientCertificateSample_1_1Program_a445747b256c029209c16f94931d6834e}\label{classClientCertificateSample_1_1Program_a445747b256c029209c16f94931d6834e}} 
+\index{ClientCertificateSample.Program@{ClientCertificateSample.Program}!ClientCertHash@{ClientCertHash}}
+\index{ClientCertHash@{ClientCertHash}!ClientCertificateSample.Program@{ClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{ClientCertHash}{ClientCertHash}}
+{\footnotesize\ttfamily const string Client\+Certificate\+Sample.\+Program.\+Client\+Cert\+Hash = \char`\"{}496B1\+B29\+D45375\+D49270966\+A45811\+E9\+F0\+AC870\+E2\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classClientCertificateSample_1_1Program_a7d26a0145d7c24d5d92d16e4090ef3a4}\label{classClientCertificateSample_1_1Program_a7d26a0145d7c24d5d92d16e4090ef3a4}} 
+\index{ClientCertificateSample.Program@{ClientCertificateSample.Program}!ServerCertHash@{ServerCertHash}}
+\index{ServerCertHash@{ServerCertHash}!ClientCertificateSample.Program@{ClientCertificateSample.Program}}
+\doxysubsubsection{\texorpdfstring{ServerCertHash}{ServerCertHash}}
+{\footnotesize\ttfamily const string Client\+Certificate\+Sample.\+Program.\+Server\+Cert\+Hash = \char`\"{}F8\+A657\+C399\+C919\+DC96\+F0\+C272\+D35\+CE5\+D51880\+CEF6\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Client\+Certificate\+Sample/\mbox{\hyperlink{WebApi_2ClientCertificateSample_2Program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

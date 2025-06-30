@@ -1,0 +1,305 @@
+\hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController}{}\doxysection{Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller Class Reference}
+\label{classSingleSignOutSample_1_1Controllers_1_1AccountController}\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+
+
+Inheritance diagram for Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classSingleSignOutSample_1_1Controllers_1_1AccountController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{classSingleSignOutSample_1_1Controllers_1_1AccountController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}{Manage\+Message\+Id}} \{ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a0053618c57496fec45c67daf91919394}{Change\+Password\+Success}}
+, \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5af17ca72fcf8adaa46d5e87b12ec3a27d}{Set\+Password\+Success}}
+, \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a46e53931d0e837638a46368b2b04ba6a}{Remove\+Login\+Success}}
+, \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a902b0d55fddef6f8d651fe1035b7d4bd}{Error}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a294402cb70cadda6967013253a456f23}{Account\+Controller}} ()
+\item 
+\mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8b7aa860451354e46fae04894e33ec63}{Account\+Controller}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ApplicationUserManager}{Application\+User\+Manager}} user\+Manager)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9e33a9325ff9d548661c827abb5292b5}{Sign\+Out\+Everywhere}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_ac96ca20a9723d47411036a847f3c0f2b}{Sign\+Out\+Client}} (int client\+Id)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_ad9b69409ecb1c283202a3f6f720d9366}{Login}} (string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a854c72ce6d299a2214913abf3ef888c5}{Login}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1LoginViewModel}{Login\+View\+Model}} model, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9033beab786c2fb1b49c06a5b8ed5494}{Register}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_aba303d47e8d3ff05685ec302c5a07e1d}{Register}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1RegisterViewModel}{Register\+View\+Model}} model)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a62c3be989bec250814bee33f8db5e90a}{Confirm\+User}} (string user\+Id, string code)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa71782b61f378f6814449f47be23ef87}{Forgot\+Password}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_af97efc1f003094ec91a8436ca5a57fe8}{Forgot\+Password}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ForgotPasswordViewModel}{Forgot\+Password\+View\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8804f797f2084cd0dc7973cd679af4bc}{Forgot\+Password\+Confirmation}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa36cf2da8587181801dc3c7d64fe5e8d}{Reset\+Password}} (string code)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9da805e1bd833b7cfe01396d775282a5}{Reset\+Password}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ResetPasswordViewModel}{Reset\+Password\+View\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_af99a642d0128cb074777d2854e12dd19}{Reset\+Password\+Confirmation}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a22f4e99996a0658dda7a1149ae85f975}{Disassociate}} (string login\+Provider, string provider\+Key)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64ff9b5f933e05c9d88714b9618c69b2}{Manage}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}{Manage\+Message\+Id}}? message)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_ada21481686d2f44dea137a0da4338d16}{Manage}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ManageUserViewModel}{Manage\+User\+View\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_af16290527a415458d32f91990da85462}{External\+Login}} (string provider, string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64220987d2af1dcffe32bb80d02bb25a}{External\+Login\+Callback}} (string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a1d2a80f70da3c74db373078657e6dd3d}{Link\+Login}} (string provider)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a758dff7d163dc4f73f9be624aa5f935b}{Link\+Login\+Callback}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4be1010e6f0e8ac7519fd51c68381bb4}{External\+Login\+Confirmation}} (\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ExternalLoginConfirmationViewModel}{External\+Login\+Confirmation\+View\+Model}} model, string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4dca7fcd7f0f41041af854409268fb71}{Log\+Off}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a26e48dfdc49e38b26b8e460216cac9fd}{External\+Login\+Failure}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_af7b8648f4876351298d48efcf8790292}{Remove\+Account\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_ae7df58126c8a4f1c93e8b8b588a20d9e}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ApplicationUserManager}{Application\+User\+Manager}}?? \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a24fccb7943ef0aee2752e52aa2521267}{User\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ManageMessageId@{ManageMessageId}}
+\index{ManageMessageId@{ManageMessageId}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ManageMessageId}{ManageMessageId}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}{Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Manage\+Message\+Id}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChangePasswordSuccess@{ChangePasswordSuccess}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ChangePasswordSuccess@{ChangePasswordSuccess}}}\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a0053618c57496fec45c67daf91919394}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a0053618c57496fec45c67daf91919394}} 
+Change\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SetPasswordSuccess@{SetPasswordSuccess}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!SetPasswordSuccess@{SetPasswordSuccess}}}\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5af17ca72fcf8adaa46d5e87b12ec3a27d}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5af17ca72fcf8adaa46d5e87b12ec3a27d}} 
+Set\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoveLoginSuccess@{RemoveLoginSuccess}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!RemoveLoginSuccess@{RemoveLoginSuccess}}}\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a46e53931d0e837638a46368b2b04ba6a}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a46e53931d0e837638a46368b2b04ba6a}} 
+Remove\+Login\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Error@{Error}}}\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a902b0d55fddef6f8d651fe1035b7d4bd}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5a902b0d55fddef6f8d651fe1035b7d4bd}} 
+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a294402cb70cadda6967013253a456f23}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a294402cb70cadda6967013253a456f23}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8b7aa860451354e46fae04894e33ec63}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8b7aa860451354e46fae04894e33ec63}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ApplicationUserManager}{Application\+User\+Manager}}}]{user\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a62c3be989bec250814bee33f8db5e90a}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a62c3be989bec250814bee33f8db5e90a}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ConfirmUser@{ConfirmUser}}
+\index{ConfirmUser@{ConfirmUser}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ConfirmUser()}{ConfirmUser()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Confirm\+User (\begin{DoxyParamCaption}\item[{string}]{user\+Id,  }\item[{string}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a22f4e99996a0658dda7a1149ae85f975}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a22f4e99996a0658dda7a1149ae85f975}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Disassociate@{Disassociate}}
+\index{Disassociate@{Disassociate}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Disassociate()}{Disassociate()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Disassociate (\begin{DoxyParamCaption}\item[{string}]{login\+Provider,  }\item[{string}]{provider\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_ae7df58126c8a4f1c93e8b8b588a20d9e}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_ae7df58126c8a4f1c93e8b8b588a20d9e}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_af16290527a415458d32f91990da85462}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_af16290527a415458d32f91990da85462}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ExternalLogin@{ExternalLogin}}
+\index{ExternalLogin@{ExternalLogin}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLogin()}{ExternalLogin()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+External\+Login (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64220987d2af1dcffe32bb80d02bb25a}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64220987d2af1dcffe32bb80d02bb25a}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ExternalLoginCallback@{ExternalLoginCallback}}
+\index{ExternalLoginCallback@{ExternalLoginCallback}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginCallback()}{ExternalLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+External\+Login\+Callback (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4be1010e6f0e8ac7519fd51c68381bb4}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4be1010e6f0e8ac7519fd51c68381bb4}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ExternalLoginConfirmation@{ExternalLoginConfirmation}}
+\index{ExternalLoginConfirmation@{ExternalLoginConfirmation}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginConfirmation()}{ExternalLoginConfirmation()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+External\+Login\+Confirmation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ExternalLoginConfirmationViewModel}{External\+Login\+Confirmation\+View\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a26e48dfdc49e38b26b8e460216cac9fd}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a26e48dfdc49e38b26b8e460216cac9fd}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ExternalLoginFailure@{ExternalLoginFailure}}
+\index{ExternalLoginFailure@{ExternalLoginFailure}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginFailure()}{ExternalLoginFailure()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+External\+Login\+Failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa71782b61f378f6814449f47be23ef87}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa71782b61f378f6814449f47be23ef87}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_af97efc1f003094ec91a8436ca5a57fe8}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_af97efc1f003094ec91a8436ca5a57fe8}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ForgotPassword@{ForgotPassword}}
+\index{ForgotPassword@{ForgotPassword}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPassword()}{ForgotPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Forgot\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ForgotPasswordViewModel}{Forgot\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8804f797f2084cd0dc7973cd679af4bc}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a8804f797f2084cd0dc7973cd679af4bc}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ForgotPasswordConfirmation@{ForgotPasswordConfirmation}}
+\index{ForgotPasswordConfirmation@{ForgotPasswordConfirmation}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ForgotPasswordConfirmation()}{ForgotPasswordConfirmation()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Forgot\+Password\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a1d2a80f70da3c74db373078657e6dd3d}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a1d2a80f70da3c74db373078657e6dd3d}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!LinkLogin@{LinkLogin}}
+\index{LinkLogin@{LinkLogin}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LinkLogin()}{LinkLogin()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Link\+Login (\begin{DoxyParamCaption}\item[{string}]{provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a758dff7d163dc4f73f9be624aa5f935b}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a758dff7d163dc4f73f9be624aa5f935b}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!LinkLoginCallback@{LinkLoginCallback}}
+\index{LinkLoginCallback@{LinkLoginCallback}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LinkLoginCallback()}{LinkLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Link\+Login\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a854c72ce6d299a2214913abf3ef888c5}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a854c72ce6d299a2214913abf3ef888c5}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1LoginViewModel}{Login\+View\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_ad9b69409ecb1c283202a3f6f720d9366}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_ad9b69409ecb1c283202a3f6f720d9366}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4dca7fcd7f0f41041af854409268fb71}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a4dca7fcd7f0f41041af854409268fb71}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!LogOff@{LogOff}}
+\index{LogOff@{LogOff}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LogOff()}{LogOff()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Log\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64ff9b5f933e05c9d88714b9618c69b2}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a64ff9b5f933e05c9d88714b9618c69b2}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Controllers_1_1AccountController_a33584305ce093ff6b587de71ec5207a5}{Manage\+Message\+Id}}?}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_ada21481686d2f44dea137a0da4338d16}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_ada21481686d2f44dea137a0da4338d16}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ManageUserViewModel}{Manage\+User\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9033beab786c2fb1b49c06a5b8ed5494}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9033beab786c2fb1b49c06a5b8ed5494}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_aba303d47e8d3ff05685ec302c5a07e1d}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_aba303d47e8d3ff05685ec302c5a07e1d}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1RegisterViewModel}{Register\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_af7b8648f4876351298d48efcf8790292}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_af7b8648f4876351298d48efcf8790292}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!RemoveAccountList@{RemoveAccountList}}
+\index{RemoveAccountList@{RemoveAccountList}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{RemoveAccountList()}{RemoveAccountList()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Remove\+Account\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9da805e1bd833b7cfe01396d775282a5}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9da805e1bd833b7cfe01396d775282a5}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Reset\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ResetPasswordViewModel}{Reset\+Password\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa36cf2da8587181801dc3c7d64fe5e8d}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_aa36cf2da8587181801dc3c7d64fe5e8d}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ResetPassword@{ResetPassword}}
+\index{ResetPassword@{ResetPassword}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPassword()}{ResetPassword()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Reset\+Password (\begin{DoxyParamCaption}\item[{string}]{code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_af99a642d0128cb074777d2854e12dd19}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_af99a642d0128cb074777d2854e12dd19}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!ResetPasswordConfirmation@{ResetPasswordConfirmation}}
+\index{ResetPasswordConfirmation@{ResetPasswordConfirmation}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ResetPasswordConfirmation()}{ResetPasswordConfirmation()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Reset\+Password\+Confirmation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_ac96ca20a9723d47411036a847f3c0f2b}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_ac96ca20a9723d47411036a847f3c0f2b}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!SignOutClient@{SignOutClient}}
+\index{SignOutClient@{SignOutClient}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{SignOutClient()}{SignOutClient()}}
+{\footnotesize\ttfamily Action\+Result Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Sign\+Out\+Client (\begin{DoxyParamCaption}\item[{int}]{client\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9e33a9325ff9d548661c827abb5292b5}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a9e33a9325ff9d548661c827abb5292b5}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!SignOutEverywhere@{SignOutEverywhere}}
+\index{SignOutEverywhere@{SignOutEverywhere}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{SignOutEverywhere()}{SignOutEverywhere()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+Sign\+Out\+Everywhere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSingleSignOutSample_1_1Controllers_1_1AccountController_a24fccb7943ef0aee2752e52aa2521267}\label{classSingleSignOutSample_1_1Controllers_1_1AccountController_a24fccb7943ef0aee2752e52aa2521267}} 
+\index{SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!SingleSignOutSample.Controllers.AccountController@{SingleSignOutSample.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{UserManager}{UserManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSingleSignOutSample_1_1Models_1_1ApplicationUserManager}{Application\+User\+Manager}}?? Single\+Sign\+Out\+Sample.\+Controllers.\+Account\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Single\+Sign\+Out\+Sample/\+Single\+Sign\+Out\+Sample/\+Controllers/\mbox{\hyperlink{Identity_2SingleSignOutSample_2SingleSignOutSample_2Controllers_2AccountController_8cs}{Account\+Controller.\+cs}}\end{DoxyCompactItemize}

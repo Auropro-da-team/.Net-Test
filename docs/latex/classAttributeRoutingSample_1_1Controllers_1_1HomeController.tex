@@ -1,0 +1,57 @@
+\hypertarget{classAttributeRoutingSample_1_1Controllers_1_1HomeController}{}\doxysection{Attribute\+Routing\+Sample.\+Controllers.\+Home\+Controller Class Reference}
+\label{classAttributeRoutingSample_1_1Controllers_1_1HomeController}\index{AttributeRoutingSample.Controllers.HomeController@{AttributeRoutingSample.Controllers.HomeController}}
+
+
+This controller uses attribute routing to map the Index action to several different URL paths.  
+
+
+
+
+Inheritance diagram for Attribute\+Routing\+Sample.\+Controllers.\+Home\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1HomeController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Attribute\+Routing\+Sample.\+Controllers.\+Home\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1HomeController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Action\+Result \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1HomeController_ac467a5999827c605145a599bd814480b}{Index}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller uses attribute routing to map the Index action to several different URL paths. 
+
+The \mbox{[}Route\+Prefix\mbox{]} attribute defines a prefix for all routes defined on the controller and on on actions. The \mbox{[}Route\+Prefix\mbox{]} attribute on its own does not create any route entries, you must add \mbox{[}Route\mbox{]} attributes to create routes.
+
+In this example the \mbox{[}Route\mbox{]} attribute is used with no arguments to specify that \textquotesingle{}/\+Home\textquotesingle{} should match the index action.
+
+The \mbox{[}Route\mbox{]} attribute is also used on the Index action with \textquotesingle{}Index\textquotesingle{}, this will be combined with the \textquotesingle{}Home\textquotesingle{} prefix to match \textquotesingle{}/\+Home/\+Index\textquotesingle{}
+
+To override a prefix, specify the \textquotesingle{}$\sim$/\textquotesingle{} qualifier, and then the full path that should match that route. In this example \textquotesingle{}$\sim$/\textquotesingle{} is used to specify a route that matches the root request path \textquotesingle{}/\textquotesingle{}.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1HomeController_ac467a5999827c605145a599bd814480b}\label{classAttributeRoutingSample_1_1Controllers_1_1HomeController_ac467a5999827c605145a599bd814480b}} 
+\index{AttributeRoutingSample.Controllers.HomeController@{AttributeRoutingSample.Controllers.HomeController}!Index@{Index}}
+\index{Index@{Index}!AttributeRoutingSample.Controllers.HomeController@{AttributeRoutingSample.Controllers.HomeController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily Action\+Result Attribute\+Routing\+Sample.\+Controllers.\+Home\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+MVC/\+Attribute\+Routing\+Sample/\+Attribute\+Routing\+Sample/\+Controllers/\mbox{\hyperlink{MVC_2AttributeRoutingSample_2AttributeRoutingSample_2Controllers_2HomeController_8cs}{Home\+Controller.\+cs}}\end{DoxyCompactItemize}

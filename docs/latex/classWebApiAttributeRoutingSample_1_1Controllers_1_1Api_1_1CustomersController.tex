@@ -1,0 +1,105 @@
+\hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController}{}\doxysection{Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller Class Reference}
+\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController}\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+
+
+This controller demonstrates mixing conventional and attribute routing together in a single controller. Here \textquotesingle{}Get\+Orders\+Of\+Customer\textquotesingle{} is the only action which uses attribute routing, where as the remaining actions are accessible through conventional route.  
+
+
+
+
+Inheritance diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IQueryable$<$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}} $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a443acd98e844ec7151a94fcc8551f9e0}{Get\+Customers}} ()
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a0691e7ca4f8320771248cb32cf0f446e}{Get\+Customer}} (int id)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a788df6bd8b4aed46970e527312831286}{Put\+Customer}} (int id, \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}} customer)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a8c4bc1c38554d9914bc793cd29e05deb}{Post\+Customer}} (\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}} customer)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a24b61139a2eadbe998931d3b0075b695}{Delete\+Customer}} (int id)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a10826f72d64f81f13704d21029f2995a}{Get\+Orders\+Of\+Customer}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_aa06d3eac6939c756bc32663ae330ac07}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller demonstrates mixing conventional and attribute routing together in a single controller. Here \textquotesingle{}Get\+Orders\+Of\+Customer\textquotesingle{} is the only action which uses attribute routing, where as the remaining actions are accessible through conventional route. 
+
+NOTE\+:
+\begin{DoxyItemize}
+\item Conventional routes can never access actions/controllers which are decorated with route attributes.
+\end{DoxyItemize}
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a24b61139a2eadbe998931d3b0075b695}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a24b61139a2eadbe998931d3b0075b695}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!DeleteCustomer@{DeleteCustomer}}
+\index{DeleteCustomer@{DeleteCustomer}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{DeleteCustomer()}{DeleteCustomer()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Delete\+Customer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_aa06d3eac6939c756bc32663ae330ac07}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_aa06d3eac6939c756bc32663ae330ac07}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a0691e7ca4f8320771248cb32cf0f446e}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a0691e7ca4f8320771248cb32cf0f446e}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!GetCustomer@{GetCustomer}}
+\index{GetCustomer@{GetCustomer}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{GetCustomer()}{GetCustomer()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Get\+Customer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a443acd98e844ec7151a94fcc8551f9e0}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a443acd98e844ec7151a94fcc8551f9e0}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!GetCustomers@{GetCustomers}}
+\index{GetCustomers@{GetCustomers}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{GetCustomers()}{GetCustomers()}}
+{\footnotesize\ttfamily IQueryable$<$\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}}$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Get\+Customers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a10826f72d64f81f13704d21029f2995a}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a10826f72d64f81f13704d21029f2995a}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!GetOrdersOfCustomer@{GetOrdersOfCustomer}}
+\index{GetOrdersOfCustomer@{GetOrdersOfCustomer}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{GetOrdersOfCustomer()}{GetOrdersOfCustomer()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Get\+Orders\+Of\+Customer (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a8c4bc1c38554d9914bc793cd29e05deb}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a8c4bc1c38554d9914bc793cd29e05deb}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!PostCustomer@{PostCustomer}}
+\index{PostCustomer@{PostCustomer}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{PostCustomer()}{PostCustomer()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Post\+Customer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}}}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a788df6bd8b4aed46970e527312831286}\label{classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController_a788df6bd8b4aed46970e527312831286}} 
+\index{WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}!PutCustomer@{PutCustomer}}
+\index{PutCustomer@{PutCustomer}!WebApiAttributeRoutingSample.Controllers.Api.CustomersController@{WebApiAttributeRoutingSample.Controllers.Api.CustomersController}}
+\doxysubsubsection{\texorpdfstring{PutCustomer()}{PutCustomer()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Web\+Api\+Attribute\+Routing\+Sample.\+Controllers.\+Api.\+Customers\+Controller.\+Put\+Customer (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{\hyperlink{classWebApiAttributeRoutingSample_1_1Models_1_1Customer}{Customer}}}]{customer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Web\+Api\+Attribute\+Routing\+Sample/\+Web\+Api\+Attribute\+Routing\+Sample/\+Controllers/\+Api/\mbox{\hyperlink{WebApiAttributeRoutingSample_2WebApiAttributeRoutingSample_2Controllers_2Api_2CustomersController_8cs}{Customers\+Controller.\+cs}}\end{DoxyCompactItemize}

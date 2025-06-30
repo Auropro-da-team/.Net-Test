@@ -1,0 +1,107 @@
+\hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{}\doxysection{ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store Class Reference}
+\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+
+
+This class maintains an in-\/memory store of traces captured by the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceWriter}{Memory\+Trace\+Writer}}.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a8a5a799f0abc367d03be9c564e463dec}{Memory\+Trace\+Store}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new instance of the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_ac9b8c3cdb73cf8f2dded0f206120131a}{Memory\+Trace\+Store}} (int max\+Requests)
+\begin{DoxyCompactList}\small\item\em Creates a new instance of the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} class. \end{DoxyCompactList}\item 
+IEnumerable$<$ \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Models_1_1RequestTrace}{Request\+Trace}} $>$ \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a66b5ec9165f297405e06880482af762c}{Get\+Request\+Traces}} ()
+\begin{DoxyCompactList}\small\item\em Gets from the store all the current request traces. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_af4a185b34680610c11c8f148df901c68}{Add\+Trace}} (Trace\+Record trace\+Record)
+\begin{DoxyCompactList}\small\item\em Adds a single trace record to the store. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a38d57fc6b6b742f8739ab14be3fa0ddb}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the application-\/wide \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class maintains an in-\/memory store of traces captured by the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceWriter}{Memory\+Trace\+Writer}}. 
+
+This class uses a rolling memory buffer that discards the oldest traces as needed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a8a5a799f0abc367d03be9c564e463dec}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a8a5a799f0abc367d03be9c564e463dec}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}!MemoryTraceStore@{MemoryTraceStore}}
+\index{MemoryTraceStore@{MemoryTraceStore}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+\doxysubsubsection{\texorpdfstring{MemoryTraceStore()}{MemoryTraceStore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store.\+Memory\+Trace\+Store (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new instance of the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} class. 
+
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_ac9b8c3cdb73cf8f2dded0f206120131a}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_ac9b8c3cdb73cf8f2dded0f206120131a}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}!MemoryTraceStore@{MemoryTraceStore}}
+\index{MemoryTraceStore@{MemoryTraceStore}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+\doxysubsubsection{\texorpdfstring{MemoryTraceStore()}{MemoryTraceStore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store.\+Memory\+Trace\+Store (\begin{DoxyParamCaption}\item[{int}]{max\+Requests }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creates a new instance of the \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Requests} & The maximum number of requests to retain in a rolling memory buffer.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_af4a185b34680610c11c8f148df901c68}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_af4a185b34680610c11c8f148df901c68}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}!AddTrace@{AddTrace}}
+\index{AddTrace@{AddTrace}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+\doxysubsubsection{\texorpdfstring{AddTrace()}{AddTrace()}}
+{\footnotesize\ttfamily void ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store.\+Add\+Trace (\begin{DoxyParamCaption}\item[{Trace\+Record}]{trace\+Record }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adds a single trace record to the store. 
+
+All trace records are correlated with their associated request GUID inside this method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em trace\+Record} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a66b5ec9165f297405e06880482af762c}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a66b5ec9165f297405e06880482af762c}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}!GetRequestTraces@{GetRequestTraces}}
+\index{GetRequestTraces@{GetRequestTraces}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+\doxysubsubsection{\texorpdfstring{GetRequestTraces()}{GetRequestTraces()}}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Models_1_1RequestTrace}{Request\+Trace}}$>$ ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store.\+Get\+Request\+Traces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets from the store all the current request traces. 
+
+\begin{DoxyReturn}{Returns}
+The collection of all available traces.
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a38d57fc6b6b742f8739ab14be3fa0ddb}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore_a38d57fc6b6b742f8739ab14be3fa0ddb}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}!Instance@{Instance}}
+\index{Instance@{Instance}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.TraceWriters.MemoryTraceStore}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Trace\+Writers.\+Memory\+Trace\+Store.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+Gets the application-\/wide \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceStore}{Memory\+Trace\+Store}} singleton. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Memory\+Tracing\+Sample/\+Areas/\+Trace/\+Trace\+Writers/\mbox{\hyperlink{MemoryTraceStore_8cs}{Memory\+Trace\+Store.\+cs}}\end{DoxyCompactItemize}

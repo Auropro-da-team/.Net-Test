@@ -1,0 +1,114 @@
+\hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute}{}\doxysection{Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute Class Reference}
+\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute}\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+
+
+Inheritance diagram for Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a46bde018f136bc8aa8251a0eb929d26f}{On\+Authentication}} (Authentication\+Context filter\+Context)
+\item 
+void \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_aae7879b0891a7c118c05ccab1fe0916b}{On\+Authentication\+Challenge}} (Authentication\+Challenge\+Context filter\+Context)
+\item 
+async Task \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a803de60f88ea3f7e7edce23f0d8a16a5}{Authenticate\+Async}} (Http\+Authentication\+Context context, Cancellation\+Token cancellation\+Token)
+\item 
+Task \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a7918b12495eb5032d74fd0683a77556a}{Challenge\+Async}} (Http\+Authentication\+Challenge\+Context context, Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract IPrincipal \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a968467b11f4aec802e89353c08706ebf}{Authenticate}} (string user\+Name, string password)
+\item 
+abstract Task$<$ IPrincipal $>$ \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae0cf7762d6f8855814f52a508346a01c}{Authenticate\+Async}} (string user\+Name, string password, Cancellation\+Token cancellation\+Token)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a68caf2335e4e95891b57df0d7eff8d5b}{Realm}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+virtual bool \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae16dd8b8e19238963c8e0d6416a228a2}{Allow\+Multiple}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a968467b11f4aec802e89353c08706ebf}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a968467b11f4aec802e89353c08706ebf}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!Authenticate@{Authenticate}}
+\index{Authenticate@{Authenticate}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{Authenticate()}{Authenticate()}}
+{\footnotesize\ttfamily abstract IPrincipal Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Authenticate (\begin{DoxyParamCaption}\item[{string}]{user\+Name,  }\item[{string}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1IdentityBasicAuthenticationAttribute_a7b24430bc227885228d3f9a8759f5399}{Basic\+Authentication.\+Filters.\+Identity\+Basic\+Authentication\+Attribute}}.
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a803de60f88ea3f7e7edce23f0d8a16a5}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a803de60f88ea3f7e7edce23f0d8a16a5}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!AuthenticateAsync@{AuthenticateAsync}}
+\index{AuthenticateAsync@{AuthenticateAsync}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{AuthenticateAsync()}{AuthenticateAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Authenticate\+Async (\begin{DoxyParamCaption}\item[{Http\+Authentication\+Context}]{context,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae0cf7762d6f8855814f52a508346a01c}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae0cf7762d6f8855814f52a508346a01c}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!AuthenticateAsync@{AuthenticateAsync}}
+\index{AuthenticateAsync@{AuthenticateAsync}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{AuthenticateAsync()}{AuthenticateAsync()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract Task$<$IPrincipal$>$ Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Authenticate\+Async (\begin{DoxyParamCaption}\item[{string}]{user\+Name,  }\item[{string}]{password,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classBasicAuthentication_1_1Filters_1_1IdentityBasicAuthenticationAttribute_aa09ac338c4a6b34f19c5108d18dd8f3d}{Basic\+Authentication.\+Filters.\+Identity\+Basic\+Authentication\+Attribute}}.
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a7918b12495eb5032d74fd0683a77556a}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a7918b12495eb5032d74fd0683a77556a}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!ChallengeAsync@{ChallengeAsync}}
+\index{ChallengeAsync@{ChallengeAsync}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{ChallengeAsync()}{ChallengeAsync()}}
+{\footnotesize\ttfamily Task Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Challenge\+Async (\begin{DoxyParamCaption}\item[{Http\+Authentication\+Challenge\+Context}]{context,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a46bde018f136bc8aa8251a0eb929d26f}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a46bde018f136bc8aa8251a0eb929d26f}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!OnAuthentication@{OnAuthentication}}
+\index{OnAuthentication@{OnAuthentication}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{OnAuthentication()}{OnAuthentication()}}
+{\footnotesize\ttfamily void Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+On\+Authentication (\begin{DoxyParamCaption}\item[{Authentication\+Context}]{filter\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_aae7879b0891a7c118c05ccab1fe0916b}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_aae7879b0891a7c118c05ccab1fe0916b}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!OnAuthenticationChallenge@{OnAuthenticationChallenge}}
+\index{OnAuthenticationChallenge@{OnAuthenticationChallenge}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{OnAuthenticationChallenge()}{OnAuthenticationChallenge()}}
+{\footnotesize\ttfamily void Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+On\+Authentication\+Challenge (\begin{DoxyParamCaption}\item[{Authentication\+Challenge\+Context}]{filter\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae16dd8b8e19238963c8e0d6416a228a2}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_ae16dd8b8e19238963c8e0d6416a228a2}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!AllowMultiple@{AllowMultiple}}
+\index{AllowMultiple@{AllowMultiple}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{AllowMultiple}{AllowMultiple}}
+{\footnotesize\ttfamily virtual bool Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Allow\+Multiple\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a68caf2335e4e95891b57df0d7eff8d5b}\label{classBasicAuthentication_1_1Filters_1_1BasicAuthenticationAttribute_a68caf2335e4e95891b57df0d7eff8d5b}} 
+\index{BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}!Realm@{Realm}}
+\index{Realm@{Realm}!BasicAuthentication.Filters.BasicAuthenticationAttribute@{BasicAuthentication.Filters.BasicAuthenticationAttribute}}
+\doxysubsubsection{\texorpdfstring{Realm}{Realm}}
+{\footnotesize\ttfamily string Basic\+Authentication.\+Filters.\+Basic\+Authentication\+Attribute.\+Realm\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+MVC/\+Basic\+Authentication/\+Basic\+Authentication/\+Filters/\mbox{\hyperlink{MVC_2BasicAuthentication_2BasicAuthentication_2Filters_2BasicAuthenticationAttribute_8cs}{Basic\+Authentication\+Attribute.\+cs}}\end{DoxyCompactItemize}

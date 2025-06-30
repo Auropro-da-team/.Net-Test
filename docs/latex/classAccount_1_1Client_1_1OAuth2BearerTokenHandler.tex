@@ -1,0 +1,89 @@
+\hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler}{}\doxysection{Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler Class Reference}
+\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler}\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+
+
+Inheritance diagram for Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classAccount_1_1Client_1_1OAuth2BearerTokenHandler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classAccount_1_1Client_1_1OAuth2BearerTokenHandler__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a54084e3e02bc83115c06940cca5e97fc}{OAuth2\+Bearer\+Token\+Handler}} (\mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenStore}{IAccess\+Token\+Store}} token\+Store, \mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenProvider}{IAccess\+Token\+Provider}} token\+Provider)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override async Task$<$ Authentication\+Header\+Value $>$ \mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_ab4a98dd9660877cfe018ea3c60e635fe}{Create\+Authorization\+Header\+Async}} (Http\+Request\+Message request, Http\+Header\+Value\+Collection$<$ Authentication\+Header\+Value $>$ challenges, Cancellation\+Token cancellation\+Token)
+\item 
+virtual async Task$<$ string $>$ \mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a000ae3b16ee056a45cca04242b5d7f00}{Get\+Access\+Token\+Async}} (Http\+Request\+Message request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenStore}{IAccess\+Token\+Store}} \mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a26718b36eb78c22ee60aea38c881b132}{Token\+Store}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenProvider}{IAccess\+Token\+Provider}} \mbox{\hyperlink{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a28c7528ed4cf0eec5af698a3ebb6b9ca}{Token\+Provider}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a54084e3e02bc83115c06940cca5e97fc}\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a54084e3e02bc83115c06940cca5e97fc}} 
+\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}!OAuth2BearerTokenHandler@{OAuth2BearerTokenHandler}}
+\index{OAuth2BearerTokenHandler@{OAuth2BearerTokenHandler}!Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+\doxysubsubsection{\texorpdfstring{OAuth2BearerTokenHandler()}{OAuth2BearerTokenHandler()}}
+{\footnotesize\ttfamily Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler.\+OAuth2\+Bearer\+Token\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenStore}{IAccess\+Token\+Store}}}]{token\+Store,  }\item[{\mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenProvider}{IAccess\+Token\+Provider}}}]{token\+Provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_ab4a98dd9660877cfe018ea3c60e635fe}\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_ab4a98dd9660877cfe018ea3c60e635fe}} 
+\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}!CreateAuthorizationHeaderAsync@{CreateAuthorizationHeaderAsync}}
+\index{CreateAuthorizationHeaderAsync@{CreateAuthorizationHeaderAsync}!Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+\doxysubsubsection{\texorpdfstring{CreateAuthorizationHeaderAsync()}{CreateAuthorizationHeaderAsync()}}
+{\footnotesize\ttfamily override async Task$<$Authentication\+Header\+Value$>$ Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler.\+Create\+Authorization\+Header\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request,  }\item[{Http\+Header\+Value\+Collection$<$ Authentication\+Header\+Value $>$}]{challenges,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classAccount_1_1Client_1_1HttpAuthenticationHandler_aada3cc6e120d0383a12e1d704bc7b440}{Account.\+Client.\+Http\+Authentication\+Handler}}.
+
+\mbox{\Hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a000ae3b16ee056a45cca04242b5d7f00}\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a000ae3b16ee056a45cca04242b5d7f00}} 
+\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}!GetAccessTokenAsync@{GetAccessTokenAsync}}
+\index{GetAccessTokenAsync@{GetAccessTokenAsync}!Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+\doxysubsubsection{\texorpdfstring{GetAccessTokenAsync()}{GetAccessTokenAsync()}}
+{\footnotesize\ttfamily virtual async Task$<$string$>$ Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler.\+Get\+Access\+Token\+Async (\begin{DoxyParamCaption}\item[{Http\+Request\+Message}]{request }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a28c7528ed4cf0eec5af698a3ebb6b9ca}\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a28c7528ed4cf0eec5af698a3ebb6b9ca}} 
+\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}!TokenProvider@{TokenProvider}}
+\index{TokenProvider@{TokenProvider}!Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+\doxysubsubsection{\texorpdfstring{TokenProvider}{TokenProvider}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenProvider}{IAccess\+Token\+Provider}} Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler.\+Token\+Provider\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\mbox{\Hypertarget{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a26718b36eb78c22ee60aea38c881b132}\label{classAccount_1_1Client_1_1OAuth2BearerTokenHandler_a26718b36eb78c22ee60aea38c881b132}} 
+\index{Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}!TokenStore@{TokenStore}}
+\index{TokenStore@{TokenStore}!Account.Client.OAuth2BearerTokenHandler@{Account.Client.OAuth2BearerTokenHandler}}
+\doxysubsubsection{\texorpdfstring{TokenStore}{TokenStore}}
+{\footnotesize\ttfamily \mbox{\hyperlink{interfaceAccount_1_1Client_1_1IAccessTokenStore}{IAccess\+Token\+Store}} Account.\+Client.\+OAuth2\+Bearer\+Token\+Handler.\+Token\+Store\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Account.\+Client/\mbox{\hyperlink{OAuth2BearerTokenHandler_8cs}{OAuth2\+Bearer\+Token\+Handler.\+cs}}\end{DoxyCompactItemize}

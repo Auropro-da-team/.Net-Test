@@ -1,0 +1,172 @@
+\hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea}{}\doxysection{Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area Class Reference}
+\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea}\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+
+
+A multiline input component for editing large string values, supports async content access without binding and without validations.  
+
+
+
+
+Inheritance diagram for Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad56a0a7522ef3017f64e219fd50c04df}{Notify\+Change}} (int length)
+\begin{DoxyCompactList}\small\item\em Invoked from the client when the textarea\textquotesingle{}s onchange event occurs. \end{DoxyCompactList}\item 
+virtual async Value\+Task$<$ Stream\+Reader $>$ \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_abc399cda6785c31cb8c8ddebf2bbaa38}{Get\+Text\+Async}} (int max\+Length=32\+\_\+000, Cancellation\+Token cancellation\+Token=default)
+\begin{DoxyCompactList}\small\item\em Retrieves the textarea value asyncronously. \end{DoxyCompactList}\item 
+virtual async Value\+Task \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a12d8b8ab4b1e3f13385aee9973fae591}{Set\+Text\+Async}} (Stream\+Writer stream\+Writer, bool leave\+Text\+Area\+Enabled=false, Cancellation\+Token cancellation\+Token=default)
+\begin{DoxyCompactList}\small\item\em Sets the textarea value asyncronously. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override async Task \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a87cea07476103aeb136f86c2b4c43cc0}{On\+After\+Render\+Async}} (bool first\+Render)
+\item 
+override void \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ae342275d0ed6cb14574ebaa298f22926}{Build\+Render\+Tree}} (Render\+Tree\+Builder \mbox{\hyperlink{ore_2blazor_2JSComponentGeneration_2BlazorAppGeneratingJSComponents_2Program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Callback$<$ \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextAreaChangeEventArgs}{Input\+Large\+Text\+Area\+Change\+Event\+Args}} $>$ \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a634f17652a337e9646947e15454f1e0e}{On\+Change}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the event callback that will be invoked when the textarea content changes. \end{DoxyCompactList}\item 
+IDictionary$<$ string, object $>$? \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a82d61e38517a0c6579e0bb8619d4c366}{Additional\+Attributes}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a collection of additional attributes that will be applied to the input element. \end{DoxyCompactList}\item 
+Element\+Reference? \mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad38910643520bf2651e1aebfea1ef363}{Element}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, protected set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the associated Element\+Reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A multiline input component for editing large string values, supports async content access without binding and without validations. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ae342275d0ed6cb14574ebaa298f22926}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ae342275d0ed6cb14574ebaa298f22926}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!BuildRenderTree@{BuildRenderTree}}
+\index{BuildRenderTree@{BuildRenderTree}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{BuildRenderTree()}{BuildRenderTree()}}
+{\footnotesize\ttfamily override void Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Build\+Render\+Tree (\begin{DoxyParamCaption}\item[{Render\+Tree\+Builder}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_abc399cda6785c31cb8c8ddebf2bbaa38}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_abc399cda6785c31cb8c8ddebf2bbaa38}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!GetTextAsync@{GetTextAsync}}
+\index{GetTextAsync@{GetTextAsync}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{GetTextAsync()}{GetTextAsync()}}
+{\footnotesize\ttfamily virtual async Value\+Task$<$Stream\+Reader$>$ Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Get\+Text\+Async (\begin{DoxyParamCaption}\item[{int}]{max\+Length = {\ttfamily 32\+\_\+000},  }\item[{Cancellation\+Token}]{cancellation\+Token = {\ttfamily default} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the textarea value asyncronously. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Length} & The maximum length of content to fetch from the textarea.\\
+\hline
+{\em cancellation\+Token} & The System.\+Threading.\+Cancellation\+Token used to relay cancellation of the request.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A System.\+IO.\+Text\+Reader which facilitates reading of the textarea value.
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad56a0a7522ef3017f64e219fd50c04df}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad56a0a7522ef3017f64e219fd50c04df}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!NotifyChange@{NotifyChange}}
+\index{NotifyChange@{NotifyChange}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{NotifyChange()}{NotifyChange()}}
+{\footnotesize\ttfamily Task Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Notify\+Change (\begin{DoxyParamCaption}\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Invoked from the client when the textarea\textquotesingle{}s onchange event occurs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & The updated length of the textarea.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a87cea07476103aeb136f86c2b4c43cc0}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a87cea07476103aeb136f86c2b4c43cc0}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!OnAfterRenderAsync@{OnAfterRenderAsync}}
+\index{OnAfterRenderAsync@{OnAfterRenderAsync}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{OnAfterRenderAsync()}{OnAfterRenderAsync()}}
+{\footnotesize\ttfamily override async Task Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+On\+After\+Render\+Async (\begin{DoxyParamCaption}\item[{bool}]{first\+Render }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+
+
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a12d8b8ab4b1e3f13385aee9973fae591}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a12d8b8ab4b1e3f13385aee9973fae591}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!SetTextAsync@{SetTextAsync}}
+\index{SetTextAsync@{SetTextAsync}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{SetTextAsync()}{SetTextAsync()}}
+{\footnotesize\ttfamily virtual async Value\+Task Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Set\+Text\+Async (\begin{DoxyParamCaption}\item[{Stream\+Writer}]{stream\+Writer,  }\item[{bool}]{leave\+Text\+Area\+Enabled = {\ttfamily false},  }\item[{Cancellation\+Token}]{cancellation\+Token = {\ttfamily default} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the textarea value asyncronously. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+Writer} & A System.\+IO.\+Stream\+Writer used to set the value of the textarea.\\
+\hline
+{\em leave\+Text\+Area\+Enabled} & {\ttfamily false} to disable the textarea while setting new content from the stream, otherwise {\ttfamily true} to allow it to be editable. Defaults to {\ttfamily false}.\\
+\hline
+{\em cancellation\+Token} & The System.\+Threading.\+Cancellation\+Token used to relay cancellation of the request.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a82d61e38517a0c6579e0bb8619d4c366}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a82d61e38517a0c6579e0bb8619d4c366}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!AdditionalAttributes@{AdditionalAttributes}}
+\index{AdditionalAttributes@{AdditionalAttributes}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{AdditionalAttributes}{AdditionalAttributes}}
+{\footnotesize\ttfamily IDictionary$<$string, object$>$? Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Additional\+Attributes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a collection of additional attributes that will be applied to the input element. 
+
+\mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad38910643520bf2651e1aebfea1ef363}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_ad38910643520bf2651e1aebfea1ef363}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!Element@{Element}}
+\index{Element@{Element}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{Element}{Element}}
+{\footnotesize\ttfamily Element\+Reference? Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+Element\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [protected set]}}
+
+
+
+Gets or sets the associated Element\+Reference. 
+
+May be {\ttfamily null} if accessed before the component is rendered. \mbox{\Hypertarget{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a634f17652a337e9646947e15454f1e0e}\label{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextArea_a634f17652a337e9646947e15454f1e0e}} 
+\index{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}!OnChange@{OnChange}}
+\index{OnChange@{OnChange}!Microsoft.AspNetCore.Components.Forms.InputLargeTextArea@{Microsoft.AspNetCore.Components.Forms.InputLargeTextArea}}
+\doxysubsubsection{\texorpdfstring{OnChange}{OnChange}}
+{\footnotesize\ttfamily Event\+Callback$<$\mbox{\hyperlink{classMicrosoft_1_1AspNetCore_1_1Components_1_1Forms_1_1InputLargeTextAreaChangeEventArgs}{Input\+Large\+Text\+Area\+Change\+Event\+Args}}$>$ Microsoft.\+Asp\+Net\+Core.\+Components.\+Forms.\+Input\+Large\+Text\+Area.\+On\+Change\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the event callback that will be invoked when the textarea content changes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnetcore/blazor/\+Input\+Large\+Text\+Area/src/\+Input\+Large\+Text\+Area/\mbox{\hyperlink{InputLargeTextArea_8cs}{Input\+Large\+Text\+Area.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter}{}\doxysection{Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter Class Reference}
+\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter}\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+
+
+This sample formatter illustrates how to use the Buffered\+Media\+Type\+Formatter base class for writing a Media\+Type\+Formatter. The Buffered\+Media\+Type\+Formatter is useful when you either want to aggregate many small reads or writes or when you are writing synchronously to the underlying stream.  
+
+
+
+
+Inheritance diagram for Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a10eb00dd17c5a7928f21351fce8c7275}{Plain\+Text\+Buffered\+Formatter}} ()
+\item 
+override bool \mbox{\hyperlink{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_aa658fab3845a22b39a11df6b91fba999}{Can\+Read\+Type}} (Type type)
+\item 
+override bool \mbox{\hyperlink{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a9bd62871289f693c7a109445c676f794}{Can\+Write\+Type}} (Type type)
+\item 
+override object \mbox{\hyperlink{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ac1ad6fcbc5ed8c24ad96cf96c677fd8b}{Read\+From\+Stream}} (Type type, Stream read\+Stream, Http\+Content content, IFormatter\+Logger formatter\+Logger)
+\item 
+override void \mbox{\hyperlink{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ae600349af8841a1930ad88353d08339b}{Write\+To\+Stream}} (Type type, object value, Stream write\+Stream, Http\+Content content)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This sample formatter illustrates how to use the Buffered\+Media\+Type\+Formatter base class for writing a Media\+Type\+Formatter. The Buffered\+Media\+Type\+Formatter is useful when you either want to aggregate many small reads or writes or when you are writing synchronously to the underlying stream. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a10eb00dd17c5a7928f21351fce8c7275}\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a10eb00dd17c5a7928f21351fce8c7275}} 
+\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}!PlainTextBufferedFormatter@{PlainTextBufferedFormatter}}
+\index{PlainTextBufferedFormatter@{PlainTextBufferedFormatter}!ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{PlainTextBufferedFormatter()}{PlainTextBufferedFormatter()}}
+{\footnotesize\ttfamily Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter.\+Plain\+Text\+Buffered\+Formatter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_aa658fab3845a22b39a11df6b91fba999}\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_aa658fab3845a22b39a11df6b91fba999}} 
+\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}!CanReadType@{CanReadType}}
+\index{CanReadType@{CanReadType}!ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{CanReadType()}{CanReadType()}}
+{\footnotesize\ttfamily override bool Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter.\+Can\+Read\+Type (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a9bd62871289f693c7a109445c676f794}\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_a9bd62871289f693c7a109445c676f794}} 
+\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}!CanWriteType@{CanWriteType}}
+\index{CanWriteType@{CanWriteType}!ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{CanWriteType()}{CanWriteType()}}
+{\footnotesize\ttfamily override bool Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter.\+Can\+Write\+Type (\begin{DoxyParamCaption}\item[{Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ac1ad6fcbc5ed8c24ad96cf96c677fd8b}\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ac1ad6fcbc5ed8c24ad96cf96c677fd8b}} 
+\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}!ReadFromStream@{ReadFromStream}}
+\index{ReadFromStream@{ReadFromStream}!ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{ReadFromStream()}{ReadFromStream()}}
+{\footnotesize\ttfamily override object Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter.\+Read\+From\+Stream (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{Stream}]{read\+Stream,  }\item[{Http\+Content}]{content,  }\item[{IFormatter\+Logger}]{formatter\+Logger }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ae600349af8841a1930ad88353d08339b}\label{classControllerSpecificConfigSample_1_1PlainTextBufferedFormatter_ae600349af8841a1930ad88353d08339b}} 
+\index{ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}!WriteToStream@{WriteToStream}}
+\index{WriteToStream@{WriteToStream}!ControllerSpecificConfigSample.PlainTextBufferedFormatter@{ControllerSpecificConfigSample.PlainTextBufferedFormatter}}
+\doxysubsubsection{\texorpdfstring{WriteToStream()}{WriteToStream()}}
+{\footnotesize\ttfamily override void Controller\+Specific\+Config\+Sample.\+Plain\+Text\+Buffered\+Formatter.\+Write\+To\+Stream (\begin{DoxyParamCaption}\item[{Type}]{type,  }\item[{object}]{value,  }\item[{Stream}]{write\+Stream,  }\item[{Http\+Content}]{content }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Controller\+Specific\+Config\+Sample/\+Formatters/\mbox{\hyperlink{ControllerSpecificConfigSample_2Formatters_2PlainTextBufferedFormatter_8cs}{Plain\+Text\+Buffered\+Formatter.\+cs}}\end{DoxyCompactItemize}

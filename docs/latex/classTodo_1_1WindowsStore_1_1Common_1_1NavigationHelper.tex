@@ -1,0 +1,247 @@
+\hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper}{}\doxysection{Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper Class Reference}
+\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper}\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+
+
+Navigation\+Manager aids in navigation between pages. It provides commands used to navigate back and forward as well as registers for standard mouse and keyboard shortcuts used to go back and forward. In addition it integrates Suspension\+Manger to handle process lifetime management and state management when navigating between pages.  
+
+
+
+
+Inheritance diagram for Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ad310fb09858dba5863a9863167e85749}{Navigation\+Helper}} (Page page)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper}{Navigation\+Helper}} class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ae58f88d910047bbfd9bfa68f1dc074c1}{Can\+Go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}{Go\+Back\+Command}} property to determine if the Frame can go back. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a1a9d0f74f719ef2014ee84ec6f9264a2}{Can\+Go\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}{Go\+Forward\+Command}} property to determine if the Frame can go forward. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aa9e01e10ba108c3e70d6ebd71f7043b3}{Go\+Back}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}{Go\+Back\+Command}} property to invoke the Windows.\+UI.\+Xaml.\+Controls.\+Frame.\+Go\+Back method. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3e4e5a874e8c7ceea9451a6ddbeecf6f}{Go\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}{Go\+Forward\+Command}} property to invoke the Windows.\+UI.\+Xaml.\+Controls.\+Frame.\+Go\+Forward method. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8c1866ce33964eb44aa65b612c992bfd}{On\+Navigated\+To}} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoked when this page is about to be displayed in a Frame. ~\newline
+ This method calls \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}{Load\+State}}, where all page specific navigation and process lifetime management logic should be placed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aedd0100308deeaac20cf814619ec1185}{On\+Navigated\+From}} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoked when this page will no longer be displayed in a Frame. This method calls \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}{Save\+State}}, where all page specific navigation and process lifetime management logic should be placed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}{Go\+Back\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} used to bind to the back Button\textquotesingle{}s Command property for navigating to the most recent item in back navigation history, if a Frame manages its own navigation history. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}{Go\+Forward\+Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} used for navigating to the most recent item in the forward navigation history, if a Frame manages its own navigation history. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a6805a3cedd11d7e9d568570d860a62e9}{Load\+State\+Event\+Handler}} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}{Load\+State}}
+\begin{DoxyCompactList}\small\item\em Register this event on the current page to populate the page with content passed during navigation as well as any saved state provided when recreating a page from a prior session. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a24fdfe387b560d6fd314a59aea83c38e}{Save\+State\+Event\+Handler}} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}{Save\+State}}
+\begin{DoxyCompactList}\small\item\em Register this event on the current page to preserve state associated with the current page in case the application is suspended or the page is discarded from the navigaqtion cache. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Navigation\+Manager aids in navigation between pages. It provides commands used to navigate back and forward as well as registers for standard mouse and keyboard shortcuts used to go back and forward. In addition it integrates Suspension\+Manger to handle process lifetime management and state management when navigating between pages. 
+
+To make use of Navigation\+Manager, follow these two steps or start with a Basic\+Page or any other Page item template other than Blank\+Page.
+
+1) Create an instance of the Naivgation\+Helper somewhere such as in the constructor for the page and register a callback for the Load\+State and Save\+State events. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{public} MyPage()}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    this.InitializeComponent();}
+\DoxyCodeLine{    var navigationHelper = \textcolor{keyword}{new} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ad310fb09858dba5863a9863167e85749}{NavigationHelper}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{    this.navigationHelper.LoadState += navigationHelper\_LoadState;}
+\DoxyCodeLine{    this.navigationHelper.SaveState += navigationHelper\_SaveState;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{private} async \textcolor{keywordtype}{void} navigationHelper\_LoadState(\textcolor{keywordtype}{object} sender, LoadStateEventArgs e)}
+\DoxyCodeLine{\{ \}}
+\DoxyCodeLine{\textcolor{keyword}{private} async \textcolor{keywordtype}{void} navigationHelper\_SaveState(\textcolor{keywordtype}{object} sender, LoadStateEventArgs e)}
+\DoxyCodeLine{\{ \}}
+
+\end{DoxyCode}
+
+
+2) Register the page to call into the Navigation\+Manager whenever the page participates in navigation by overriding the Windows.\+UI.\+Xaml.\+Controls.\+Page.\+On\+Navigated\+To and Windows.\+UI.\+Xaml.\+Controls.\+Page.\+On\+Navigated\+From events. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8c1866ce33964eb44aa65b612c992bfd}{OnNavigatedTo}}(NavigationEventArgs e)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    navigationHelper.OnNavigatedTo(e);}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{protected} \textcolor{keyword}{override} \textcolor{keywordtype}{void} \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aedd0100308deeaac20cf814619ec1185}{OnNavigatedFrom}}(NavigationEventArgs e)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{    navigationHelper.OnNavigatedFrom(e);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ad310fb09858dba5863a9863167e85749}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ad310fb09858dba5863a9863167e85749}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!NavigationHelper@{NavigationHelper}}
+\index{NavigationHelper@{NavigationHelper}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{NavigationHelper()}{NavigationHelper()}}
+{\footnotesize\ttfamily Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Navigation\+Helper (\begin{DoxyParamCaption}\item[{Page}]{page }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper}{Navigation\+Helper}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & A reference to the current page used for navigation. ~\newline
+ This reference allows for frame manipulation and to ensure that keyboard navigation requests only occur when the page is occupying the entire window.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ae58f88d910047bbfd9bfa68f1dc074c1}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ae58f88d910047bbfd9bfa68f1dc074c1}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!CanGoBack@{CanGoBack}}
+\index{CanGoBack@{CanGoBack}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{CanGoBack()}{CanGoBack()}}
+{\footnotesize\ttfamily virtual bool Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Can\+Go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}{Go\+Back\+Command}} property to determine if the Frame can go back. 
+
+\begin{DoxyReturn}{Returns}
+true if the Frame has at least one entry in the back navigation history. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a1a9d0f74f719ef2014ee84ec6f9264a2}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a1a9d0f74f719ef2014ee84ec6f9264a2}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!CanGoForward@{CanGoForward}}
+\index{CanGoForward@{CanGoForward}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{CanGoForward()}{CanGoForward()}}
+{\footnotesize\ttfamily virtual bool Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Can\+Go\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}{Go\+Forward\+Command}} property to determine if the Frame can go forward. 
+
+\begin{DoxyReturn}{Returns}
+true if the Frame has at least one entry in the forward navigation history. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aa9e01e10ba108c3e70d6ebd71f7043b3}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aa9e01e10ba108c3e70d6ebd71f7043b3}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!GoBack@{GoBack}}
+\index{GoBack@{GoBack}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{GoBack()}{GoBack()}}
+{\footnotesize\ttfamily virtual void Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Go\+Back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}{Go\+Back\+Command}} property to invoke the Windows.\+UI.\+Xaml.\+Controls.\+Frame.\+Go\+Back method. 
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3e4e5a874e8c7ceea9451a6ddbeecf6f}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3e4e5a874e8c7ceea9451a6ddbeecf6f}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!GoForward@{GoForward}}
+\index{GoForward@{GoForward}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{GoForward()}{GoForward()}}
+{\footnotesize\ttfamily virtual void Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Go\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Virtual method used by the \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}{Go\+Forward\+Command}} property to invoke the Windows.\+UI.\+Xaml.\+Controls.\+Frame.\+Go\+Forward method. 
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aedd0100308deeaac20cf814619ec1185}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aedd0100308deeaac20cf814619ec1185}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!OnNavigatedFrom@{OnNavigatedFrom}}
+\index{OnNavigatedFrom@{OnNavigatedFrom}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{OnNavigatedFrom()}{OnNavigatedFrom()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+On\+Navigated\+From (\begin{DoxyParamCaption}\item[{Navigation\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Invoked when this page will no longer be displayed in a Frame. This method calls \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}{Save\+State}}, where all page specific navigation and process lifetime management logic should be placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Event data that describes how this page was reached. The Parameter property provides the group to be displayed.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8c1866ce33964eb44aa65b612c992bfd}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8c1866ce33964eb44aa65b612c992bfd}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!OnNavigatedTo@{OnNavigatedTo}}
+\index{OnNavigatedTo@{OnNavigatedTo}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{OnNavigatedTo()}{OnNavigatedTo()}}
+{\footnotesize\ttfamily void Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+On\+Navigated\+To (\begin{DoxyParamCaption}\item[{Navigation\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Invoked when this page is about to be displayed in a Frame. ~\newline
+ This method calls \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}{Load\+State}}, where all page specific navigation and process lifetime management logic should be placed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Event data that describes how this page was reached. The Parameter property provides the group to be displayed.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a24037078f93aecac30741e35e8be8b79}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!GoBackCommand@{GoBackCommand}}
+\index{GoBackCommand@{GoBackCommand}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{GoBackCommand}{GoBackCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Go\+Back\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} used to bind to the back Button\textquotesingle{}s Command property for navigating to the most recent item in back navigation history, if a Frame manages its own navigation history. 
+
+The \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} is set up to use the virtual method \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_aa9e01e10ba108c3e70d6ebd71f7043b3}{Go\+Back}} as the Execute Action and \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_ae58f88d910047bbfd9bfa68f1dc074c1}{Can\+Go\+Back}} for Can\+Execute.\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3c8d2868845fcda4735bf9bc2b950709}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!GoForwardCommand@{GoForwardCommand}}
+\index{GoForwardCommand@{GoForwardCommand}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{GoForwardCommand}{GoForwardCommand}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Go\+Forward\+Command\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+\mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} used for navigating to the most recent item in the forward navigation history, if a Frame manages its own navigation history. 
+
+The \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1RelayCommand}{Relay\+Command}} is set up to use the virtual method \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a3e4e5a874e8c7ceea9451a6ddbeecf6f}{Go\+Forward}} as the Execute Action and \mbox{\hyperlink{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a1a9d0f74f719ef2014ee84ec6f9264a2}{Can\+Go\+Forward}} for Can\+Execute.
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a8b8821cdccee21e6b2a60fb9cd4bce7c}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!LoadState@{LoadState}}
+\index{LoadState@{LoadState}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{LoadState}{LoadState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a6805a3cedd11d7e9d568570d860a62e9}{Load\+State\+Event\+Handler}} Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Load\+State}
+
+
+
+Register this event on the current page to populate the page with content passed during navigation as well as any saved state provided when recreating a page from a prior session. 
+
+\mbox{\Hypertarget{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}\label{classTodo_1_1WindowsStore_1_1Common_1_1NavigationHelper_a0b79001c050b5054cc28c9d493c1779e}} 
+\index{Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}!SaveState@{SaveState}}
+\index{SaveState@{SaveState}!Todo.WindowsStore.Common.NavigationHelper@{Todo.WindowsStore.Common.NavigationHelper}}
+\doxysubsubsection{\texorpdfstring{SaveState}{SaveState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceTodo_1_1WindowsStore_1_1Common_a24fdfe387b560d6fd314a59aea83c38e}{Save\+State\+Event\+Handler}} Todo.\+Windows\+Store.\+Common.\+Navigation\+Helper.\+Save\+State}
+
+
+
+Register this event on the current page to preserve state associated with the current page in case the application is suspended or the page is discarded from the navigaqtion cache. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Todo.\+Windows\+Store/\+Common/\mbox{\hyperlink{NavigationHelper_8cs}{Navigation\+Helper.\+cs}}\end{DoxyCompactItemize}

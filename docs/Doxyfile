@@ -4,6 +4,6 @@ INPUT                  = "/home/auropro/Documents/git-scraping/doxygen/cloned_re
 RECURSIVE              = YES
 FILE_PATTERNS          = *.cs *.vb *.fs *.csx *.vbx
 EXTRACT_ALL            = YES
-GENERATE_LATEX         = NO
+GENERATE_LATEX         = YES
 QUIET                  = YES
 GENERATE_HTML          = YES

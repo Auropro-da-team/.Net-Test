@@ -1,0 +1,222 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User Class Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+
+
+Class that implements the ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} IUser interface  
+
+
+
+
+Inheritance diagram for Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a196f98fdbd27e1a6eb18e1e5a244cd29}{Identity\+User}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a722600dced0f85b478e9dfc4a013a7e1}{Identity\+User}} (string user\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor that takes user name as argument \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abe1a9c0c49e1faf11f8527338b487bc2}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em User ID \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_aac0ca265f9f420f2b895d8da8f5d1962}{User\+Name}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em User\textquotesingle{}s name \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af369be6310c6f29bfd7c12489738ffe3}{Email}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Email \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a4fc3155ff89902d28729933fb943784f}{Email\+Confirmed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the email is confirmed, default is false \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af12dc355cfee71ab6f24ca7642b0f4a6}{Password\+Hash}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The salted/hashed form of the user password \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a5dba81af6fa57346da0e1bed209b0daa}{Security\+Stamp}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A random value that should change whenever a users credentials have changed (password changed, login removed) \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a0ebe838bd371d076bbb8d0454f68d7e7}{Phone\+Number}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Phone\+Number for the user \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a1985afa6ff3a996a08b9a046714d3933}{Phone\+Number\+Confirmed}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em True if the phone number is confirmed, default is false \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a762b07beade70fe5153c242252592e87}{Two\+Factor\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is two factor enabled for the user \end{DoxyCompactList}\item 
+virtual ? Date\+Time \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a720d0e9f93a2f950b87b365e7403e14b}{Lockout\+End\+Date\+Utc}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Date\+Time in UTC when lockout ends, any time in the past is considered not locked out. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a2852c84a1b8284c759aa937521f22ae3}{Lockout\+Enabled}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Is lockout enabled for this user \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abc1145478d3217cf05f4aae8e98bd6bd}{Access\+Failed\+Count}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Used to record failures for the purposes of lockout \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that implements the ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} IUser interface 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a196f98fdbd27e1a6eb18e1e5a244cd29}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a196f98fdbd27e1a6eb18e1e5a244cd29}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!IdentityUser@{IdentityUser}}
+\index{IdentityUser@{IdentityUser}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{IdentityUser()}{IdentityUser()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Identity\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a722600dced0f85b478e9dfc4a013a7e1}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a722600dced0f85b478e9dfc4a013a7e1}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!IdentityUser@{IdentityUser}}
+\index{IdentityUser@{IdentityUser}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{IdentityUser()}{IdentityUser()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Identity\+User (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes user name as argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abc1145478d3217cf05f4aae8e98bd6bd}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abc1145478d3217cf05f4aae8e98bd6bd}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!AccessFailedCount@{AccessFailedCount}}
+\index{AccessFailedCount@{AccessFailedCount}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{AccessFailedCount}{AccessFailedCount}}
+{\footnotesize\ttfamily virtual int Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Access\+Failed\+Count\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Used to record failures for the purposes of lockout 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af369be6310c6f29bfd7c12489738ffe3}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af369be6310c6f29bfd7c12489738ffe3}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!Email@{Email}}
+\index{Email@{Email}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{Email}{Email}}
+{\footnotesize\ttfamily virtual string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Email 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a4fc3155ff89902d28729933fb943784f}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a4fc3155ff89902d28729933fb943784f}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!EmailConfirmed@{EmailConfirmed}}
+\index{EmailConfirmed@{EmailConfirmed}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{EmailConfirmed}{EmailConfirmed}}
+{\footnotesize\ttfamily virtual bool Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Email\+Confirmed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+True if the email is confirmed, default is false 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abe1a9c0c49e1faf11f8527338b487bc2}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_abe1a9c0c49e1faf11f8527338b487bc2}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!Id@{Id}}
+\index{Id@{Id}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+User ID 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a2852c84a1b8284c759aa937521f22ae3}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a2852c84a1b8284c759aa937521f22ae3}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!LockoutEnabled@{LockoutEnabled}}
+\index{LockoutEnabled@{LockoutEnabled}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{LockoutEnabled}{LockoutEnabled}}
+{\footnotesize\ttfamily virtual bool Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Lockout\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is lockout enabled for this user 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a720d0e9f93a2f950b87b365e7403e14b}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a720d0e9f93a2f950b87b365e7403e14b}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!LockoutEndDateUtc@{LockoutEndDateUtc}}
+\index{LockoutEndDateUtc@{LockoutEndDateUtc}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{LockoutEndDateUtc}{LockoutEndDateUtc}}
+{\footnotesize\ttfamily virtual ? Date\+Time Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Lockout\+End\+Date\+Utc\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Date\+Time in UTC when lockout ends, any time in the past is considered not locked out. 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af12dc355cfee71ab6f24ca7642b0f4a6}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_af12dc355cfee71ab6f24ca7642b0f4a6}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!PasswordHash@{PasswordHash}}
+\index{PasswordHash@{PasswordHash}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{PasswordHash}{PasswordHash}}
+{\footnotesize\ttfamily virtual string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Password\+Hash\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The salted/hashed form of the user password 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a0ebe838bd371d076bbb8d0454f68d7e7}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a0ebe838bd371d076bbb8d0454f68d7e7}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!PhoneNumber@{PhoneNumber}}
+\index{PhoneNumber@{PhoneNumber}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{PhoneNumber}{PhoneNumber}}
+{\footnotesize\ttfamily virtual string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Phone\+Number\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Phone\+Number for the user 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a1985afa6ff3a996a08b9a046714d3933}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a1985afa6ff3a996a08b9a046714d3933}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!PhoneNumberConfirmed@{PhoneNumberConfirmed}}
+\index{PhoneNumberConfirmed@{PhoneNumberConfirmed}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{PhoneNumberConfirmed}{PhoneNumberConfirmed}}
+{\footnotesize\ttfamily virtual bool Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Phone\+Number\+Confirmed\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+True if the phone number is confirmed, default is false 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a5dba81af6fa57346da0e1bed209b0daa}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a5dba81af6fa57346da0e1bed209b0daa}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!SecurityStamp@{SecurityStamp}}
+\index{SecurityStamp@{SecurityStamp}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{SecurityStamp}{SecurityStamp}}
+{\footnotesize\ttfamily virtual string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Security\+Stamp\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+A random value that should change whenever a users credentials have changed (password changed, login removed) 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a762b07beade70fe5153c242252592e87}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_a762b07beade70fe5153c242252592e87}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!TwoFactorEnabled@{TwoFactorEnabled}}
+\index{TwoFactorEnabled@{TwoFactorEnabled}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{TwoFactorEnabled}{TwoFactorEnabled}}
+{\footnotesize\ttfamily virtual bool Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+Two\+Factor\+Enabled\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Is two factor enabled for the user 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_aac0ca265f9f420f2b895d8da8f5d1962}\label{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser_aac0ca265f9f420f2b895d8da8f5d1962}} 
+\index{AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}!UserName@{UserName}}
+\index{UserName@{UserName}!AspNet.Identity.MySQL.IdentityUser@{AspNet.Identity.MySQL.IdentityUser}}
+\doxysubsubsection{\texorpdfstring{UserName}{UserName}}
+{\footnotesize\ttfamily string Asp\+Net.\+Identity.\+My\+SQL.\+Identity\+User.\+User\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+User\textquotesingle{}s name 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{IdentityUser_8cs}{Identity\+User.\+cs}}\end{DoxyCompactItemize}

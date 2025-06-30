@@ -1,0 +1,114 @@
+\hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController}{}\doxysection{ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller Class Reference}
+\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController}\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}}
+
+
+This class is the MVC Controller that controls views of the In-\/\+Memory traces.  
+
+
+
+
+Inheritance diagram for ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Action\+Result \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a2353d8b9f6b1ab31afa7ef10d30e6c8c}{Index}} (string http\+Method=null, string path=null)
+\begin{DoxyCompactList}\small\item\em Index action to view In-\/\+Memory traces. \end{DoxyCompactList}\item 
+Action\+Result \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a781f4b0d1943c8d6b1fabe3a4ee9b2ff}{Group\+Details}} (string http\+Method=null, string path=null)
+\begin{DoxyCompactList}\small\item\em Action to display trace groups \end{DoxyCompactList}\item 
+Action\+Result \mbox{\hyperlink{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a1ec0686d999214aea3fb4320e5699893}{Trace\+Details}} (string id)
+\begin{DoxyCompactList}\small\item\em Action to display the detail trace records for a single request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is the MVC Controller that controls views of the In-\/\+Memory traces. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a781f4b0d1943c8d6b1fabe3a4ee9b2ff}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a781f4b0d1943c8d6b1fabe3a4ee9b2ff}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}!GroupDetails@{GroupDetails}}
+\index{GroupDetails@{GroupDetails}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}}
+\doxysubsubsection{\texorpdfstring{GroupDetails()}{GroupDetails()}}
+{\footnotesize\ttfamily Action\+Result ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller.\+Group\+Details (\begin{DoxyParamCaption}\item[{string}]{http\+Method = {\ttfamily null},  }\item[{string}]{path = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Action to display trace groups 
+
+A trace group consists of all requests that have the same URL. This action accepts optional arguments to filter which groups to display. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Method} & If not {\ttfamily null} shows only traces for this HTTP method.\\
+\hline
+{\em path} & If not {\ttfamily null} shows only traces whose URL begins with this path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Action\+Result
+\end{DoxyReturn}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a2353d8b9f6b1ab31afa7ef10d30e6c8c}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a2353d8b9f6b1ab31afa7ef10d30e6c8c}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}!Index@{Index}}
+\index{Index@{Index}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily Action\+Result ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller.\+Index (\begin{DoxyParamCaption}\item[{string}]{http\+Method = {\ttfamily null},  }\item[{string}]{path = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Index action to view In-\/\+Memory traces. 
+
+This page is generally viewed only through the root URL plus \char`\"{}/\+Trace\char`\"{}. It accepts optional arguments to filter the visible traces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em http\+Method} & If not {\ttfamily null} shows only traces for this HTTP method.\\
+\hline
+{\em path} & If not {\ttfamily null} shows only traces whose URL begins with this path.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Action\+Result
+\end{DoxyReturn}
+\mbox{\Hypertarget{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a1ec0686d999214aea3fb4320e5699893}\label{classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController_a1ec0686d999214aea3fb4320e5699893}} 
+\index{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}!TraceDetails@{TraceDetails}}
+\index{TraceDetails@{TraceDetails}!ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController@{ROOT\_PROJECT\_NAMESPACE.Areas.Trace.Controllers.TraceController}}
+\doxysubsubsection{\texorpdfstring{TraceDetails()}{TraceDetails()}}
+{\footnotesize\ttfamily Action\+Result ROOT\+\_\+\+PROJECT\+\_\+\+NAMESPACE.\+Areas.\+Trace.\+Controllers.\+Trace\+Controller.\+Trace\+Details (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Action to display the detail trace records for a single request. 
+
+A Not\+Found response will be generated if there is no request in the current In-\/\+Memory buffer with that {\itshape id} . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier of the request. ~\newline
+ This is the Guid associated with the request as the traces were captured.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Action\+Result.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Memory\+Tracing\+Sample/\+Areas/\+Trace/\+Controllers/\mbox{\hyperlink{TraceController_8cs}{Trace\+Controller.\+cs}}\end{DoxyCompactItemize}

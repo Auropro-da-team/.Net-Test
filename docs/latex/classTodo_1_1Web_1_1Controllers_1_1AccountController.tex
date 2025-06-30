@@ -1,0 +1,173 @@
+\hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController}{}\doxysection{Todo.\+Web.\+Controllers.\+Account\+Controller Class Reference}
+\label{classTodo_1_1Web_1_1Controllers_1_1AccountController}\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+
+
+Inheritance diagram for Todo.\+Web.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classTodo_1_1Web_1_1Controllers_1_1AccountController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Todo.\+Web.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classTodo_1_1Web_1_1Controllers_1_1AccountController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20084d9df8e3ca3227fdc689897aaaa4}{Account\+Controller}} ()
+\item 
+\mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a615c4c3e2cb464c95157f19a433cb9e1}{Account\+Controller}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a73a934ebfca93708f8df85e767541d68}{User\+Manager}}$<$ Identity\+User $>$ user\+Manager, ISecure\+Data\+Format$<$ Authentication\+Ticket $>$ access\+Token\+Format)
+\item 
+\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1UserInfoViewModel}{User\+Info\+View\+Model}} \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a6ddc323db626d0210aee2cb07162fc6a}{Get\+User\+Info}} ()
+\item 
+IHttp\+Action\+Result \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20b04e24d632d06b308fcb779da4d3f3}{Logout}} ()
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_af5efc69b5411dc25baaec1d7b68973f4}{Get\+Manage\+Info}} (string return\+Url, bool generate\+State=false)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a8f94e5ddcadc71016972a4c94da197f7}{Change\+Password}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1ChangePasswordBindingModel}{Change\+Password\+Binding\+Model}} model)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_ae7728119410defb8634b85cf2462fd5d}{Set\+Password}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1SetPasswordBindingModel}{Set\+Password\+Binding\+Model}} model)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a217aa3ec3c7c65e0f9049125dbd3d635}{Add\+External\+Login}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1AddExternalLoginBindingModel}{Add\+External\+Login\+Binding\+Model}} model)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a2f2e3731c24551d029066983aea327d4}{Remove\+Login}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RemoveLoginBindingModel}{Remove\+Login\+Binding\+Model}} model)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a3374997ebd73e80449256deacca7b692}{Get\+External\+Login}} (string provider, string error=null)
+\item 
+IEnumerable$<$ \mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1ExternalLoginViewModel}{External\+Login\+View\+Model}} $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0802407b8cfa2ef4a62e4d97fbec868f}{Get\+External\+Logins}} (string return\+Url, bool generate\+State=false)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a59bffb115cd3a5f3c570ed6ddb72a665}{Register}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RegisterBindingModel}{Register\+Binding\+Model}} model)
+\item 
+async Task$<$ IHttp\+Action\+Result $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_aeb256d8aa1b73075946fcccd2d075087}{Register\+External}} (\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RegisterExternalBindingModel}{Register\+External\+Binding\+Model}} model)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0cd6fe72c9405bc004b8493f71401419}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+User\+Manager$<$ Identity\+User $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a73a934ebfca93708f8df85e767541d68}{User\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+ISecure\+Data\+Format$<$ Authentication\+Ticket $>$ \mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a16f5b029cfdc7e002af7a0387bb05112}{Access\+Token\+Format}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20084d9df8e3ca3227fdc689897aaaa4}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20084d9df8e3ca3227fdc689897aaaa4}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Todo.\+Web.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a615c4c3e2cb464c95157f19a433cb9e1}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a615c4c3e2cb464c95157f19a433cb9e1}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Todo.\+Web.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Controllers_1_1AccountController_a73a934ebfca93708f8df85e767541d68}{User\+Manager}}$<$ Identity\+User $>$}]{user\+Manager,  }\item[{ISecure\+Data\+Format$<$ Authentication\+Ticket $>$}]{access\+Token\+Format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a217aa3ec3c7c65e0f9049125dbd3d635}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a217aa3ec3c7c65e0f9049125dbd3d635}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!AddExternalLogin@{AddExternalLogin}}
+\index{AddExternalLogin@{AddExternalLogin}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AddExternalLogin()}{AddExternalLogin()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Add\+External\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1AddExternalLoginBindingModel}{Add\+External\+Login\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a8f94e5ddcadc71016972a4c94da197f7}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a8f94e5ddcadc71016972a4c94da197f7}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Change\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1ChangePasswordBindingModel}{Change\+Password\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0cd6fe72c9405bc004b8493f71401419}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0cd6fe72c9405bc004b8493f71401419}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Todo.\+Web.\+Controllers.\+Account\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a3374997ebd73e80449256deacca7b692}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a3374997ebd73e80449256deacca7b692}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!GetExternalLogin@{GetExternalLogin}}
+\index{GetExternalLogin@{GetExternalLogin}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{GetExternalLogin()}{GetExternalLogin()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Get\+External\+Login (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{error = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0802407b8cfa2ef4a62e4d97fbec868f}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a0802407b8cfa2ef4a62e4d97fbec868f}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!GetExternalLogins@{GetExternalLogins}}
+\index{GetExternalLogins@{GetExternalLogins}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{GetExternalLogins()}{GetExternalLogins()}}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1ExternalLoginViewModel}{External\+Login\+View\+Model}}$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Get\+External\+Logins (\begin{DoxyParamCaption}\item[{string}]{return\+Url,  }\item[{bool}]{generate\+State = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_af5efc69b5411dc25baaec1d7b68973f4}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_af5efc69b5411dc25baaec1d7b68973f4}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!GetManageInfo@{GetManageInfo}}
+\index{GetManageInfo@{GetManageInfo}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{GetManageInfo()}{GetManageInfo()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Get\+Manage\+Info (\begin{DoxyParamCaption}\item[{string}]{return\+Url,  }\item[{bool}]{generate\+State = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a6ddc323db626d0210aee2cb07162fc6a}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a6ddc323db626d0210aee2cb07162fc6a}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!GetUserInfo@{GetUserInfo}}
+\index{GetUserInfo@{GetUserInfo}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{GetUserInfo()}{GetUserInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1UserInfoViewModel}{User\+Info\+View\+Model}} Todo.\+Web.\+Controllers.\+Account\+Controller.\+Get\+User\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20b04e24d632d06b308fcb779da4d3f3}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a20b04e24d632d06b308fcb779da4d3f3}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!Logout@{Logout}}
+\index{Logout@{Logout}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Logout()}{Logout()}}
+{\footnotesize\ttfamily IHttp\+Action\+Result Todo.\+Web.\+Controllers.\+Account\+Controller.\+Logout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a59bffb115cd3a5f3c570ed6ddb72a665}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a59bffb115cd3a5f3c570ed6ddb72a665}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RegisterBindingModel}{Register\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_aeb256d8aa1b73075946fcccd2d075087}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_aeb256d8aa1b73075946fcccd2d075087}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!RegisterExternal@{RegisterExternal}}
+\index{RegisterExternal@{RegisterExternal}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{RegisterExternal()}{RegisterExternal()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Register\+External (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RegisterExternalBindingModel}{Register\+External\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a2f2e3731c24551d029066983aea327d4}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a2f2e3731c24551d029066983aea327d4}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!RemoveLogin@{RemoveLogin}}
+\index{RemoveLogin@{RemoveLogin}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{RemoveLogin()}{RemoveLogin()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Remove\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1RemoveLoginBindingModel}{Remove\+Login\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_ae7728119410defb8634b85cf2462fd5d}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_ae7728119410defb8634b85cf2462fd5d}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!SetPassword@{SetPassword}}
+\index{SetPassword@{SetPassword}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{SetPassword()}{SetPassword()}}
+{\footnotesize\ttfamily async Task$<$IHttp\+Action\+Result$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Set\+Password (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTodo_1_1Web_1_1Models_1_1SetPasswordBindingModel}{Set\+Password\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a16f5b029cfdc7e002af7a0387bb05112}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a16f5b029cfdc7e002af7a0387bb05112}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!AccessTokenFormat@{AccessTokenFormat}}
+\index{AccessTokenFormat@{AccessTokenFormat}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccessTokenFormat}{AccessTokenFormat}}
+{\footnotesize\ttfamily ISecure\+Data\+Format$<$Authentication\+Ticket$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+Access\+Token\+Format\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classTodo_1_1Web_1_1Controllers_1_1AccountController_a73a934ebfca93708f8df85e767541d68}\label{classTodo_1_1Web_1_1Controllers_1_1AccountController_a73a934ebfca93708f8df85e767541d68}} 
+\index{Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!Todo.Web.Controllers.AccountController@{Todo.Web.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{UserManager}{UserManager}}
+{\footnotesize\ttfamily User\+Manager$<$Identity\+User$>$ Todo.\+Web.\+Controllers.\+Account\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Todo/\+Todo.\+Web/\+Controllers/\mbox{\hyperlink{WebApi_2Todo_2Todo_8Web_2Controllers_2AccountController_8cs}{Account\+Controller.\+cs}}\end{DoxyCompactItemize}

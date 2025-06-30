@@ -1,0 +1,82 @@
+\hypertarget{classClientCertificateSample_1_1Controllers_1_1SampleController}{}\doxysection{Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller Class Reference}
+\label{classClientCertificateSample_1_1Controllers_1_1SampleController}\index{ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}}
+
+
+Inheritance diagram for Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classClientCertificateSample_1_1Controllers_1_1SampleController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classClientCertificateSample_1_1Controllers_1_1SampleController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+IEnumerable$<$ \mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}} $>$ \mbox{\hyperlink{classClientCertificateSample_1_1Controllers_1_1SampleController_acb795c0e8b4dbc3299d368a33178b4c2}{Get\+Items}} ()
+\begin{DoxyCompactList}\small\item\em Gets all the sample Items \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}} \mbox{\hyperlink{classClientCertificateSample_1_1Controllers_1_1SampleController_a6ad2a1a741f52b95d364c21dbf33fbfd}{Get\+Item}} (int id)
+\begin{DoxyCompactList}\small\item\em Gets an sample Item with the given id \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classClientCertificateSample_1_1Controllers_1_1SampleController_a2338906d6e9eb5767c0ec03515e1dd6d}{Post\+Item}} (\mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}} item)
+\begin{DoxyCompactList}\small\item\em Post a new sample item to the list. This requires authentication with client certificate and it needs to be in the \char`\"{}administrator\char`\"{} role. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classClientCertificateSample_1_1Controllers_1_1SampleController_a6ad2a1a741f52b95d364c21dbf33fbfd}\label{classClientCertificateSample_1_1Controllers_1_1SampleController_a6ad2a1a741f52b95d364c21dbf33fbfd}} 
+\index{ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}!GetItem@{GetItem}}
+\index{GetItem@{GetItem}!ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{GetItem()}{GetItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}} Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Get\+Item (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets an sample Item with the given id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id that is part of the route\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classClientCertificateSample_1_1Controllers_1_1SampleController_acb795c0e8b4dbc3299d368a33178b4c2}\label{classClientCertificateSample_1_1Controllers_1_1SampleController_acb795c0e8b4dbc3299d368a33178b4c2}} 
+\index{ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}!GetItems@{GetItems}}
+\index{GetItems@{GetItems}!ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{GetItems()}{GetItems()}}
+{\footnotesize\ttfamily IEnumerable$<$\mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}}$>$ Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Get\+Items (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets all the sample Items 
+
+\mbox{\Hypertarget{classClientCertificateSample_1_1Controllers_1_1SampleController_a2338906d6e9eb5767c0ec03515e1dd6d}\label{classClientCertificateSample_1_1Controllers_1_1SampleController_a2338906d6e9eb5767c0ec03515e1dd6d}} 
+\index{ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}!PostItem@{PostItem}}
+\index{PostItem@{PostItem}!ClientCertificateSample.Controllers.SampleController@{ClientCertificateSample.Controllers.SampleController}}
+\doxysubsubsection{\texorpdfstring{PostItem()}{PostItem()}}
+{\footnotesize\ttfamily string Client\+Certificate\+Sample.\+Controllers.\+Sample\+Controller.\+Post\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClientCertificateSample_1_1Models_1_1SampleItem}{Sample\+Item}}}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Post a new sample item to the list. This requires authentication with client certificate and it needs to be in the \char`\"{}administrator\char`\"{} role. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The sample item coming from the request body\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the newly added sample item\textquotesingle{}s string value
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Web\+Api/\+Client\+Certificate\+Sample/\+Controllers/\mbox{\hyperlink{ClientCertificateSample_2Controllers_2SampleController_8cs}{Sample\+Controller.\+cs}}\end{DoxyCompactItemize}

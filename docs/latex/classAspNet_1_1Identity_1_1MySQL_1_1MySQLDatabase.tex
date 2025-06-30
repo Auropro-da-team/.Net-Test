@@ -1,0 +1,183 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase Class Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+
+
+Class that encapsulates a \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} database connections and CRUD operations  
+
+
+
+
+Inheritance diagram for Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_af7866152fc48f8de2843d8f3b2069c2e}{My\+SQLDatabase}} ()
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ae738bacb260126df943a7b67d5516373}{My\+SQLDatabase}} (string connection\+String\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor which takes the connection string name \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ac9864cd72ae3cec5cac6180394bf885b}{Execute}} (string command\+Text, Dictionary$<$ string, object $>$ parameters)
+\begin{DoxyCompactList}\small\item\em Executes a non-\/query \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} statement \end{DoxyCompactList}\item 
+object \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a17eeb4a8ff5e03a3a1d13503b323e779}{Query\+Value}} (string command\+Text, Dictionary$<$ string, object $>$ parameters)
+\begin{DoxyCompactList}\small\item\em Executes a \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query that returns a single scalar value as the result. \end{DoxyCompactList}\item 
+List$<$ Dictionary$<$ string, string $>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a42af8504e803aee340e08e532bc66fa3}{Query}} (string command\+Text, Dictionary$<$ string, object $>$ parameters)
+\begin{DoxyCompactList}\small\item\em Executes a SQL query that returns a list of rows as the result. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ad5f5785cd829f2794725b7f669039038}{Ensure\+Connection\+Closed}} ()
+\begin{DoxyCompactList}\small\item\em Closes a connection if open \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a621aeb8a5f8d1dbca9a3b2ff63a5b95a}{Get\+Str\+Value}} (string command\+Text, Dictionary$<$ string, object $>$ parameters)
+\begin{DoxyCompactList}\small\item\em Helper method to return query a string value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_add9dfcbc3fd3e882ed163d92cb07afd1}{Dispose}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that encapsulates a \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} database connections and CRUD operations 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_af7866152fc48f8de2843d8f3b2069c2e}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_af7866152fc48f8de2843d8f3b2069c2e}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!MySQLDatabase@{MySQLDatabase}}
+\index{MySQLDatabase@{MySQLDatabase}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{MySQLDatabase()}{MySQLDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+My\+SQLDatabase (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+Default constructor which uses the \char`\"{}\+Default\+Connection\char`\"{} connection\+String \mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ae738bacb260126df943a7b67d5516373}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ae738bacb260126df943a7b67d5516373}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!MySQLDatabase@{MySQLDatabase}}
+\index{MySQLDatabase@{MySQLDatabase}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{MySQLDatabase()}{MySQLDatabase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+My\+SQLDatabase (\begin{DoxyParamCaption}\item[{string}]{connection\+String\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor which takes the connection string name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection\+String\+Name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_add9dfcbc3fd3e882ed163d92cb07afd1}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_add9dfcbc3fd3e882ed163d92cb07afd1}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ad5f5785cd829f2794725b7f669039038}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ad5f5785cd829f2794725b7f669039038}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!EnsureConnectionClosed@{EnsureConnectionClosed}}
+\index{EnsureConnectionClosed@{EnsureConnectionClosed}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{EnsureConnectionClosed()}{EnsureConnectionClosed()}}
+{\footnotesize\ttfamily void Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Ensure\+Connection\+Closed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Closes a connection if open 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ac9864cd72ae3cec5cac6180394bf885b}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_ac9864cd72ae3cec5cac6180394bf885b}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!Execute@{Execute}}
+\index{Execute@{Execute}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily int Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Execute (\begin{DoxyParamCaption}\item[{string}]{command\+Text,  }\item[{Dictionary$<$ string, object $>$}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes a non-\/query \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} statement 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Text} & The \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query to execute\\
+\hline
+{\em parameters} & Optional parameters to pass to the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The count of records affected by the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} statement
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a621aeb8a5f8d1dbca9a3b2ff63a5b95a}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a621aeb8a5f8d1dbca9a3b2ff63a5b95a}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!GetStrValue@{GetStrValue}}
+\index{GetStrValue@{GetStrValue}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{GetStrValue()}{GetStrValue()}}
+{\footnotesize\ttfamily string Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Get\+Str\+Value (\begin{DoxyParamCaption}\item[{string}]{command\+Text,  }\item[{Dictionary$<$ string, object $>$}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper method to return query a string value 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Text} & The \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query to execute\\
+\hline
+{\em parameters} & Parameters to pass to the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string value resulting from the query
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a42af8504e803aee340e08e532bc66fa3}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a42af8504e803aee340e08e532bc66fa3}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!Query@{Query}}
+\index{Query@{Query}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{Query()}{Query()}}
+{\footnotesize\ttfamily List$<$Dictionary$<$string, string$>$ $>$ Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Query (\begin{DoxyParamCaption}\item[{string}]{command\+Text,  }\item[{Dictionary$<$ string, object $>$}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes a SQL query that returns a list of rows as the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Text} & The \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query to execute\\
+\hline
+{\em parameters} & Parameters to pass to the \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of a Dictionary of Key, values pairs representing the Column\+Name and corresponding value
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a17eeb4a8ff5e03a3a1d13503b323e779}\label{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase_a17eeb4a8ff5e03a3a1d13503b323e779}} 
+\index{AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}!QueryValue@{QueryValue}}
+\index{QueryValue@{QueryValue}!AspNet.Identity.MySQL.MySQLDatabase@{AspNet.Identity.MySQL.MySQLDatabase}}
+\doxysubsubsection{\texorpdfstring{QueryValue()}{QueryValue()}}
+{\footnotesize\ttfamily object Asp\+Net.\+Identity.\+My\+SQL.\+My\+SQLDatabase.\+Query\+Value (\begin{DoxyParamCaption}\item[{string}]{command\+Text,  }\item[{Dictionary$<$ string, object $>$}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Executes a \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query that returns a single scalar value as the result. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Text} & The \mbox{\hyperlink{namespaceAspNet_1_1Identity_1_1MySQL}{My\+SQL}} query to execute\\
+\hline
+{\em parameters} & Optional parameters to pass to the query\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{MySQLDatabase_8cs}{My\+SQLDatabase.\+cs}}\end{DoxyCompactItemize}

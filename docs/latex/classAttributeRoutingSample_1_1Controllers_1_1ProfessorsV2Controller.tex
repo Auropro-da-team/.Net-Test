@@ -1,0 +1,74 @@
+\hypertarget{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller}{}\doxysection{Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller Class Reference}
+\label{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller}\index{AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}}
+
+
+This controller uses a custom Route\+Factory\+Attribute to generate a specialized route instance.  
+
+
+
+
+Inheritance diagram for Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a730ba065104f8bd34dfc6a6268c5645c}{Index}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_ac9194a929387e3e73bc36428716d2061}{Details}} (int? id)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a409bfe8f5c6bed5e3390ea06cf8e2e38}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This controller uses a custom Route\+Factory\+Attribute to generate a specialized route instance. 
+
+This controller has some slight differences from the \textquotesingle{}v1\textquotesingle{} Professors controller, it includes a list of courses and links right on the index page.
+
+The action to be invoked on this controller is determined by the \{action\} parameter, which has a default of \textquotesingle{}Index\textquotesingle{}. The \{id\} parameter is optional, so that a single route can match both Index and Details (which requires an id). Above each action are examples of request paths that would reach that action.
+
+In this case the custom route implements versioning by looking at the parameters matched by the route template, but a variety of criteria could be used, see \mbox{\hyperlink{VersionedRouteAttribute_8cs}{Versioned\+Route\+Attribute.\+cs}} and \mbox{\hyperlink{VersionedRouteConstraint_8cs}{Versioned\+Route\+Constraint.\+cs}}.
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_ac9194a929387e3e73bc36428716d2061}\label{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_ac9194a929387e3e73bc36428716d2061}} 
+\index{AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}!Details@{Details}}
+\index{Details@{Details}!AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a409bfe8f5c6bed5e3390ea06cf8e2e38}\label{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a409bfe8f5c6bed5e3390ea06cf8e2e38}} 
+\index{AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a730ba065104f8bd34dfc6a6268c5645c}\label{classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller_a730ba065104f8bd34dfc6a6268c5645c}} 
+\index{AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}!Index@{Index}}
+\index{Index@{Index}!AttributeRoutingSample.Controllers.ProfessorsV2Controller@{AttributeRoutingSample.Controllers.ProfessorsV2Controller}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Attribute\+Routing\+Sample.\+Controllers.\+Professors\+V2\+Controller.\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+MVC/\+Attribute\+Routing\+Sample/\+Attribute\+Routing\+Sample/\+Controllers/\mbox{\hyperlink{ProfessorsV2Controller_8cs}{Professors\+V2\+Controller.\+cs}}\end{DoxyCompactItemize}

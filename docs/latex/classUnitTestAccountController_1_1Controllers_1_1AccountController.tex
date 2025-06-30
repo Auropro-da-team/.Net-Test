@@ -1,0 +1,233 @@
+\hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController}{}\doxysection{Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller Class Reference}
+\label{classUnitTestAccountController_1_1Controllers_1_1AccountController}\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+
+
+Inheritance diagram for Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classUnitTestAccountController_1_1Controllers_1_1AccountController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classUnitTestAccountController_1_1Controllers_1_1AccountController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}{Manage\+Message\+Id}} \{ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a0053618c57496fec45c67daf91919394}{Change\+Password\+Success}}
+, \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216af17ca72fcf8adaa46d5e87b12ec3a27d}{Set\+Password\+Success}}
+, \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a46e53931d0e837638a46368b2b04ba6a}{Remove\+Login\+Success}}
+, \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a902b0d55fddef6f8d651fe1035b7d4bd}{Error}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_af03ab4f8ecff8aa38dc3da7cde3a973a}{Account\+Controller}} ()
+\item 
+\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_aa562ef00c299ebf46fdab231ef83aaef}{Account\+Controller}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a5481575f81eb7c9062b3102c3e3ca428}{User\+Manager}}$<$ \mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ApplicationUser}{Application\+User}} $>$ user\+Manager)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_abc8c56c5e1893436ae31950d5aba3752}{Login}} (string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7cb717b40fb4f2d6481d544d878f8023}{Login}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1LoginViewModel}{Login\+View\+Model}} model, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a6f800598e483ba1e7acfbaac23da2615}{Register}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_abdf4ec4342a9595d153ae24a0ced758c}{Register}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1RegisterViewModel}{Register\+View\+Model}} model)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_aec5f1e0c276d4138e04ac312ccf17805}{Disassociate}} (string login\+Provider, string provider\+Key)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_af9aefcef40d193d636c28f559c7cb18f}{Manage}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}{Manage\+Message\+Id}}? message)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a45486182d5c4b5f66f0355de1a3c7ae1}{Manage}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ManageUserViewModel}{Manage\+User\+View\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_ade500c0ac5340ca54d7833f637ea2a64}{External\+Login}} (string provider, string return\+Url)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_aca52c4b8f384ae9943dd4f692722d9be}{External\+Login\+Callback}} (string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9f36af89b633532469b5771b1020491a}{Link\+Login}} (string provider)
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a8441f4b4973b94b06a47f891b87aa0e1}{Link\+Login\+Callback}} ()
+\item 
+async Task$<$ Action\+Result $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_ac766129fbf5a6d19d9c2cdb5724aac2c}{External\+Login\+Confirmation}} (\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ExternalLoginConfirmationViewModel}{External\+Login\+Confirmation\+View\+Model}} model, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7dca787bd7d395f2a182c08c4a4815e1}{Log\+Off}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a3fed3a301ca90081a3b60df1b4fbdda1}{External\+Login\+Failure}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_af989fc8f029c8da4f89223f9f85c89cf}{Remove\+Account\+List}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9554d4540370d69c9e4876c7e37e02d2}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+User\+Manager$<$ \mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ApplicationUser}{Application\+User}} $>$ \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a5481575f81eb7c9062b3102c3e3ca428}{User\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ManageMessageId@{ManageMessageId}}
+\index{ManageMessageId@{ManageMessageId}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ManageMessageId}{ManageMessageId}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}{Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Manage\+Message\+Id}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChangePasswordSuccess@{ChangePasswordSuccess}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ChangePasswordSuccess@{ChangePasswordSuccess}}}\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a0053618c57496fec45c67daf91919394}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a0053618c57496fec45c67daf91919394}} 
+Change\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SetPasswordSuccess@{SetPasswordSuccess}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!SetPasswordSuccess@{SetPasswordSuccess}}}\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216af17ca72fcf8adaa46d5e87b12ec3a27d}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216af17ca72fcf8adaa46d5e87b12ec3a27d}} 
+Set\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoveLoginSuccess@{RemoveLoginSuccess}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!RemoveLoginSuccess@{RemoveLoginSuccess}}}\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a46e53931d0e837638a46368b2b04ba6a}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a46e53931d0e837638a46368b2b04ba6a}} 
+Remove\+Login\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Error@{Error}}}\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a902b0d55fddef6f8d651fe1035b7d4bd}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216a902b0d55fddef6f8d651fe1035b7d4bd}} 
+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_af03ab4f8ecff8aa38dc3da7cde3a973a}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_af03ab4f8ecff8aa38dc3da7cde3a973a}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_aa562ef00c299ebf46fdab231ef83aaef}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_aa562ef00c299ebf46fdab231ef83aaef}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a5481575f81eb7c9062b3102c3e3ca428}{User\+Manager}}$<$ \mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ApplicationUser}{Application\+User}} $>$}]{user\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_aec5f1e0c276d4138e04ac312ccf17805}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_aec5f1e0c276d4138e04ac312ccf17805}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Disassociate@{Disassociate}}
+\index{Disassociate@{Disassociate}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Disassociate()}{Disassociate()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Disassociate (\begin{DoxyParamCaption}\item[{string}]{login\+Provider,  }\item[{string}]{provider\+Key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9554d4540370d69c9e4876c7e37e02d2}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9554d4540370d69c9e4876c7e37e02d2}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_ade500c0ac5340ca54d7833f637ea2a64}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_ade500c0ac5340ca54d7833f637ea2a64}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ExternalLogin@{ExternalLogin}}
+\index{ExternalLogin@{ExternalLogin}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLogin()}{ExternalLogin()}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+External\+Login (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_aca52c4b8f384ae9943dd4f692722d9be}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_aca52c4b8f384ae9943dd4f692722d9be}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ExternalLoginCallback@{ExternalLoginCallback}}
+\index{ExternalLoginCallback@{ExternalLoginCallback}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginCallback()}{ExternalLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+External\+Login\+Callback (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_ac766129fbf5a6d19d9c2cdb5724aac2c}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_ac766129fbf5a6d19d9c2cdb5724aac2c}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ExternalLoginConfirmation@{ExternalLoginConfirmation}}
+\index{ExternalLoginConfirmation@{ExternalLoginConfirmation}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginConfirmation()}{ExternalLoginConfirmation()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+External\+Login\+Confirmation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ExternalLoginConfirmationViewModel}{External\+Login\+Confirmation\+View\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a3fed3a301ca90081a3b60df1b4fbdda1}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a3fed3a301ca90081a3b60df1b4fbdda1}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!ExternalLoginFailure@{ExternalLoginFailure}}
+\index{ExternalLoginFailure@{ExternalLoginFailure}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginFailure()}{ExternalLoginFailure()}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+External\+Login\+Failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9f36af89b633532469b5771b1020491a}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a9f36af89b633532469b5771b1020491a}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!LinkLogin@{LinkLogin}}
+\index{LinkLogin@{LinkLogin}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LinkLogin()}{LinkLogin()}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Link\+Login (\begin{DoxyParamCaption}\item[{string}]{provider }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a8441f4b4973b94b06a47f891b87aa0e1}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a8441f4b4973b94b06a47f891b87aa0e1}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!LinkLoginCallback@{LinkLoginCallback}}
+\index{LinkLoginCallback@{LinkLoginCallback}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LinkLoginCallback()}{LinkLoginCallback()}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Link\+Login\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7cb717b40fb4f2d6481d544d878f8023}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7cb717b40fb4f2d6481d544d878f8023}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1LoginViewModel}{Login\+View\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_abc8c56c5e1893436ae31950d5aba3752}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_abc8c56c5e1893436ae31950d5aba3752}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7dca787bd7d395f2a182c08c4a4815e1}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a7dca787bd7d395f2a182c08c4a4815e1}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!LogOff@{LogOff}}
+\index{LogOff@{LogOff}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LogOff()}{LogOff()}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Log\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_af9aefcef40d193d636c28f559c7cb18f}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_af9aefcef40d193d636c28f559c7cb18f}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Controllers_1_1AccountController_a4bb65619b4cdda2d2e9740ab2b379216}{Manage\+Message\+Id}}?}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a45486182d5c4b5f66f0355de1a3c7ae1}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a45486182d5c4b5f66f0355de1a3c7ae1}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ManageUserViewModel}{Manage\+User\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a6f800598e483ba1e7acfbaac23da2615}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a6f800598e483ba1e7acfbaac23da2615}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_abdf4ec4342a9595d153ae24a0ced758c}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_abdf4ec4342a9595d153ae24a0ced758c}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$Action\+Result$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1RegisterViewModel}{Register\+View\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_af989fc8f029c8da4f89223f9f85c89cf}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_af989fc8f029c8da4f89223f9f85c89cf}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!RemoveAccountList@{RemoveAccountList}}
+\index{RemoveAccountList@{RemoveAccountList}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{RemoveAccountList()}{RemoveAccountList()}}
+{\footnotesize\ttfamily Action\+Result Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+Remove\+Account\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classUnitTestAccountController_1_1Controllers_1_1AccountController_a5481575f81eb7c9062b3102c3e3ca428}\label{classUnitTestAccountController_1_1Controllers_1_1AccountController_a5481575f81eb7c9062b3102c3e3ca428}} 
+\index{UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!UnitTestAccountController.Controllers.AccountController@{UnitTestAccountController.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{UserManager}{UserManager}}
+{\footnotesize\ttfamily User\+Manager$<$\mbox{\hyperlink{classUnitTestAccountController_1_1Models_1_1ApplicationUser}{Application\+User}}$>$ Unit\+Test\+Account\+Controller.\+Controllers.\+Account\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Unit\+Test\+Account\+Controller/\+Unit\+Test\+Account\+Controller/\+Controllers/\mbox{\hyperlink{Identity_2UnitTestAccountController_2UnitTestAccountController_2Controllers_2AccountController_8cs}{Account\+Controller.\+cs}}\end{DoxyCompactItemize}

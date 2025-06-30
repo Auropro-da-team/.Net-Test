@@ -1,0 +1,219 @@
+\hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController}{}\doxysection{Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller Class Reference}
+\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController}\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+
+
+Inheritance diagram for Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classSimpleMembershipMigration_1_1Controllers_1_1AccountController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classSimpleMembershipMigration_1_1Controllers_1_1AccountController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries External\+Login\+Result}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}{Manage\+Message\+Id}} \{ \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a0053618c57496fec45c67daf91919394}{Change\+Password\+Success}}
+, \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0af17ca72fcf8adaa46d5e87b12ec3a27d}{Set\+Password\+Success}}
+, \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a46e53931d0e837638a46368b2b04ba6a}{Remove\+Login\+Success}}
+, \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a902b0d55fddef6f8d651fe1035b7d4bd}{Error}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a254940436362c195971a09059b143ba7}{Account\+Controller}} ()
+\item 
+\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a1e0e0d47c8e9dc68dcdf4e3f83d7ae21}{Account\+Controller}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a837292eb13fba7fec3b7fea6ff4b5279}{User\+Manager}}$<$ \mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1Identity_1_1User}{User}}, int $>$ user\+Manager)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a15b515fe4220e5a66da0fe53f6731c94}{Login}} (string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a56a280e1574672102426a67e8196cdb0}{Login}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1LoginBindingModel}{Login\+Binding\+Model}} model, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0cd47a2230709e70514fff81b669e305}{Log\+Off}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a3bf5eeaa65ba90ea36d19baab515f7bc}{Register}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a586c66f6c909845df594dc669cce0299}{Register}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1RegisterBindingModel}{Register\+Binding\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a00e101a989e5adf14e7c163dfb7c997d}{Disassociate}} (string provider, string provider\+User\+Id)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a91635754e40ac8abe96a0160526089c0}{Manage}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}{Manage\+Message\+Id}}? message)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a96a609bc63879035472494a81b3cc871}{Manage}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1LocalPasswordBindingModel}{Local\+Password\+Binding\+Model}} model)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a5b843f5adca3d4eec162824569fca23b}{External\+Login}} (string provider, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_ab39be2d310109a1d41f6d0ba56491a60}{External\+Login\+Callback}} (string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a25c2ae4ff78b55527aada575dcb23fba}{External\+Login\+Confirmation}} (\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1RegisterExternalLoginBindingModel}{Register\+External\+Login\+Binding\+Model}} model, string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a2f97b663032177f4961547b7ccc1d604}{External\+Login\+Failure}} ()
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a09f55c52b8dceffa3f0fc109cb95f46e}{External\+Logins\+List}} (string return\+Url)
+\item 
+Action\+Result \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0b48647e01117f5ddaef61c36dfa360f}{Remove\+External\+Logins}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+User\+Manager$<$ \mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1Identity_1_1User}{User}}, int $>$ \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a837292eb13fba7fec3b7fea6ff4b5279}{User\+Manager}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ManageMessageId@{ManageMessageId}}
+\index{ManageMessageId@{ManageMessageId}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ManageMessageId}{ManageMessageId}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}{Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Manage\+Message\+Id}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ChangePasswordSuccess@{ChangePasswordSuccess}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ChangePasswordSuccess@{ChangePasswordSuccess}}}\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a0053618c57496fec45c67daf91919394}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a0053618c57496fec45c67daf91919394}} 
+Change\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SetPasswordSuccess@{SetPasswordSuccess}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!SetPasswordSuccess@{SetPasswordSuccess}}}\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0af17ca72fcf8adaa46d5e87b12ec3a27d}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0af17ca72fcf8adaa46d5e87b12ec3a27d}} 
+Set\+Password\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RemoveLoginSuccess@{RemoveLoginSuccess}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!RemoveLoginSuccess@{RemoveLoginSuccess}}}\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a46e53931d0e837638a46368b2b04ba6a}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a46e53931d0e837638a46368b2b04ba6a}} 
+Remove\+Login\+Success&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Error@{Error}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Error@{Error}}}\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a902b0d55fddef6f8d651fe1035b7d4bd}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0a902b0d55fddef6f8d651fe1035b7d4bd}} 
+Error&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a254940436362c195971a09059b143ba7}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a254940436362c195971a09059b143ba7}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a1e0e0d47c8e9dc68dcdf4e3f83d7ae21}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a1e0e0d47c8e9dc68dcdf4e3f83d7ae21}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!AccountController@{AccountController}}
+\index{AccountController@{AccountController}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{AccountController()}{AccountController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Account\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a837292eb13fba7fec3b7fea6ff4b5279}{User\+Manager}}$<$ \mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1Identity_1_1User}{User}}, int $>$}]{user\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a00e101a989e5adf14e7c163dfb7c997d}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a00e101a989e5adf14e7c163dfb7c997d}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Disassociate@{Disassociate}}
+\index{Disassociate@{Disassociate}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Disassociate()}{Disassociate()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Disassociate (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{provider\+User\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a5b843f5adca3d4eec162824569fca23b}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a5b843f5adca3d4eec162824569fca23b}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ExternalLogin@{ExternalLogin}}
+\index{ExternalLogin@{ExternalLogin}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLogin()}{ExternalLogin()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+External\+Login (\begin{DoxyParamCaption}\item[{string}]{provider,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_ab39be2d310109a1d41f6d0ba56491a60}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_ab39be2d310109a1d41f6d0ba56491a60}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ExternalLoginCallback@{ExternalLoginCallback}}
+\index{ExternalLoginCallback@{ExternalLoginCallback}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginCallback()}{ExternalLoginCallback()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+External\+Login\+Callback (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a25c2ae4ff78b55527aada575dcb23fba}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a25c2ae4ff78b55527aada575dcb23fba}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ExternalLoginConfirmation@{ExternalLoginConfirmation}}
+\index{ExternalLoginConfirmation@{ExternalLoginConfirmation}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginConfirmation()}{ExternalLoginConfirmation()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+External\+Login\+Confirmation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1RegisterExternalLoginBindingModel}{Register\+External\+Login\+Binding\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a2f97b663032177f4961547b7ccc1d604}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a2f97b663032177f4961547b7ccc1d604}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ExternalLoginFailure@{ExternalLoginFailure}}
+\index{ExternalLoginFailure@{ExternalLoginFailure}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginFailure()}{ExternalLoginFailure()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+External\+Login\+Failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a09f55c52b8dceffa3f0fc109cb95f46e}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a09f55c52b8dceffa3f0fc109cb95f46e}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!ExternalLoginsList@{ExternalLoginsList}}
+\index{ExternalLoginsList@{ExternalLoginsList}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{ExternalLoginsList()}{ExternalLoginsList()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+External\+Logins\+List (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a56a280e1574672102426a67e8196cdb0}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a56a280e1574672102426a67e8196cdb0}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1LoginBindingModel}{Login\+Binding\+Model}}}]{model,  }\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a15b515fe4220e5a66da0fe53f6731c94}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a15b515fe4220e5a66da0fe53f6731c94}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Login@{Login}}
+\index{Login@{Login}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Login (\begin{DoxyParamCaption}\item[{string}]{return\+Url }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0cd47a2230709e70514fff81b669e305}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0cd47a2230709e70514fff81b669e305}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!LogOff@{LogOff}}
+\index{LogOff@{LogOff}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{LogOff()}{LogOff()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Log\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a96a609bc63879035472494a81b3cc871}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a96a609bc63879035472494a81b3cc871}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1LocalPasswordBindingModel}{Local\+Password\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a91635754e40ac8abe96a0160526089c0}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a91635754e40ac8abe96a0160526089c0}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Manage@{Manage}}
+\index{Manage@{Manage}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Manage()}{Manage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Manage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a633be64ab371f1e4019ed537c5562ae0}{Manage\+Message\+Id}}?}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a3bf5eeaa65ba90ea36d19baab515f7bc}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a3bf5eeaa65ba90ea36d19baab515f7bc}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a586c66f6c909845df594dc669cce0299}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a586c66f6c909845df594dc669cce0299}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!Register@{Register}}
+\index{Register@{Register}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1RegisterBindingModel}{Register\+Binding\+Model}}}]{model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0b48647e01117f5ddaef61c36dfa360f}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a0b48647e01117f5ddaef61c36dfa360f}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!RemoveExternalLogins@{RemoveExternalLogins}}
+\index{RemoveExternalLogins@{RemoveExternalLogins}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{RemoveExternalLogins()}{RemoveExternalLogins()}}
+{\footnotesize\ttfamily Action\+Result Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+Remove\+External\+Logins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a837292eb13fba7fec3b7fea6ff4b5279}\label{classSimpleMembershipMigration_1_1Controllers_1_1AccountController_a837292eb13fba7fec3b7fea6ff4b5279}} 
+\index{SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}!UserManager@{UserManager}}
+\index{UserManager@{UserManager}!SimpleMembershipMigration.Controllers.AccountController@{SimpleMembershipMigration.Controllers.AccountController}}
+\doxysubsubsection{\texorpdfstring{UserManager}{UserManager}}
+{\footnotesize\ttfamily User\+Manager$<$\mbox{\hyperlink{classSimpleMembershipMigration_1_1Models_1_1Identity_1_1User}{User}}, int$>$ Simple\+Membership\+Migration.\+Controllers.\+Account\+Controller.\+User\+Manager\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Simple\+Membership\+Migration/\+Simple\+Membership\+Migration/\+Controllers/\mbox{\hyperlink{Identity_2SimpleMembershipMigration_2SimpleMembershipMigration_2Controllers_2AccountController_8cs}{Account\+Controller.\+cs}}\end{DoxyCompactItemize}

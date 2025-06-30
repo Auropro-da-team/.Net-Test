@@ -1,0 +1,921 @@
+\hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{}\doxysection{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store$<$ TUser $>$ Class Template Reference}
+\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+
+
+Class that implements the key ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} user store iterfaces  
+
+
+
+
+Inheritance diagram for Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store$<$ TUser $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAspNet_1_1Identity_1_1MySQL_1_1UserStore__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store$<$ TUser $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAspNet_1_1Identity_1_1MySQL_1_1UserStore__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7d45578c9503e265c98f1c16e72e1cc3}{User\+Store}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that initializes a new \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance using the Default Connection string \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab024d053ccf3e14b749432a44d41516e}{User\+Store}} (\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} database)
+\begin{DoxyCompactList}\small\item\em Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} as argument \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a64936ea1be0eda72f36e3a455954d9b3}{Create\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Insert a new TUser in the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{User\+Table}} \end{DoxyCompactList}\item 
+Task$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acf2b3ee29668dc3d5b795b1c145e8243}{Find\+By\+Id\+Async}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Returns an TUser instance based on a user\+Id query \end{DoxyCompactList}\item 
+Task$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a05b6829133657fe25b0d57b2e3b90035}{Find\+By\+Name\+Async}} (string user\+Name)
+\begin{DoxyCompactList}\small\item\em Returns an TUser instance based on a user\+Name query \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab093ba503a7062c96769dbee93dc2a4c}{Update\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Updates the Users\+Table with the TUser instance values \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af990431c96a029a3b493b0b5d825d210}{Dispose}} ()
+\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac4a167c3586626a42d5de117a59ffe6f}{Add\+Claim\+Async}} (TUser user, Claim claim)
+\begin{DoxyCompactList}\small\item\em Inserts a claim to the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable}{User\+Claims\+Table}} for the given user \end{DoxyCompactList}\item 
+Task$<$ IList$<$ Claim $>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaa8d42a70ecdebdf835938d9697cf251}{Get\+Claims\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Returns all claims for a given user \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab95aff85bbeb169e55e0975c55aa5b5f}{Remove\+Claim\+Async}} (TUser user, Claim claim)
+\begin{DoxyCompactList}\small\item\em Removes a claim froma user \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aa21149595aae7ef6c093468ac58da372}{Add\+Login\+Async}} (TUser user, User\+Login\+Info login)
+\begin{DoxyCompactList}\small\item\em Inserts a Login in the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}{User\+Logins\+Table}} for a given User \end{DoxyCompactList}\item 
+Task$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad518e1e5e13d23951859c22080a40f37}{Find\+Async}} (User\+Login\+Info login)
+\begin{DoxyCompactList}\small\item\em Returns an TUser based on the Login info \end{DoxyCompactList}\item 
+Task$<$ IList$<$ User\+Login\+Info $>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af0ce18690c4709ef293d6da924858f63}{Get\+Logins\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Returns list of User\+Login\+Info for a given TUser \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a4fd00a51782e45654348dc2f34e6387a}{Remove\+Login\+Async}} (TUser user, User\+Login\+Info login)
+\begin{DoxyCompactList}\small\item\em Deletes a login from \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}{User\+Logins\+Table}} for a given TUser \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0adcd99188d442580dbdaf5d3544b29f}{Add\+To\+Role\+Async}} (TUser user, string role\+Name)
+\begin{DoxyCompactList}\small\item\em Inserts a entry in the User\+Roles table \end{DoxyCompactList}\item 
+Task$<$ IList$<$ string $>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_abd2f274f65eeefe51ef5ede8ef50c1d4}{Get\+Roles\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Returns the roles for a given TUser \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acbbd45a76123df38676af13f6b3f8a75}{Is\+In\+Role\+Async}} (TUser user, string role)
+\begin{DoxyCompactList}\small\item\em Verifies if a user is in a role \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a11cba1093215337b91a5f60cb9c50247}{Remove\+From\+Role\+Async}} (TUser user, string role)
+\begin{DoxyCompactList}\small\item\em Removes a user from a role \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7877d0c2b1413daa1086da49acbb98ef}{Delete\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Deletes a user \end{DoxyCompactList}\item 
+Task$<$ string $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a49d26d183db6b294f0d65181af658c21}{Get\+Password\+Hash\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Returns the Password\+Hash for a given TUser \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aef8bdba5b80bb34ae83e5ae8c825437d}{Has\+Password\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Verifies if user has password \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac8002c7315c8685ca0a24ce912ab98b5}{Set\+Password\+Hash\+Async}} (TUser user, string password\+Hash)
+\begin{DoxyCompactList}\small\item\em Sets the password hash for a given TUser \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae9b5abf0b5d0ce4fca8aa450992e961e}{Set\+Security\+Stamp\+Async}} (TUser user, string stamp)
+\begin{DoxyCompactList}\small\item\em Set security stamp \end{DoxyCompactList}\item 
+Task$<$ string $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a6e464416e3e0a2dc09c8a85520f3922c}{Get\+Security\+Stamp\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get security stamp \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae38664fc89aeaeb25999c86bcab4a98e}{Set\+Email\+Async}} (TUser user, string email)
+\begin{DoxyCompactList}\small\item\em Set email on user \end{DoxyCompactList}\item 
+Task$<$ string $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab8d7a11271d09e7007f804ec04362340}{Get\+Email\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get email from user \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae20dcbcc3607e5fbeae7cdab8c411ca1}{Get\+Email\+Confirmed\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get if user email is confirmed \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_adbdc0a1c8ff9669e30419c47991b29a0}{Set\+Email\+Confirmed\+Async}} (TUser user, bool confirmed)
+\begin{DoxyCompactList}\small\item\em Set when user email is confirmed \end{DoxyCompactList}\item 
+Task$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af8f9345f784617296b1898ed818c013f}{Find\+By\+Email\+Async}} (string email)
+\begin{DoxyCompactList}\small\item\em Get user by email \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afa7de60ea892317fee2d94774a62f886}{Set\+Phone\+Number\+Async}} (TUser user, string phone\+Number)
+\begin{DoxyCompactList}\small\item\em Set user phone number \end{DoxyCompactList}\item 
+Task$<$ string $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8db20f2e4cd4b1122944bf07d2ee89d6}{Get\+Phone\+Number\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get user phone number \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac0137afb47f61c2184ea95075fee4c91}{Get\+Phone\+Number\+Confirmed\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get if user phone number is confirmed \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8bd2411b6d2c6e092cafb48264711d61}{Set\+Phone\+Number\+Confirmed\+Async}} (TUser user, bool confirmed)
+\begin{DoxyCompactList}\small\item\em Set phone number if confirmed \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a682e753cdbf96c7564d01f21b491e3c4}{Set\+Two\+Factor\+Enabled\+Async}} (TUser user, bool enabled)
+\begin{DoxyCompactList}\small\item\em Set two factor authentication is enabled on the user \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaabbe9e61c4e0664d5b9951bd8f3091c}{Get\+Two\+Factor\+Enabled\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get if two factor authentication is enabled on the user \end{DoxyCompactList}\item 
+Task$<$ Date\+Time\+Offset $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae1d67353cb8ab06c97a36564910ab4b6}{Get\+Lockout\+End\+Date\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get user lock out end date \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a85664b66ab4b65dc5ddd297f97e44ca8}{Set\+Lockout\+End\+Date\+Async}} (TUser user, Date\+Time\+Offset lockout\+End)
+\begin{DoxyCompactList}\small\item\em Set user lockout end date \end{DoxyCompactList}\item 
+Task$<$ int $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0f4bd597e1c8ba877422047a1ce511cf}{Increment\+Access\+Failed\+Count\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Increment failed access count \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7b9491b49c8d5e54070b15a152317d7f}{Reset\+Access\+Failed\+Count\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Reset failed access count \end{DoxyCompactList}\item 
+Task$<$ int $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a1727989262f7d2cb1156eb422f549df8}{Get\+Access\+Failed\+Count\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get failed access count \end{DoxyCompactList}\item 
+Task$<$ bool $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a72b48260efce283f8f878f7a8eb24da4}{Get\+Lockout\+Enabled\+Async}} (TUser user)
+\begin{DoxyCompactList}\small\item\em Get if lockout is enabled for the user \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afb725631550281fe1ca82dd8f8fb8b1b}{Set\+Lockout\+Enabled\+Async}} (TUser user, bool enabled)
+\begin{DoxyCompactList}\small\item\em Set lockout enabled for user \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad1ffae54903d43ee4a97fb1ddb94b966}{Database}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+IQueryable$<$ TUser $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae0dc0173ee31cb3b114dbf831988ab9c}{Users}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that implements the key ASP.\+NET \mbox{\hyperlink{namespaceAspNet_1_1Identity}{Identity}} user store iterfaces 
+
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em TUser} : {\em \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1IdentityUser}{Identity\+User}}}]\end{description}
+\end{Desc}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7d45578c9503e265c98f1c16e72e1cc3}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7d45578c9503e265c98f1c16e72e1cc3}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!UserStore@{UserStore}}
+\index{UserStore@{UserStore}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{UserStore()}{UserStore()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{User\+Store}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default constructor that initializes a new \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} instance using the Default Connection string 
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab024d053ccf3e14b749432a44d41516e}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab024d053ccf3e14b749432a44d41516e}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!UserStore@{UserStore}}
+\index{UserStore@{UserStore}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{UserStore()}{UserStore()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{User\+Store}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}}}]{database }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor that takes a \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} as argument 
+
+
+\begin{DoxyParams}{Parameters}
+{\em database} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac4a167c3586626a42d5de117a59ffe6f}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac4a167c3586626a42d5de117a59ffe6f}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!AddClaimAsync@{AddClaimAsync}}
+\index{AddClaimAsync@{AddClaimAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{AddClaimAsync()}{AddClaimAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Add\+Claim\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{Claim}]{claim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a claim to the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserClaimsTable}{User\+Claims\+Table}} for the given user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have claim added\\
+\hline
+{\em claim} & Claim to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aa21149595aae7ef6c093468ac58da372}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aa21149595aae7ef6c093468ac58da372}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!AddLoginAsync@{AddLoginAsync}}
+\index{AddLoginAsync@{AddLoginAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{AddLoginAsync()}{AddLoginAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Add\+Login\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{User\+Login\+Info}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a Login in the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}{User\+Logins\+Table}} for a given User 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have login added\\
+\hline
+{\em login} & Login to be added\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0adcd99188d442580dbdaf5d3544b29f}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0adcd99188d442580dbdaf5d3544b29f}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!AddToRoleAsync@{AddToRoleAsync}}
+\index{AddToRoleAsync@{AddToRoleAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{AddToRoleAsync()}{AddToRoleAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Add\+To\+Role\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{role\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inserts a entry in the User\+Roles table 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have role added\\
+\hline
+{\em role\+Name} & Name of the role to be added to user\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a64936ea1be0eda72f36e3a455954d9b3}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a64936ea1be0eda72f36e3a455954d9b3}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!CreateAsync@{CreateAsync}}
+\index{CreateAsync@{CreateAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{CreateAsync()}{CreateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Create\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insert a new TUser in the \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserTable}{User\+Table}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7877d0c2b1413daa1086da49acbb98ef}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7877d0c2b1413daa1086da49acbb98ef}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!DeleteAsync@{DeleteAsync}}
+\index{DeleteAsync@{DeleteAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{DeleteAsync()}{DeleteAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Delete\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af990431c96a029a3b493b0b5d825d210}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af990431c96a029a3b493b0b5d825d210}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily void \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad518e1e5e13d23951859c22080a40f37}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad518e1e5e13d23951859c22080a40f37}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!FindAsync@{FindAsync}}
+\index{FindAsync@{FindAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{FindAsync()}{FindAsync()}}
+{\footnotesize\ttfamily Task$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Find\+Async (\begin{DoxyParamCaption}\item[{User\+Login\+Info}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an TUser based on the Login info 
+
+
+\begin{DoxyParams}{Parameters}
+{\em login} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af8f9345f784617296b1898ed818c013f}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af8f9345f784617296b1898ed818c013f}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!FindByEmailAsync@{FindByEmailAsync}}
+\index{FindByEmailAsync@{FindByEmailAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{FindByEmailAsync()}{FindByEmailAsync()}}
+{\footnotesize\ttfamily Task$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Find\+By\+Email\+Async (\begin{DoxyParamCaption}\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get user by email 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acf2b3ee29668dc3d5b795b1c145e8243}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acf2b3ee29668dc3d5b795b1c145e8243}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!FindByIdAsync@{FindByIdAsync}}
+\index{FindByIdAsync@{FindByIdAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{FindByIdAsync()}{FindByIdAsync()}}
+{\footnotesize\ttfamily Task$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Find\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{string}]{user\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an TUser instance based on a user\+Id query 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Id} & The user\textquotesingle{}s Id\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a05b6829133657fe25b0d57b2e3b90035}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a05b6829133657fe25b0d57b2e3b90035}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!FindByNameAsync@{FindByNameAsync}}
+\index{FindByNameAsync@{FindByNameAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{FindByNameAsync()}{FindByNameAsync()}}
+{\footnotesize\ttfamily Task$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Find\+By\+Name\+Async (\begin{DoxyParamCaption}\item[{string}]{user\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns an TUser instance based on a user\+Name query 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Name} & The user\textquotesingle{}s name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a1727989262f7d2cb1156eb422f549df8}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a1727989262f7d2cb1156eb422f549df8}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetAccessFailedCountAsync@{GetAccessFailedCountAsync}}
+\index{GetAccessFailedCountAsync@{GetAccessFailedCountAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetAccessFailedCountAsync()}{GetAccessFailedCountAsync()}}
+{\footnotesize\ttfamily Task$<$int$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Access\+Failed\+Count\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get failed access count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaa8d42a70ecdebdf835938d9697cf251}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaa8d42a70ecdebdf835938d9697cf251}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetClaimsAsync@{GetClaimsAsync}}
+\index{GetClaimsAsync@{GetClaimsAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetClaimsAsync()}{GetClaimsAsync()}}
+{\footnotesize\ttfamily Task$<$IList$<$Claim$>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Claims\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns all claims for a given user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab8d7a11271d09e7007f804ec04362340}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab8d7a11271d09e7007f804ec04362340}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetEmailAsync@{GetEmailAsync}}
+\index{GetEmailAsync@{GetEmailAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetEmailAsync()}{GetEmailAsync()}}
+{\footnotesize\ttfamily Task$<$string$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Email\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get email from user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae20dcbcc3607e5fbeae7cdab8c411ca1}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae20dcbcc3607e5fbeae7cdab8c411ca1}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetEmailConfirmedAsync@{GetEmailConfirmedAsync}}
+\index{GetEmailConfirmedAsync@{GetEmailConfirmedAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetEmailConfirmedAsync()}{GetEmailConfirmedAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Email\+Confirmed\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get if user email is confirmed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a72b48260efce283f8f878f7a8eb24da4}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a72b48260efce283f8f878f7a8eb24da4}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetLockoutEnabledAsync@{GetLockoutEnabledAsync}}
+\index{GetLockoutEnabledAsync@{GetLockoutEnabledAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetLockoutEnabledAsync()}{GetLockoutEnabledAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Lockout\+Enabled\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get if lockout is enabled for the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae1d67353cb8ab06c97a36564910ab4b6}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae1d67353cb8ab06c97a36564910ab4b6}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetLockoutEndDateAsync@{GetLockoutEndDateAsync}}
+\index{GetLockoutEndDateAsync@{GetLockoutEndDateAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetLockoutEndDateAsync()}{GetLockoutEndDateAsync()}}
+{\footnotesize\ttfamily Task$<$Date\+Time\+Offset$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Lockout\+End\+Date\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get user lock out end date 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af0ce18690c4709ef293d6da924858f63}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_af0ce18690c4709ef293d6da924858f63}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetLoginsAsync@{GetLoginsAsync}}
+\index{GetLoginsAsync@{GetLoginsAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetLoginsAsync()}{GetLoginsAsync()}}
+{\footnotesize\ttfamily Task$<$IList$<$User\+Login\+Info$>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Logins\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns list of User\+Login\+Info for a given TUser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a49d26d183db6b294f0d65181af658c21}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a49d26d183db6b294f0d65181af658c21}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetPasswordHashAsync@{GetPasswordHashAsync}}
+\index{GetPasswordHashAsync@{GetPasswordHashAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetPasswordHashAsync()}{GetPasswordHashAsync()}}
+{\footnotesize\ttfamily Task$<$string$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Password\+Hash\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the Password\+Hash for a given TUser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8db20f2e4cd4b1122944bf07d2ee89d6}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8db20f2e4cd4b1122944bf07d2ee89d6}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetPhoneNumberAsync@{GetPhoneNumberAsync}}
+\index{GetPhoneNumberAsync@{GetPhoneNumberAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetPhoneNumberAsync()}{GetPhoneNumberAsync()}}
+{\footnotesize\ttfamily Task$<$string$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Phone\+Number\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get user phone number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac0137afb47f61c2184ea95075fee4c91}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac0137afb47f61c2184ea95075fee4c91}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetPhoneNumberConfirmedAsync@{GetPhoneNumberConfirmedAsync}}
+\index{GetPhoneNumberConfirmedAsync@{GetPhoneNumberConfirmedAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetPhoneNumberConfirmedAsync()}{GetPhoneNumberConfirmedAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Phone\+Number\+Confirmed\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get if user phone number is confirmed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_abd2f274f65eeefe51ef5ede8ef50c1d4}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_abd2f274f65eeefe51ef5ede8ef50c1d4}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetRolesAsync@{GetRolesAsync}}
+\index{GetRolesAsync@{GetRolesAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetRolesAsync()}{GetRolesAsync()}}
+{\footnotesize\ttfamily Task$<$IList$<$string$>$ $>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Roles\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the roles for a given TUser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a6e464416e3e0a2dc09c8a85520f3922c}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a6e464416e3e0a2dc09c8a85520f3922c}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetSecurityStampAsync@{GetSecurityStampAsync}}
+\index{GetSecurityStampAsync@{GetSecurityStampAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetSecurityStampAsync()}{GetSecurityStampAsync()}}
+{\footnotesize\ttfamily Task$<$string$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Security\+Stamp\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get security stamp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaabbe9e61c4e0664d5b9951bd8f3091c}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aaabbe9e61c4e0664d5b9951bd8f3091c}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!GetTwoFactorEnabledAsync@{GetTwoFactorEnabledAsync}}
+\index{GetTwoFactorEnabledAsync@{GetTwoFactorEnabledAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{GetTwoFactorEnabledAsync()}{GetTwoFactorEnabledAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Get\+Two\+Factor\+Enabled\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get if two factor authentication is enabled on the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aef8bdba5b80bb34ae83e5ae8c825437d}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_aef8bdba5b80bb34ae83e5ae8c825437d}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!HasPasswordAsync@{HasPasswordAsync}}
+\index{HasPasswordAsync@{HasPasswordAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{HasPasswordAsync()}{HasPasswordAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Has\+Password\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifies if user has password 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0f4bd597e1c8ba877422047a1ce511cf}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a0f4bd597e1c8ba877422047a1ce511cf}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!IncrementAccessFailedCountAsync@{IncrementAccessFailedCountAsync}}
+\index{IncrementAccessFailedCountAsync@{IncrementAccessFailedCountAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{IncrementAccessFailedCountAsync()}{IncrementAccessFailedCountAsync()}}
+{\footnotesize\ttfamily Task$<$int$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Increment\+Access\+Failed\+Count\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Increment failed access count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acbbd45a76123df38676af13f6b3f8a75}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_acbbd45a76123df38676af13f6b3f8a75}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!IsInRoleAsync@{IsInRoleAsync}}
+\index{IsInRoleAsync@{IsInRoleAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{IsInRoleAsync()}{IsInRoleAsync()}}
+{\footnotesize\ttfamily Task$<$bool$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Is\+In\+Role\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Verifies if a user is in a role 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em role} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab95aff85bbeb169e55e0975c55aa5b5f}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab95aff85bbeb169e55e0975c55aa5b5f}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!RemoveClaimAsync@{RemoveClaimAsync}}
+\index{RemoveClaimAsync@{RemoveClaimAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveClaimAsync()}{RemoveClaimAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Remove\+Claim\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{Claim}]{claim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a claim froma user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have claim removed\\
+\hline
+{\em claim} & Claim to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a11cba1093215337b91a5f60cb9c50247}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a11cba1093215337b91a5f60cb9c50247}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!RemoveFromRoleAsync@{RemoveFromRoleAsync}}
+\index{RemoveFromRoleAsync@{RemoveFromRoleAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveFromRoleAsync()}{RemoveFromRoleAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Remove\+From\+Role\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{role }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Removes a user from a role 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em role} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a4fd00a51782e45654348dc2f34e6387a}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a4fd00a51782e45654348dc2f34e6387a}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!RemoveLoginAsync@{RemoveLoginAsync}}
+\index{RemoveLoginAsync@{RemoveLoginAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{RemoveLoginAsync()}{RemoveLoginAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Remove\+Login\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{User\+Login\+Info}]{login }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Deletes a login from \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserLoginsTable}{User\+Logins\+Table}} for a given TUser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & User to have login removed\\
+\hline
+{\em login} & Login to be removed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7b9491b49c8d5e54070b15a152317d7f}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a7b9491b49c8d5e54070b15a152317d7f}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!ResetAccessFailedCountAsync@{ResetAccessFailedCountAsync}}
+\index{ResetAccessFailedCountAsync@{ResetAccessFailedCountAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{ResetAccessFailedCountAsync()}{ResetAccessFailedCountAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Reset\+Access\+Failed\+Count\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset failed access count 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae38664fc89aeaeb25999c86bcab4a98e}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae38664fc89aeaeb25999c86bcab4a98e}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetEmailAsync@{SetEmailAsync}}
+\index{SetEmailAsync@{SetEmailAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetEmailAsync()}{SetEmailAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Email\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{email }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set email on user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_adbdc0a1c8ff9669e30419c47991b29a0}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_adbdc0a1c8ff9669e30419c47991b29a0}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetEmailConfirmedAsync@{SetEmailConfirmedAsync}}
+\index{SetEmailConfirmedAsync@{SetEmailConfirmedAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetEmailConfirmedAsync()}{SetEmailConfirmedAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Email\+Confirmed\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{bool}]{confirmed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set when user email is confirmed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em confirmed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afb725631550281fe1ca82dd8f8fb8b1b}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afb725631550281fe1ca82dd8f8fb8b1b}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetLockoutEnabledAsync@{SetLockoutEnabledAsync}}
+\index{SetLockoutEnabledAsync@{SetLockoutEnabledAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetLockoutEnabledAsync()}{SetLockoutEnabledAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Lockout\+Enabled\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set lockout enabled for user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em enabled} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a85664b66ab4b65dc5ddd297f97e44ca8}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a85664b66ab4b65dc5ddd297f97e44ca8}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetLockoutEndDateAsync@{SetLockoutEndDateAsync}}
+\index{SetLockoutEndDateAsync@{SetLockoutEndDateAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetLockoutEndDateAsync()}{SetLockoutEndDateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Lockout\+End\+Date\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{Date\+Time\+Offset}]{lockout\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set user lockout end date 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em lockout\+End} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac8002c7315c8685ca0a24ce912ab98b5}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ac8002c7315c8685ca0a24ce912ab98b5}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetPasswordHashAsync@{SetPasswordHashAsync}}
+\index{SetPasswordHashAsync@{SetPasswordHashAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetPasswordHashAsync()}{SetPasswordHashAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Password\+Hash\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{password\+Hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the password hash for a given TUser 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em password\+Hash} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afa7de60ea892317fee2d94774a62f886}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_afa7de60ea892317fee2d94774a62f886}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetPhoneNumberAsync@{SetPhoneNumberAsync}}
+\index{SetPhoneNumberAsync@{SetPhoneNumberAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetPhoneNumberAsync()}{SetPhoneNumberAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Phone\+Number\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{phone\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set user phone number 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em phone\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8bd2411b6d2c6e092cafb48264711d61}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a8bd2411b6d2c6e092cafb48264711d61}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetPhoneNumberConfirmedAsync@{SetPhoneNumberConfirmedAsync}}
+\index{SetPhoneNumberConfirmedAsync@{SetPhoneNumberConfirmedAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetPhoneNumberConfirmedAsync()}{SetPhoneNumberConfirmedAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Phone\+Number\+Confirmed\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{bool}]{confirmed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set phone number if confirmed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em confirmed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae9b5abf0b5d0ce4fca8aa450992e961e}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae9b5abf0b5d0ce4fca8aa450992e961e}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetSecurityStampAsync@{SetSecurityStampAsync}}
+\index{SetSecurityStampAsync@{SetSecurityStampAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetSecurityStampAsync()}{SetSecurityStampAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Security\+Stamp\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{string}]{stamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set security stamp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em stamp} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a682e753cdbf96c7564d01f21b491e3c4}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_a682e753cdbf96c7564d01f21b491e3c4}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!SetTwoFactorEnabledAsync@{SetTwoFactorEnabledAsync}}
+\index{SetTwoFactorEnabledAsync@{SetTwoFactorEnabledAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{SetTwoFactorEnabledAsync()}{SetTwoFactorEnabledAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Set\+Two\+Factor\+Enabled\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user,  }\item[{bool}]{enabled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set two factor authentication is enabled on the user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & \\
+\hline
+{\em enabled} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab093ba503a7062c96769dbee93dc2a4c}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ab093ba503a7062c96769dbee93dc2a4c}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!UpdateAsync@{UpdateAsync}}
+\index{UpdateAsync@{UpdateAsync}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{UpdateAsync()}{UpdateAsync()}}
+{\footnotesize\ttfamily Task \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Update\+Async (\begin{DoxyParamCaption}\item[{TUser}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Updates the Users\+Table with the TUser instance values 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & TUser to be updated\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad1ffae54903d43ee4a97fb1ddb94b966}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ad1ffae54903d43ee4a97fb1ddb94b966}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!Database@{Database}}
+\index{Database@{Database}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Database}{Database}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1MySQLDatabase}{My\+SQLDatabase}} \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Database\hspace{0.3cm}{\ttfamily [get]}}
+
+\mbox{\Hypertarget{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae0dc0173ee31cb3b114dbf831988ab9c}\label{classAspNet_1_1Identity_1_1MySQL_1_1UserStore_ae0dc0173ee31cb3b114dbf831988ab9c}} 
+\index{AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}!Users@{Users}}
+\index{Users@{Users}!AspNet.Identity.MySQL.UserStore$<$ TUser $>$@{AspNet.Identity.MySQL.UserStore$<$ TUser $>$}}
+\doxysubsubsection{\texorpdfstring{Users}{Users}}
+{\footnotesize\ttfamily IQueryable$<$TUser$>$ \mbox{\hyperlink{classAspNet_1_1Identity_1_1MySQL_1_1UserStore}{Asp\+Net.\+Identity.\+My\+SQL.\+User\+Store}}$<$ TUser $>$.Users\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+cloned\+\_\+repo/repo/samples/aspnet/\+Identity/\+Asp\+Net.\+Identity.\+My\+SQL/\mbox{\hyperlink{UserStore_8cs}{User\+Store.\+cs}}\end{DoxyCompactItemize}
