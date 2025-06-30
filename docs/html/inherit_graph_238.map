@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,20,152,47"/>
+<area shape="rect" id="node2" href="$classRouteConstraintsAndModelBindersSample_1_1Server_1_1RouteConstraints_1_1SegmentPrefixConstraint.html" title="This constraint will match a route starting with the segmentPrefix + &quot;;&quot; or the segmentPrefix only." alt="" coords="200,5,461,61"/>
+</map>

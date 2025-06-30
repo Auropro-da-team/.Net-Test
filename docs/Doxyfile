@@ -1,0 +1,10 @@
+PROJECT_NAME           = ".Net-Test"
+OUTPUT_DIRECTORY       = "/home/auropro/Documents/git-scraping/doxygen/cloned_repo/repo/docs"
+INPUT                  = "/home/auropro/Documents/git-scraping/doxygen/cloned_repo/repo"
+RECURSIVE              = YES
+FILE_PATTERNS          = *.cs *.vb *.fs *.csx *.vbx
+EXTRACT_ALL            = YES
+GENERATE_LATEX         = NO
+QUIET                  = YES
+GENERATE_HTML          = YES
+OPTIMIZE_OUTPUT_FOR_CSHARP = YES

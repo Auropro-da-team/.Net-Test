@@ -1,0 +1,4 @@
+<map id="WebApiAttributeRoutingSample.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider" name="WebApiAttributeRoutingSample.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider">
+<area shape="rect" id="node1" title=" " alt="" coords="29,5,262,61"/>
+<area shape="rect" id="node2" href="$classWebApiAttributeRoutingSample_1_1Areas_1_1HelpPage_1_1XmlDocumentationProvider.html" title="A custom IDocumentationProvider that reads the API documentation from an XML documentation file." alt="" coords="5,109,285,151"/>
+</map>

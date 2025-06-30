@@ -1,0 +1,7 @@
+<map id="Account.Client.ErrorResponse" name="Account.Client.ErrorResponse">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,204,134"/>
+<area shape="rect" id="node2" href="$classAccount_1_1Client_1_1ChangePasswordResponse.html" title=" " alt="" coords="255,5,469,47"/>
+<area shape="rect" id="node3" href="$classAccount_1_1Client_1_1RegisterExternalResponse.html" title=" " alt="" coords="257,71,467,112"/>
+<area shape="rect" id="node4" href="$classAccount_1_1Client_1_1RegisterResponse.html" title=" " alt="" coords="252,137,472,163"/>
+<area shape="rect" id="node5" href="$classAccount_1_1Client_1_1SetPasswordResponse.html" title=" " alt="" coords="267,188,457,229"/>
+</map>

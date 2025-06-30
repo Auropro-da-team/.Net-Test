@@ -1,0 +1,4 @@
+<map id="FlightFinder.Server.SampleData" name="FlightFinder.Server.SampleData">
+<area shape="rect" id="node1" title=" " alt="" coords="5,95,212,121"/>
+<area shape="rect" id="node2" href="$classFlightFinder_1_1Shared_1_1Airport.html" title=" " alt="" coords="21,5,197,32"/>
+</map>

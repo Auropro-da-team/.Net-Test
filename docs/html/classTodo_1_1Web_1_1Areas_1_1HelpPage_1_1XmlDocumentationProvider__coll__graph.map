@@ -1,0 +1,5 @@
+<map id="Todo.Web.Areas.HelpPage.XmlDocumentationProvider" name="Todo.Web.Areas.HelpPage.XmlDocumentationProvider">
+<area shape="rect" id="node1" title="A custom IDocumentationProvider that reads the API documentation from an XML documentation file." alt="" coords="97,80,279,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node3" href="$interfaceTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1IModelDocumentationProvider.html" title=" " alt="" coords="192,5,389,32"/>
+</map>

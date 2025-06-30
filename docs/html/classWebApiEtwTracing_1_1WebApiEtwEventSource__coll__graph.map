@@ -1,0 +1,4 @@
+<map id="WebApiEtwTracing.WebApiEtwEventSource" name="WebApiEtwTracing.WebApiEtwEventSource">
+<area shape="rect" id="node1" title="Implementation of EventSource used by WebApiEtwTraceWriter to emit ETW events." alt="" coords="5,81,211,123"/>
+<area shape="rect" id="node2" title=" " alt="" coords="59,5,157,32"/>
+</map>

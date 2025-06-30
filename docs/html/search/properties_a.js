@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['keymodeldescription_4231',['KeyModelDescription',['../classBSONSample_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription.html#a43c7a4d3939c281541fe3093ae49b272',1,'BSONSample.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyModelDescription()'],['../classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription.html#ad035a7df1afffb4471b272c62df8bbf8',1,'Todo.Web.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyModelDescription()'],['../classWebApiAttributeRoutingSample_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription.html#ad879bc7c718b2579649b142674c4c06c',1,'WebApiAttributeRoutingSample.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription.KeyModelDescription()']]],
+  ['keys_4232',['Keys',['../classTodo_1_1WindowsStore_1_1Common_1_1ObservableDictionary.html#a5a5cf7df39c2475f1e1dcfcd2e8e2143',1,'Todo::WindowsStore::Common::ObservableDictionary']]],
+  ['kind_4233',['Kind',['../classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Models_1_1TraceItem.html#adad07358d02ab2006f88724484b84d52',1,'ROOT_PROJECT_NAMESPACE::Areas::Trace::Models::TraceItem']]]
+];

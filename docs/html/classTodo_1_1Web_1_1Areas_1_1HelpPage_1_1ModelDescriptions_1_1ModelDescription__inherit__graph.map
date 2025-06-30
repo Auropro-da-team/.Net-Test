@@ -1,0 +1,9 @@
+<map id="Todo.Web.Areas.HelpPage.ModelDescriptions.ModelDescription" name="Todo.Web.Areas.HelpPage.ModelDescriptions.ModelDescription">
+<area shape="rect" id="node1" title="Describes a type model." alt="" coords="5,173,240,214"/>
+<area shape="rect" id="node2" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1CollectionModelDescription.html" title=" " alt="" coords="307,5,499,61"/>
+<area shape="rect" id="node3" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1ComplexTypeModelDescription.html" title=" " alt="" coords="296,85,511,141"/>
+<area shape="rect" id="node4" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1EnumTypeModelDescription.html" title=" " alt="" coords="288,165,519,221"/>
+<area shape="rect" id="node5" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1KeyValuePairModelDescription.html" title=" " alt="" coords="297,245,509,301"/>
+<area shape="rect" id="node7" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1SimpleTypeModelDescription.html" title=" " alt="" coords="302,325,505,381"/>
+<area shape="rect" id="node6" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1ModelDescriptions_1_1DictionaryModelDescription.html" title=" " alt="" coords="567,245,760,301"/>
+</map>

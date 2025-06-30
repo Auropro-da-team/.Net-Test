@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,159,124,185"/>
+<area shape="rect" id="node2" href="$classAttributeRoutingSample_1_1Areas_1_1Administration_1_1AdministrationAreaRegistration.html" title=" " alt="" coords="200,5,419,61"/>
+<area shape="rect" id="node3" href="$classBSONSample_1_1Areas_1_1HelpPage_1_1HelpPageAreaRegistration.html" title=" " alt="" coords="206,86,413,127"/>
+<area shape="rect" id="node4" href="$classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceAreaRegistration.html" title="This class exists to register the In&#45;Memory tracing feature. It is called during application start&#45;up..." alt="" coords="178,151,441,193"/>
+<area shape="rect" id="node5" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1HelpPageAreaRegistration.html" title=" " alt="" coords="218,217,401,258"/>
+<area shape="rect" id="node6" href="$classWebApiAttributeRoutingSample_1_1Areas_1_1HelpPage_1_1HelpPageAreaRegistration.html" title=" " alt="" coords="172,282,447,323"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CustomActionSelector.Server.BetaTestingActionSelector" name="CustomActionSelector.Server.BetaTestingActionSelector">
+<area shape="rect" id="node1" title="Randomly selects a &#39;beta&#45;testing&#39; version of actions for users that are part of the beta program." alt="" coords="5,80,203,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="13,5,195,32"/>
+</map>

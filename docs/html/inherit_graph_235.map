@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,99,73"/>
+<area shape="rect" id="node2" href="$classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1TraceWriters_1_1MemoryTraceWriter.html" title="This class is responsible for" alt="" coords="147,5,409,47"/>
+<area shape="rect" id="node3" href="$classWebApiEtwTracing_1_1WebApiEtwTraceWriter.html" title="Implementation of ITraceWriter that traces to ETW." alt="" coords="175,71,381,112"/>
+</map>

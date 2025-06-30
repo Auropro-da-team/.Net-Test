@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,59,124"/>
+<area shape="rect" id="node2" href="$classAspNet_1_1Identity_1_1MySQL_1_1IdentityRole.html" title="Class that implements the ASP.NET Identity IRole interface" alt="" coords="107,5,340,32"/>
+<area shape="rect" id="node3" href="$classSQLMembership__Identity__OWIN_1_1Role.html" title=" " alt="" coords="139,57,308,98"/>
+<area shape="rect" id="node4" href="$classSimpleMembershipMigration_1_1Models_1_1Identity_1_1Role.html" title=" " alt="" coords="128,122,319,163"/>
+<area shape="rect" id="node5" href="$classUniversalProviders__Identity__Migrations_1_1Role.html" title=" " alt="" coords="138,187,309,229"/>
+</map>

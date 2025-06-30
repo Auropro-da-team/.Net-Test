@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,274,91,301"/>
+<area shape="rect" id="node2" href="$classAttributeRoutingSample_1_1Models_1_1SchoolContext.html" title=" " alt="" coords="150,5,361,47"/>
+<area shape="rect" id="node3" href="$classBSONSample_1_1Models_1_1MyDataContext.html" title=" " alt="" coords="155,71,355,112"/>
+<area shape="rect" id="node4" href="$classBatchSample_1_1Models_1_1CustomersContext.html" title=" " alt="" coords="148,136,363,177"/>
+<area shape="rect" id="node5" href="$classCustomMembershipSample_1_1Models_1_1AppDbEntities.html" title=" " alt="" coords="139,201,372,243"/>
+<area shape="rect" id="node6" href="$classEnumSample_1_1Models_1_1MyDataContext.html" title=" " alt="" coords="157,267,353,308"/>
+<area shape="rect" id="node7" href="$classSimpleMembershipMigration_1_1Models_1_1Identity_1_1SimpleMembershipDbContext.html" title=" " alt="" coords="143,333,367,389"/>
+<area shape="rect" id="node8" href="$classTodo_1_1Web_1_1Models_1_1TodosDbContext.html" title=" " alt="" coords="141,413,369,439"/>
+<area shape="rect" id="node9" href="$classTouristAttractions_1_1Models_1_1TourismContext.html" title=" " alt="" coords="168,464,343,505"/>
+<area shape="rect" id="node10" href="$classWebApiAttributeRoutingSample_1_1Models_1_1ShoppingContext.html" title=" " alt="" coords="151,529,360,571"/>
+</map>

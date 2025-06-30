@@ -1,0 +1,95 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1553,103,1579"/>
+<area shape="rect" id="node2" href="$classActionResults_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="201,5,375,47"/>
+<area shape="rect" id="node3" href="$classActionResults_1_1Controllers_1_1ProductsController.html" title=" " alt="" coords="201,71,375,112"/>
+<area shape="rect" id="node4" href="$classAsyncRequestReaderSample_1_1Controllers_1_1ContentController.html" title="This sample controller illustrates how to deal with request entities and response entities as streams..." alt="" coords="189,136,387,177"/>
+<area shape="rect" id="node5" href="$classAzureBlobsFileUpload_1_1Controllers_1_1FilesController.html" title=" " alt="" coords="177,201,399,243"/>
+<area shape="rect" id="node6" href="$classBSONSample_1_1Controllers_1_1MyDataController.html" title=" " alt="" coords="191,267,385,308"/>
+<area shape="rect" id="node7" href="$classBasicAuthentication_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="183,3116,393,3157"/>
+<area shape="rect" id="node8" href="$classBatchSample_1_1Controllers_1_1CustomersController.html" title=" " alt="" coords="203,332,373,373"/>
+<area shape="rect" id="node9" href="$classClientCertificateSample_1_1Controllers_1_1SampleController.html" title=" " alt="" coords="193,397,383,439"/>
+<area shape="rect" id="node10" href="$classConsoleDemo_1_1TestController.html" title=" " alt="" coords="193,463,383,490"/>
+<area shape="rect" id="node11" href="$classControllerLibrary_1_1HelloController.html" title=" " alt="" coords="185,514,391,541"/>
+<area shape="rect" id="node12" href="$classControllerSpecificConfigSample_1_1Controllers_1_1SampleController.html" title="Sample controller with controller specific configuration in the form of a parameter binder which can ..." alt="" coords="169,565,407,607"/>
+<area shape="rect" id="node13" href="$classCustomActionSelector_1_1Server_1_1StoreController.html" title=" " alt="" coords="189,631,387,672"/>
+<area shape="rect" id="node14" href="$classCustomMediaTypeFormatter_1_1Controllers_1_1ValuesController.html" title=" " alt="" coords="193,696,383,737"/>
+<area shape="rect" id="node15" href="$classCustomModelBinderSample_1_1Controllers_1_1ProductsController.html" title=" " alt="" coords="189,761,387,803"/>
+<area shape="rect" id="node16" href="$classCustomParameterBindingSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="179,827,397,868"/>
+<area shape="rect" id="node17" href="$classDeltaJsonDeserialization_1_1Server_1_1Controllers_1_1PatchController.html" title=" " alt="" coords="178,892,398,933"/>
+<area shape="rect" id="node18" href="$classElmah_1_1Server_1_1Controllers_1_1ConstructorExceptionController.html" title=" " alt="" coords="186,957,390,999"/>
+<area shape="rect" id="node19" href="$classElmah_1_1Server_1_1Controllers_1_1ExceptionController.html" title=" " alt="" coords="203,1023,373,1064"/>
+<area shape="rect" id="node20" href="$classFileUploadSample_1_1FileUploadController.html" title="This sample controller reads the contents of an HTML file upload asynchronously and writes one or mor..." alt="" coords="191,1088,385,1129"/>
+<area shape="rect" id="node21" href="$classHostedClientCertificateSample_1_1Controllers_1_1SampleController.html" title=" " alt="" coords="185,1153,391,1195"/>
+<area shape="rect" id="node22" href="$classHttpMessageHandlerPipelineSample_1_1Controllers_1_1SampleController.html" title=" " alt="" coords="169,1219,407,1260"/>
+<area shape="rect" id="node23" href="$classHttpRangeRequestSample_1_1Controllers_1_1RangeController.html" title="This controller illustrates support for HTTP range requests with ASP.NET Web API using the ByteRangeS..." alt="" coords="163,1284,413,1325"/>
+<area shape="rect" id="node24" href="$classJsonUploadSample_1_1Controllers_1_1ContactController.html" title=" " alt="" coords="185,1349,391,1391"/>
+<area shape="rect" id="node25" href="$classMashupSample_1_1Controllers_1_1MashupController.html" title="This ApiController aggregates information from http://www.digg.com and http://delicious...." alt="" coords="197,1415,379,1456"/>
+<area shape="rect" id="node26" href="$classMongoSample_1_1Controllers_1_1ContactsController.html" title=" " alt="" coords="200,1480,376,1521"/>
+<area shape="rect" id="node27" href="$classOwinSelfhostSample_1_1ValuesController.html" title=" " alt="" coords="195,1545,381,1587"/>
+<area shape="rect" id="node28" href="$classPushContentController_1_1Controllers_1_1PushContentController.html" title="This controller pushes data to the client as a never&#45;ending HTTP response writing a little bit of dat..." alt="" coords="176,1611,400,1652"/>
+<area shape="rect" id="node29" href="$classRelaySample_1_1Controllers_1_1ContentController.html" title="This sample controller functions as a &quot;backend&quot; service which the RelayController relays messages for..." alt="" coords="203,1676,373,1717"/>
+<area shape="rect" id="node30" href="$classRelaySample_1_1Controllers_1_1RelayController.html" title="This sample shows how to relay a response from a backend service asynchronously without buffering the..." alt="" coords="203,1741,373,1783"/>
+<area shape="rect" id="node31" href="$classResponseEntityProcessorSample_1_1Controllers_1_1ValuesController.html" title="This controller returns a simple collection of strings of varied size." alt="" coords="177,1807,399,1848"/>
+<area shape="rect" id="node32" href="$classRouteConstraintsAndModelBindersSample_1_1Server_1_1Controllers_1_1FruitsController.html" title=" " alt="" coords="177,1873,399,1929"/>
+<area shape="rect" id="node33" href="$classRoutingConstraints_1_1Server_1_1Controllers_1_1CustomerVersion1Controller.html" title="A Customer controller for version 1 of the api." alt="" coords="161,1953,415,1995"/>
+<area shape="rect" id="node34" href="$classRoutingConstraints_1_1Server_1_1Controllers_1_1CustomerVersion2Controller.html" title="A Customer controller for version 2 of the api." alt="" coords="161,2019,415,2060"/>
+<area shape="rect" id="node35" href="$classTestSelector_1_1Controllers_1_1V1_1_1ValuesController.html" title=" " alt="" coords="205,2084,371,2125"/>
+<area shape="rect" id="node36" href="$classTestSelector_1_1Controllers_1_1V2_1_1ValuesController.html" title=" " alt="" coords="205,2149,371,2191"/>
+<area shape="rect" id="node37" href="$classTodo_1_1Web_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="189,2215,387,2256"/>
+<area shape="rect" id="node38" href="$classTouristAttractions_1_1Controllers_1_1AttractionsController.html" title=" " alt="" coords="191,2280,385,2321"/>
+<area shape="rect" id="node39" href="$classUploadXDocumentSample_1_1Controllers_1_1BookController.html" title=" " alt="" coords="165,2345,411,2387"/>
+<area shape="rect" id="node40" href="$classValidationSample_1_1Controllers_1_1CustomerController.html" title=" " alt="" coords="191,2411,385,2452"/>
+<area shape="rect" id="node41" href="$classWebApi_1_1CustomerController.html" title=" " alt="" coords="196,2477,380,2503"/>
+<area shape="rect" id="node42" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CategoriesController.html" title="This controller demonstrates default ordering of attribute routes. In general, as per the routing gui..." alt="" coords="173,2528,403,2569"/>
+<area shape="rect" id="node43" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CountriesV1Controller.html" title=" " alt="" coords="168,2593,408,2635"/>
+<area shape="rect" id="node44" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CountriesV2Controller.html" title=" " alt="" coords="168,2659,408,2700"/>
+<area shape="rect" id="node45" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1CustomersController.html" title="This controller demonstrates mixing conventional and attribute routing together in a single controlle..." alt="" coords="172,2724,404,2765"/>
+<area shape="rect" id="node46" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrderManagementController.html" title="This controller demonstrates RPC style of accessing actions by decorating the controller&#45;level route ..." alt="" coords="151,2789,425,2831"/>
+<area shape="rect" id="node47" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1OrdersController.html" title="This demonstrates the use of a controller&#45;level attribute route. Notes:" alt="" coords="183,2855,393,2896"/>
+<area shape="rect" id="node48" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ProductsController.html" title="Here we demonstrate the following:" alt="" coords="178,2920,398,2961"/>
+<area shape="rect" id="node49" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1Api_1_1ValuesController.html" title="This controller does not use attribute routing and is accessible by conventional routes only...." alt="" coords="183,2985,393,3027"/>
+<area shape="rect" id="node50" href="$classWebForm_1_1Controllers_1_1ValuesController.html" title="This ApiController was added using the menu &quot;Add New Item&quot; and then select &quot;Web API Controller Class&quot;..." alt="" coords="194,3051,382,3092"/>
+<area shape="rect" id="node51" title=" " alt="" coords="15,4526,93,4553"/>
+<area shape="rect" id="node52" href="$classAttributeRoutingSample_1_1Areas_1_1Administration_1_1Controllers_1_1RolesController.html" title="NOTE: In this Administration area, we have the following setup:" alt="" coords="183,3182,393,3238"/>
+<area shape="rect" id="node53" href="$classAttributeRoutingSample_1_1Areas_1_1Administration_1_1Controllers_1_1UsersController.html" title="This controller does not use attribute routing and uses the conventional route defined in Administrat..." alt="" coords="183,3262,393,3318"/>
+<area shape="rect" id="node54" href="$classAttributeRoutingSample_1_1Areas_1_1Help_1_1Controllers_1_1AboutController.html" title="This controller uses attribute routing inside an Area." alt="" coords="183,3343,393,3384"/>
+<area shape="rect" id="node55" href="$classAttributeRoutingSample_1_1Controllers_1_1AccountController.html" title="This controller does not use attribute routing. Conventional routing and attribute routing based cont..." alt="" coords="173,3408,403,3449"/>
+<area shape="rect" id="node56" href="$classAttributeRoutingSample_1_1Controllers_1_1CoursesController.html" title="This controller mixes conventional and attribute routing in a single controller. The &#39;Professor&#39; acti..." alt="" coords="173,3473,403,3515"/>
+<area shape="rect" id="node57" href="$classAttributeRoutingSample_1_1Controllers_1_1HomeController.html" title="This controller uses attribute routing to map the Index action to several different URL paths." alt="" coords="173,3539,403,3580"/>
+<area shape="rect" id="node58" href="$classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV1Controller.html" title="This controller uses a custom class derived from [RouteFactory] attribute to generate a specialized r..." alt="" coords="173,3604,403,3645"/>
+<area shape="rect" id="node59" href="$classAttributeRoutingSample_1_1Controllers_1_1ProfessorsV2Controller.html" title="This controller uses a custom RouteFactoryAttribute to generate a specialized route instance." alt="" coords="173,3669,403,3711"/>
+<area shape="rect" id="node60" href="$classAttributeRoutingSample_1_1Controllers_1_1StudentsController.html" title="This controller uses routes defined on actions with a route defined at the controller&#45;level." alt="" coords="173,3735,403,3776"/>
+<area shape="rect" id="node61" href="$classAzureBlobsFileUpload_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="177,3800,399,3841"/>
+<area shape="rect" id="node62" href="$classBSONSample_1_1Areas_1_1HelpPage_1_1Controllers_1_1HelpController.html" title="The controller that will handle requests for the help page." alt="" coords="185,3865,391,3907"/>
+<area shape="rect" id="node63" href="$classBSONSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="183,3931,393,3972"/>
+<area shape="rect" id="node64" href="$classBatchSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="203,3996,373,4037"/>
+<area shape="rect" id="node65" href="$classContentController_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="191,4061,385,4103"/>
+<area shape="rect" id="node66" href="$classCustomMediaTypeFormatter_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="193,4127,383,4168"/>
+<area shape="rect" id="node67" href="$classCustomMembershipSample_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="161,4192,415,4233"/>
+<area shape="rect" id="node68" href="$classCustomMembershipSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="161,4257,415,4299"/>
+<area shape="rect" id="node69" href="$classCustomMembershipSample_1_1Controllers_1_1IdentityAccountController.html" title=" " alt="" coords="161,4323,415,4364"/>
+<area shape="rect" id="node70" href="$classEnumSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="185,4388,391,4429"/>
+<area shape="rect" id="node71" href="$classFlightFinder_1_1Server_1_1Controllers_1_1AirportsController.html" title=" " alt="" coords="187,4453,389,4495"/>
+<area shape="rect" id="node72" href="$classIdentity__PasswordPolicy_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="191,4519,385,4560"/>
+<area shape="rect" id="node73" href="$classIdentity__PasswordPolicy_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="198,4584,378,4625"/>
+<area shape="rect" id="node74" href="$classMvcSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="189,4649,387,4691"/>
+<area shape="rect" id="node75" href="$classMyApp_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="175,4715,401,4742"/>
+<area shape="rect" id="node76" href="$classPushContentController_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="176,4767,400,4808"/>
+<area shape="rect" id="node77" href="$classROOT__PROJECT__NAMESPACE_1_1Areas_1_1Trace_1_1Controllers_1_1TraceController.html" title="This class is the MVC Controller that controls views of the In&#45;Memory traces." alt="" coords="157,4832,419,4873"/>
+<area shape="rect" id="node78" href="$classSimpleMembershipMigration_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="191,4897,385,4939"/>
+<area shape="rect" id="node79" href="$classSimpleMembershipMigration_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="193,4963,383,5004"/>
+<area shape="rect" id="node80" href="$classSimpleMembershipSchemeUpdateMigration_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="163,5028,413,5069"/>
+<area shape="rect" id="node81" href="$classSimpleMembershipSchemeUpdateMigration_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="169,5093,407,5135"/>
+<area shape="rect" id="node82" href="$classSingleSignOutSample_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="178,5159,398,5200"/>
+<area shape="rect" id="node83" href="$classSingleSignOutSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="178,5224,398,5265"/>
+<area shape="rect" id="node84" href="$classTestingMVC_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="181,5289,395,5331"/>
+<area shape="rect" id="node85" href="$classTestingMVC_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="188,5355,388,5396"/>
+<area shape="rect" id="node86" href="$classTestingMVC_1_1Controllers_1_1ManageController.html" title=" " alt="" coords="183,5420,393,5461"/>
+<area shape="rect" id="node87" href="$classTodo_1_1Web_1_1Areas_1_1HelpPage_1_1Controllers_1_1HelpController.html" title="The controller that will handle requests for the help page." alt="" coords="197,5485,379,5527"/>
+<area shape="rect" id="node88" href="$classTodo_1_1Web_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="195,5551,381,5592"/>
+<area shape="rect" id="node89" href="$classTouristAttractions_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="191,5616,385,5657"/>
+<area shape="rect" id="node90" href="$classUnitTestAccountController_1_1Controllers_1_1AccountController.html" title=" " alt="" coords="191,5681,385,5723"/>
+<area shape="rect" id="node91" href="$classUnitTestAccountController_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="198,5747,378,5788"/>
+<area shape="rect" id="node92" href="$classWebApiAttributeRoutingSample_1_1Areas_1_1HelpPage_1_1Controllers_1_1HelpController.html" title="The controller that will handle requests for the help page." alt="" coords="153,5812,423,5853"/>
+<area shape="rect" id="node93" href="$classWebApiAttributeRoutingSample_1_1Controllers_1_1HomeController.html" title=" " alt="" coords="183,5877,393,5919"/>
+</map>

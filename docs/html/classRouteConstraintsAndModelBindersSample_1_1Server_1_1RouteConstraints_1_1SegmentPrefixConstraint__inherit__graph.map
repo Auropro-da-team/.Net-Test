@@ -1,0 +1,4 @@
+<map id="RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint" name="RouteConstraintsAndModelBindersSample.Server.RouteConstraints.SegmentPrefixConstraint">
+<area shape="rect" id="node1" title="This constraint will match a route starting with the segmentPrefix + &quot;;&quot; or the segmentPrefix only." alt="" coords="5,80,267,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="63,5,209,32"/>
+</map>

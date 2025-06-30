@@ -1,0 +1,5 @@
+<map id="CustomActionSelector.Server.BetaTestingBehaviorAttribute" name="CustomActionSelector.Server.BetaTestingBehaviorAttribute">
+<area shape="rect" id="node1" title="Configures a controller to behave different for users that are beta testers. For each action that has..." alt="" coords="61,80,258,121"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="167,5,325,32"/>
+</map>

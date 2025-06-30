@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,242,135,269"/>
+<area shape="rect" id="node2" href="$classAccount_1_1Client_1_1AuthenticationHandler.html" title=" " alt="" coords="199,5,394,47"/>
+<area shape="rect" id="node5" href="$classBingTranslate_1_1AzureMarketplace_1_1AccessTokenMessageHandler.html" title="Simple DelegatingHandler which obtains an Access Token from Azure Marketplace by issuing an asynchron..." alt="" coords="189,71,404,112"/>
+<area shape="rect" id="node6" href="$classClientCertificateSample_1_1CustomCertificateMessageHandler.html" title="This verifies the client certificate is one of those known certificates and creates an generic princi..." alt="" coords="183,136,410,177"/>
+<area shape="rect" id="node7" href="$classHostedClientCertificateSample_1_1CustomCertificateMessageHandler.html" title="This verifies the client certificate is one of those known certificates and creates a generic princip..." alt="" coords="183,201,410,243"/>
+<area shape="rect" id="node8" href="$classResponseEntityProcessorSample_1_1Handlers_1_1ResponseEntityHandler.html" title="This DelegatingHandler checks that there is a response entity and if so plugs in a HttpContentProcess..." alt="" coords="185,267,408,308"/>
+<area shape="rect" id="node9" href="$classTodo_1_1Tests_1_1Helpers_1_1NonDisposableRequestHandler.html" title=" " alt="" coords="183,332,411,373"/>
+<area shape="rect" id="node10" href="$classTodo_1_1Tests_1_1RequestContextHandler.html" title=" " alt="" coords="204,397,389,439"/>
+<area shape="rect" id="node11" href="$classTwitterSample_1_1OAuth_1_1OAuthMessageHandler.html" title="Basic DelegatingHandler that creates an OAuth authorization header based on the OAuthBase class downl..." alt="" coords="203,463,390,504"/>
+<area shape="rect" id="node3" href="$classAccount_1_1Client_1_1HttpAuthenticationHandler.html" title=" " alt="" coords="459,5,679,47"/>
+<area shape="rect" id="node4" href="$classAccount_1_1Client_1_1OAuth2BearerTokenHandler.html" title=" " alt="" coords="727,5,921,47"/>
+</map>

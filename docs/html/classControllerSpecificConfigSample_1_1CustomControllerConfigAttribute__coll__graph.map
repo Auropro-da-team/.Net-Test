@@ -1,0 +1,5 @@
+<map id="ControllerSpecificConfigSample.CustomControllerConfigAttribute" name="ControllerSpecificConfigSample.CustomControllerConfigAttribute">
+<area shape="rect" id="node1" title="This Attribute class sets per controller specific configuration. Controllers marked with this attribu..." alt="" coords="5,80,216,136"/>
+<area shape="rect" id="node2" title=" " alt="" coords="6,5,77,32"/>
+<area shape="rect" id="node3" title=" " alt="" coords="101,5,259,32"/>
+</map>

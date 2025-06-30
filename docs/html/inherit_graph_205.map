@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,209,113,235"/>
+<area shape="rect" id="node2" href="$classMvcSample_1_1Controllers_1_1DomainWildcardController.html" title=" " alt="" coords="173,5,380,47"/>
+<area shape="rect" id="node3" href="$classMvcSample_1_1Controllers_1_1ExceptionalController.html" title=" " alt="" coords="161,71,392,112"/>
+<area shape="rect" id="node4" href="$classMvcSample_1_1Controllers_1_1FallbackController.html" title=" " alt="" coords="171,136,382,177"/>
+<area shape="rect" id="node5" href="$classMvcSample_1_1Controllers_1_1GraphController.html" title=" " alt="" coords="178,201,375,243"/>
+<area shape="rect" id="node6" href="$classMvcSample_1_1Controllers_1_1MultipleHostController.html" title=" " alt="" coords="173,267,380,308"/>
+<area shape="rect" id="node7" href="$classMvcSample_1_1Controllers_1_1SingleHostController.html" title=" " alt="" coords="177,332,376,373"/>
+<area shape="rect" id="node8" href="$classMvcSample_1_1Controllers_1_1StrictController.html" title=" " alt="" coords="180,397,373,439"/>
+</map>

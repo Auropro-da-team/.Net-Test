@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,177,168,203"/>
+<area shape="rect" id="node2" href="$classTodo_1_1Client_1_1Models_1_1BindableBase.html" title=" " alt="" coords="216,177,435,203"/>
+<area shape="rect" id="node3" href="$classTodo_1_1WindowsPhone_1_1Models_1_1TodoItemModel.html" title=" " alt="" coords="483,5,677,47"/>
+<area shape="rect" id="node4" href="$classTodo_1_1WindowsPhone_1_1Models_1_1TodoListModel.html" title=" " alt="" coords="483,71,677,112"/>
+<area shape="rect" id="node5" href="$classTodo_1_1WindowsPhone_1_1Models_1_1TodoPageModel.html" title=" " alt="" coords="483,136,677,177"/>
+<area shape="rect" id="node6" href="$classTodo_1_1WindowsStore_1_1Models_1_1TodoItemModel.html" title=" " alt="" coords="485,201,675,243"/>
+<area shape="rect" id="node7" href="$classTodo_1_1WindowsStore_1_1Models_1_1TodoListModel.html" title=" " alt="" coords="485,267,675,308"/>
+<area shape="rect" id="node8" href="$classTodo_1_1WindowsStore_1_1Models_1_1TodoPageModel.html" title=" " alt="" coords="485,332,675,373"/>
+</map>

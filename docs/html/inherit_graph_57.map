@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="20,13,117,39"/>
+<area shape="rect" id="node2" href="$classBasicAuthentication_1_1Results_1_1AddChallengeOnUnauthorizedResult.html" title=" " alt="" coords="180,5,415,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,209,132,235"/>
+<area shape="rect" id="node4" href="$classActionResults_1_1Results_1_1OkFileDownloadResult.html" title=" " alt="" coords="210,71,385,112"/>
+<area shape="rect" id="node5" href="$classActionResults_1_1Results_1_1OkTextPlainResult.html" title=" " alt="" coords="210,136,385,177"/>
+<area shape="rect" id="node6" href="$classBasicAuthentication_1_1Results_1_1AuthenticationFailureResult.html" title=" " alt="" coords="202,201,393,243"/>
+<area shape="rect" id="node7" href="$classDeltaJsonDeserialization_1_1Server_1_1PlainTextHttpActionResult.html" title=" " alt="" coords="189,267,406,308"/>
+<area shape="rect" id="node8" href="$classElmah_1_1Server_1_1Results_1_1InternalServerErrorTextPlainResult.html" title=" " alt="" coords="199,332,395,373"/>
+<area shape="rect" id="node9" href="$classTodo_1_1Web_1_1Results_1_1ChallengeResult.html" title=" " alt="" coords="202,397,393,439"/>
+</map>
